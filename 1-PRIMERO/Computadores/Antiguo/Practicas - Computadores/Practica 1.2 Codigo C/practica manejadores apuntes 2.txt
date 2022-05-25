@@ -1,0 +1,10 @@
+            __________  
+funciones  | open     |                            _______
+           | close    |  se registran             | ReatOS|
+           | read     | /                          _______
+           | write    |/
+           | control  |
+           |__________|
+            ______________
+           |inicialización|
+            ______________

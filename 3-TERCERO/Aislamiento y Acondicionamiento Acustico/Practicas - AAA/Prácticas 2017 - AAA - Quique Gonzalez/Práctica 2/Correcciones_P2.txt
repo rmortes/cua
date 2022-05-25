@@ -1,0 +1,6 @@
+- No data about reverberation times is asked. 
+- Take care with the error expression (try to follow the general expression criterion). 
+- Graphical comparison between the different configurations of the same material? This was a very important part of the lab experience that you have not addressed. 
+- Graphical comparison between the absoprtion coefficients of the different materials? 
+- Your comments are all right but the lab report is a bit poor, more comparison will be definitevely welcome. 
+- References for the absorption coefficient theoretical values?

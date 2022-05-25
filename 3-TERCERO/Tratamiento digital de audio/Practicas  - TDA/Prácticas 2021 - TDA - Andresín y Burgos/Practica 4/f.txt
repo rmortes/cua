@@ -1,0 +1,13 @@
+primeras dos formas si o si llegas a la ecuación  de X(z)
+
+Usando el método 1 o método 2, tienes que desarrollar los métodos
+
+Están discutiendo de algo que no entiendo
+
+floor abajo
+
+ceil arriba
+
+fix entero
+
+round 

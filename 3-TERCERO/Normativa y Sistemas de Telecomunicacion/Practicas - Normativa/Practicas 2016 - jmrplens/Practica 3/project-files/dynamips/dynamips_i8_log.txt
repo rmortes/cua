@@ -1,0 +1,37 @@
+Mar 10 16:47:49.285 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Mar 10 16:47:49.285 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49423.
+Mar 10 16:47:49.384 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 10 16:47:49.398 HYPERVISOR: exec_cmd: hypervisor uuid 
+Mar 10 16:47:49.405 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 3/Practica 3/project-files/dynamips 
+Mar 10 16:47:49.405 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 3/Practica 3/project-files/dynamips
+Mar 10 16:47:49.411 HYPERVISOR: exec_cmd: vm create R3 8 c2691 
+Mar 10 16:47:49.411 VM: VM R3 created.
+Mar 10 16:47:49.418 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 2002 
+Mar 10 16:47:49.423 HYPERVISOR: exec_cmd: c2691 get_mac_addr R3 
+Mar 10 16:47:49.430 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 10 16:47:49.437 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x606eaea8 
+Mar 10 16:47:49.445 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/jmrplens/GNS3/images/IOS/c2691-advsecurityk9-mz.124-25d.image 
+Mar 10 16:47:49.451 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Mar 10 16:47:49.457 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Mar 10 16:47:49.465 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Mar 10 16:47:49.472 HYPERVISOR: exec_cmd: c2691 set_mac_addr R3 c008.8c58.0000 
+Mar 10 16:47:49.479 HYPERVISOR: exec_cmd: vm set_config R3 configs/i8_startup-config.cfg 
+Mar 10 16:47:50.234 HYPERVISOR: exec_cmd: nio create_udp udp-6471aa9a-63bd-42c5-8680-c238d30ed967 10016 127.0.0.1 10017 
+Mar 10 16:47:50.239 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-6471aa9a-63bd-42c5-8680-c238d30ed967 
+Mar 10 16:47:50.247 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 10 16:47:50.277 HYPERVISOR: exec_cmd: nio create_udp udp-4d92ba4d-7e95-41f8-9f4f-30125703e3cf 10018 127.0.0.1 10019 
+Mar 10 16:47:50.285 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-4d92ba4d-7e95-41f8-9f4f-30125703e3cf 
+Mar 10 16:47:50.288 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 10 16:47:54.118 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Mar 10 16:47:54.120 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c2691-advsecurityk9-mz.124-25d.image-192.ghost 
+Mar 10 16:47:54.121 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 10 16:47:54.123 HYPERVISOR: exec_cmd: vm start R3 
+Mar 10 16:57:11.405 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 10 16:57:11.415 HYPERVISOR: exec_cmd: vm stop R3 
+Mar 10 16:57:11.524 VM: VM R3 shutdown.
+Mar 10 16:57:11.536 HYPERVISOR: exec_cmd: vm extract_config R3 
+Mar 10 16:57:11.550 HYPERVISOR: exec_cmd: vm delete R3 
+Mar 10 16:57:11.550 VM: VM R3 destroyed.
+Mar 10 16:57:11.560 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 10 16:57:11.966 HYPERVISOR: Stopped.
+Mar 10 16:57:11.966 GENERAL: reset done.

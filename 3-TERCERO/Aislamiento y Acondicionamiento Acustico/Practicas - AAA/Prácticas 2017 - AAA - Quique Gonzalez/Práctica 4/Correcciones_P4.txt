@@ -1,0 +1,12 @@
+- When we come to ISO stantards 16283-2 and 717-2, we always speak about impact noise insulation, we do not measure the isolation, although it may interfere in the insulation of course. 
+- Please, use always decimal points instead of commas!!! 
+- If level difference is lgreater than 10 dB we must not correct the measured levels from background noise!!! 
+- You say : "The standard says that we have to measure the levels of the emitter and the receiver individually", really? what's the trouble in making the measurements at the same time? 
+- You also say: "We are going to do the examples of the mathematical calculations with the measurements of group 3", do you really mean "one speaker position for group 3?" 
+- Standard deviations in measurement results? 
+- The area of the common partition is the same for airborne and impact noise insulation reports. 
+- Comments about corner and low-frequency measurements? 
+- What about other adaptation terms for different frequency intervals? 
+- Comments about diffuse fields? Calibrations?Largest room? Sound spectrum level differences between adjacent 1/3 octave bands? 
+- In the case of airborne noise you may compare your results with NC or NR curves assuming a specific outside noise level. 
+- White or pink noise?

@@ -1,0 +1,8 @@
+Nota:5
+
+Observaciones prof.: Ejercicio 2: Los valores que deben aparecer son los medidos, 
+no los obtenidos usando la ecuación que supone conocida la velocidad del sonido, 
+que es justo lo que queremos obtener. 
+- Ejercicio 3: Obviamente os tiene que salir un ajuste perfecto si 
+habéis usado los cálculos teóricos. - Faltan magnitudes y unidades en los ejes. 
+- Ejercicio 6: Faltan magnitudes y unidades en los ejes.

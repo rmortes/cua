@@ -1,0 +1,130 @@
+#include <stdio.h>
+int main(void)
+{
+    int a,centenas,decenas, unidades;
+    printf("Introduzca un numero entre 1 y 999:");
+    scanf("%d",&a);
+    centenas=a/100;
+    a=a-centenas*100;
+    decenas=a/10;
+    unidades=a-decenas*10;
+    if(a<=0 || a>999){
+        printf("Error. El numero es incorrecto");
+        getchar();
+        getchar();
+    }else{
+        switch(centenas){
+        case 1: if(decenas==0 && unidades==0){
+                printf("cien");
+            }else{
+                printf("ciento ");
+            }
+            break;
+          case 2: printf("doscientos ");
+              break;
+          case 3: printf("trescientos ");
+              break;
+          case 4: printf("cuatrocientos ");
+              break;
+          case 5: printf("quinientos ");
+              break;
+          case 6: printf("seiscientos ");
+              break;
+          case 7: printf("setecientos ");
+              break;
+          case 8: printf("ochocientos ");
+              break;
+          case 9: printf("novecientos ");
+              break;
+          }switch(decenas){
+          case 1:
+          switch(unidades){
+          case 1: printf("once");
+              break;
+          case 2: printf("doce");
+              break;
+          case 3: printf("trece");
+              break;
+          case 4: printf("catorce");
+              break;
+          case 5: printf("quince");
+              break;
+          default: printf("diez y ");
+              break;
+          };
+          break;
+          case 2: if(unidades==0){
+                  printf("veinte");
+              }else{
+                  printf("veinte y ");
+              }
+              break;
+          case 3: if(unidades==0){
+                  printf("treinta");
+              }else{
+                  printf("treinta y ");
+              }
+              break;
+          case 4: if(unidades==0){
+                  printf("cuarenta");
+              }else{
+                  printf("cuarenta y ");
+              }
+              break;
+          case 5: if(unidades==0){
+                  printf("cincuenta");
+              }else{
+                  printf("cincuenta y ");
+              }
+              break;
+          case 6: if(unidades==0){
+                  printf("sesenta");
+              }else{
+                  printf("sesenta y ");
+              }
+              break;
+          case 7: if(unidades==0){
+                  printf("setenta");
+              }else{
+                  printf("setenta y ");
+              }
+              break;
+           case 8: if(unidades==0){
+                   printf("ochenta");
+               }else{
+                   printf("ochenta y ");
+               }
+               break;
+           case 9: if(unidades==0){
+                   printf("noventa");
+               }else{
+                   printf("noventa y " );
+               }
+               break;
+           }switch(unidades){
+           case 1: printf("uno");
+               break;
+           case 2: printf("dos");
+               break;
+           case 3: printf("tres");
+               break;
+           case 4: printf("cuatro");
+               break;
+           case 5: printf("cinco");
+               break;
+           case 6: printf("seis");
+               break;
+           case 7: printf("siete");
+               break;
+           case 8: printf("ocho");
+               break;
+           case 9: printf("nueve");
+               break;
+           }
+        getchar();
+        getchar();
+    }
+    
+    return(0);
+}
+

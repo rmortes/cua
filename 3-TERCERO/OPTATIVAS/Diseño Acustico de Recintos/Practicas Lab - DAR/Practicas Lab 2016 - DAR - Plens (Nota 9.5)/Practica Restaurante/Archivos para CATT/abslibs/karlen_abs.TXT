@@ -1,0 +1,376 @@
+;CATT Exchange text for import into CATT-Acoustic
+;Note that some versions < v7.2f may fail to import
+;data without diffusion. If so, switch on "zig-zag"
+;diffusion below and switch off again after import.
+
+;"Akustik i rum och byggander" (in Swedish)
+;Lennart Karlen
+;Ref. code: [Karlen]
+;Svensk Byggtjänst
+;1983
+;ISBN: 91-7332-226-
+
+CONCRETE_WALL = < 1 1 1 2 2 3>
+ C:Walls
+ D:Concrete wall, rough finish
+ R:[Karlen]
+
+MARBLE = < 1 1 1 1 2 2 >
+ C:Walls
+ D:Marble, glazed tiles
+ R:[Karlen]
+
+BRICK_WALL1 = <3 3 3 4 5 7 >
+ C:Walls
+ D:Brick wall, stuccoed with a rough finish
+ R:[Karlen]
+
+BRICK_WALL2 = <2 2 3 4 5 5 >
+ C:Walls
+ D:Brick wall, with a smooth troweled finish
+ R:[Karlen]
+
+BRICK_WALL3 = <1 2 2 2 3 3>
+ C:Walls
+ D:Brick wall, lime cast, coated with oil paint
+ R:[Karlen]
+
+BRICK_WALL4 = <2 3 4 5 7 8>
+ C:Walls
+ D:Brick wall, casted, with tapestry
+ R:[Karlen]
+
+WOOD_FLOOR1 = <4 4 7 6 6 7 >
+ C:Floors
+ D:Wooden floor in asphalt on concrete
+ R:[Karlen]
+
+TILE_FLOOR = <2 2 2 2 3 3 >
+ C:Floors
+ D:Tiles on concrete
+ R:[Karlen]
+
+LINOLEUM1 = <2 2 3 3 4 4 >
+ C:Floors
+ D:Linoleum directly on concrete
+ R:[Karlen]
+
+RUBBER_FLOOR = <4 4 8 12 10 10 >
+ C:Floors
+ D:5 mm rubber carpet on concrete
+ R:[Karlen]
+
+CARPET_SOFT = <9 8 21 26 27 37 >
+ C:Floors
+ D:10 mm soft carpet on concrete
+ R:[Karlen]
+
+WATER_SURFACE = <1 1 1 2 2 3>
+ C:Misc
+ D:Water surface
+ R:[Karlen]
+
+WOOD_PANEL2 = <18 12 10 9 8 7>
+ C:Walls
+ D:16 mm wood on 40 mm studs
+ R:[Karlen]
+
+WOOD_VENEER1 = <28 22 17 9 10 11>
+ C:Walls
+ D:8 mm wood veneer on 50 mm studs
+ R:[Karlen]
+
+WOOD_VENEER2 = <20 28 26 9 12 11>
+ C:Walls
+ D:3 mm wood veneer on 50 mm studs
+ R:[Karlen]
+
+WOOD_FLOOR2 = <15 11 10 7 6 7>
+ C:Floors
+ D:Wooden floor on joists
+ R:[Karlen]
+
+LINOLEUM2 = <15 12 11 10 7 8>
+ C:Floors
+ D:Linoleum on wooden floor
+ R:[Karlen]
+
+PLASTER1 = <12 10 8 6 6 6 >
+ C:Walls
+ D:Plaster wall
+ R:[Karlen]
+
+WINDOW1 = <35 25 18 12 7 4>
+ C:Windows
+ D:Window glass
+ R:[Karlen]
+
+WINDOW_THICK = <18 6 4 3 2 2>
+ C:Windows
+ D:Window glass, big thick panes
+ R:[Karlen]
+
+WINDOW_DBL_30 = <15 5 3 3 2 2>
+ C:Windows
+ D:Double 3 mm glass/ 30 mm distance
+ R:[Karlen]
+
+WINDOW_DBL_10 = <2 6 3 3 2 2>
+ C:Windows
+ D:Double 3 mm glass/ 10 mm distance
+ R:[Karlen]
+
+PLASTER2 = <29 10 5 4 7 9>
+ C:Walls
+ D:13 mm plaster on 100 mm studs
+ R:[Karlen]
+
+PLASTER3 = <16 15 7 8 5 6>
+ C:Walls
+ D:13 mm plaster on 25 mm studs (no mineral wool)
+ R:[Karlen]
+
+PLASTER4 = <26 20 10 7 4 7>
+ C:Walls
+ D:13 mm plaster on 25 mm studs (with mineral wool)
+ R:[Karlen]
+
+PLASTER5 = <21 20 7 6 4 8>
+ C:Walls
+ D:9 mm plaster on 25 mm studs (with mineral wool)
+ R:[Karlen]
+
+PLASTER6 = <15 16 8 6 5 6>
+ C:Walls
+ D:9 mm plaster on 25 mm studs (no mineral wool)
+ R:[Karlen]
+
+WOOD_PODIUM = <40 30 20 17 15 10>
+ C:Floors
+ D:Hollow wooden podium
+ R:[Karlen]
+
+AUDIENCE_072 = <10 21 41 65 75 71> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Audience area, 0.72 persons/m2
+ R:[Karlen]
+
+AUDIENCE_104 = <16 29 55 80 92 90> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Audience area, 1.04 persons/m2
+ R:[Karlen]
+
+AUDIENCE_152 = <22 38 71 95 99 99> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Audience area, 1.52 persons/m2
+ R:[Karlen]
+
+AUDIENCE_200 = <26 46 87 99 99 99> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Audience area, 2.0 persons/m2
+ R:[Karlen]
+
+CONCERT_CHAIR1 = <49 66 80 88 82 70> L <30 40 50 60 70 70>
+ C:Chairs
+ D:Upholstered concert chairs, empty
+ R:[Karlen]
+
+BRICK_WALL5 = <5 15 33 85 45 55>
+ C:Walls
+ D:Bricks with 78 holes (facing out) directly on stone wall
+ R:[Karlen]
+
+BRICK_WALL6 = <48 77 38 27 65 35>
+ C:Walls
+ D:Bricks with 78 holes (facing out), 50 mm from hard wall with mineral wool
+ R:[Karlen]
+
+PLASTER7 = <20 22 71 99 55 42>
+ C:Walls
+ D:Slotted 13 mm gypsumboard (12%) 106 x 3 mm2 on studs and mineral wool
+ R:[Karlen]
+
+PLASTER8 = <18 32 71 99 50 29>
+ C:Walls
+ D:Perf. 13 mm gypsumboard (11%), d= 5 mm, on studs and mineral wool
+ R:[Karlen]
+
+PLASTER9 = <45 55 60 90 86 75>
+ C:Ceilings
+ D:Perf. 27 mm gypsumboard (16%), d= 4.5 mm 300 mm from ceiling
+ R:[Karlen]
+
+BRICK_WALL7 = <14 28 45 90 45 65>
+ C:Walls
+ D:Raised bricks with 19 holes directly on stone wall
+ R:[Karlen]
+
+BRICK_WALL8 = <37 99 85 60 80 65>
+ C:Walls
+ D:Bricks with 19 holes (facing out), 50 mm from hard wall with mineral wool
+ R:[Karlen]
+
+PANEL1 = <17 32 12 6 3 2>
+ C:Walls
+ D:Panel w. slot= 0 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL2 = <9 72 30 12 6 5>
+ C:Walls
+ D:Panel w. slot= 1 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL3 = <9 67 49 21 9 7>
+ C:Walls
+ D:Panel w. slot= 2 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL4 = <8 57 71 40 20 18>
+ C:Walls
+ D:Panel w. slot= 4 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL5 = <9 60 91 60 35 30>
+ C:Walls
+ D:Panel w. slot= 8 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL6 = <3 46 87 70 54 42>
+ C:Walls
+ D:Panel w. slot= 16 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL7 = <6 41 83 93 73 55>
+ C:Walls
+ D:Panel w. slot= 49 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL8 = <3 40 79 91 76 70>
+ C:Walls
+ D:Panel w. slot= 102 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+PANEL9 = <3 33 73 89 85 77>
+ C:Walls
+ D:Panel w. slot= 270 mm, on 25 mm studs with mineral wool
+ R:[Karlen]
+
+MINERALWOOL1 = <5 21 59 83 87 91>
+ C:Ceilings
+ D:25 mm thick, against ceiling
+ R:[Karlen]
+
+MINERALWOOL2 = <15 56 88 99 99 95>
+ C:Ceilings
+ D:50 mm thick, against ceiling
+ R:[Karlen]
+
+MINERALWOOL3 = <58 69 96 97 99 91>
+ C:Ceilings
+ D:100 mm thick, against ceiling
+ R:[Karlen]
+
+MINERALWOOL4 = <48 49 70 78 94 93>
+ C:Ceilings
+ D:25 mm thick, 200 mm from ceiling
+ R:[Karlen]
+
+MINERALWOOL5 = <49 63 83 97 99 96>
+ C:Ceilings
+ D:50 mm thick, 200 mm from ceiling
+ R:[Karlen]
+
+MINERALWOOL6 = <49 64 89 98 99 96>
+ C:Ceilings
+ D:100 mm thick, 200 mm from ceiling
+ R:[Karlen]
+
+MINERALWOOL7 = <20 63 99 95 83 66>
+ C:Walls
+ D:50 mm thick, directly against wall, w. 0.05 mm PE-foil
+ R:[Karlen]
+
+MINERALFIBER1 = <9 40 56 59 70 69>
+ C:Ceilings
+ D:16 mm pressed mineral fiber board (fissured) 20 mm from ceiling
+ R:[Karlen]
+
+MINERALFIBER2 = <38 28 39 59 64 65>
+ C:Ceilings
+ D:16 mm pressed mineral fiber board (fissured) 210 mm from ceiling
+ R:[Karlen]
+
+CURTAIN1 = <6 10 38  63 70 73>
+ C:Curtains
+ D:Densly woven window curtains 90 mm from wall
+ R:[Karlen]
+
+COTTON1 = <7 31 49 81 66 54>
+ C:Curtains
+ D:Cotton cloth (0.33 kg/m2) folded to 1/2 area
+ R:[Karlen]
+
+COTTON2 = <4 23 14 57 53 40>
+ C:Curtains
+ D:Cotton cloth (0.33 kg/m2) folded to 3/4 area
+ R:[Karlen]
+
+COTTON3 = <3 12 15 27 37 42>
+ C:Curtains
+ D:Cotton cloth (0.33 kg/m2) folded to 7/8 area
+ R:[Karlen]
+
+FOAMPLASTIC1 = <10 21 40 93 82 98>
+ C:Misc
+ D:Porous foamplastic 50 mm
+ R:[Karlen]
+
+FOAMPLASTIC2 = <3 7 35 72 95 90>
+ C:Misc
+ D:Porous foamplastic 20 mm
+ R:[Karlen]
+
+GRAVEL1 = <25 60 65 70 75 80>
+ C:Floors
+ D:Gravel, 100 mm thickness
+ R:[Karlen]
+
+SAND1 = <15 35 40 50 55 80>
+ C:Floors
+ D:Sand, 100 mm thickness
+ R:[Karlen]
+
+NEEDLEFELT1 = <5 8 20 30 35 40>
+ C:Floors
+ D:Needle-felt on concrete
+ R:[Karlen]
+
+SOUNDBOARD1 = <6 9 17 35 52 56>
+ C:Walls
+ D:30 mm "Soundboard" (pressed wood curles with air gaps)
+ R:[Karlen]
+
+SOUNDBOARD2 = <10 15 25 51 47 63>
+ C:Walls
+ D:50 mm "Soundboard" (pressed wood curles with air gaps)
+ R:[Karlen]
+
+SOUNDBOARD3 = <15 20 40 65 52 78>
+ C:Walls
+ D:70 mm "Soundboard" (pressed wood curles with air gaps)
+ R:[Karlen]
+
+SOUNDBOARD4 = <13 25 51 52 68 82>
+ C:Walls
+ D:100 mm "Soundboard" (pressed wood curles with air gaps)
+ R:[Karlen]
+
+SOUNDBOARD5 = <20 64 75 75 85 91>
+ C:Ceilings
+ D:150 mm "Soundboard" (pressed wood curles with air gaps)
+ R:[Karlen]
+
+SOUNDBOARD6 = <8 15 23 55 61 59>
+ C:Ceilings
+ D:50 mm "Soundboard" (pressed wood curles with air gaps) on 25 mm studs
+ R:[Karlen]

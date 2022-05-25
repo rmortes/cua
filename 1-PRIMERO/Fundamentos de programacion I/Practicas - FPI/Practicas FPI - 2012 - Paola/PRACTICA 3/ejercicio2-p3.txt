@@ -1,0 +1,153 @@
+#include<stdlib.h>
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<time.h>
+
+/*pasar a mayuscula las letras de la palabra que introducimos*/
+void mayuscula(char palabra[]){
+    for(int i=0;i<strlen(palabra);i++){
+        if(palabra[i]>='a' && palabra[i]<='z'){
+            palabra[i]=palabra[i]-'a'+'A';
+        }
+    }
+    return;
+}
+
+/*funcion que cuenta el numero de letras de nuestro tablero*/
+int cuentaletras(char Tab[]){
+    int s=0;
+    for(int i=0;i<50;i++){
+        if(Tab[i]!='-'){
+            s++;
+        }
+    }
+    return (s);
+}
+
+/*funcion que rellena de consonantes y vocales el tablero Tab[]*/
+void rellenar (char Tab[]){
+    char vocal[]="AEIOU";
+    char consonante[]="BCDFGHJKLMNPQRSTVWXYZ";
+    for(int i=0;i<25; i++){
+        Tab[i]=vocal[rand()%5];
+    }
+    for(int j=25;j<50;j++){
+        Tab[j]=consonante[rand()%21];
+    }
+    return;
+
+}
+
+/*funcion que saca por pantalla el panel*/
+void mostrar (char Tab[]){
+    printf("\nLETRAS PENDIENTES:");
+    for(int i=0;i<50;i++){
+        if (Tab[i]== '-'){
+            printf("");
+        }else{
+            printf("%c", Tab[i]);
+        }
+    }
+    return;
+}
+
+/* funciones para que salga la vocal y consonante que compra el usuario */
+void comprarvocal(int *puntuacion, char Tab[]){
+    char vocal[]="AEIOU";
+    int termina=0;
+    if(*puntuacion>=50){
+        for(int i=0; i<50 && termina==0;i++){
+            if (Tab[i]=='-'){
+                Tab[i]=vocal[rand()%5];
+                termina=1;
+            }
+        }
+        *puntuacion=*puntuacion-50;
+    }else{
+        printf("Error.No tienes suficiente puntuacion para comprar letras \n");
+    }
+    return;
+}
+void comprarconsonante(int *puntuacion, char Tab[]){
+    char consonante[]="BCDFGHJKLMNPQRSTVWXYZ";
+    int termina=0;
+    if(*puntuacion>=20){
+        for (int j=0; j<50 && termina==0;j++){
+            if (Tab[j]=='-'){
+                Tab[j]=consonante[rand()%21];
+                termina=1;
+            }
+        }
+        *puntuacion=*puntuacion-20;
+    }else{
+        printf("Error.No tienes suficiente puntuacion para comprar letras \n");
+    }
+    return;
+}
+
+/* funcion que comprueba que la palabra se puede formar y que ejecuta un nuevo panel*/
+int comprobar(char Tab[], char palabra[],char aux1[]){
+    for(int i=0;i<50;i++){
+        aux1[i]=Tab[i];
+    }
+    int k=0;
+    for(int i=0;i<strlen(palabra);i++){
+        int termina=0;
+        for(int j=0; j<50 && termina==0;j++){
+            if (aux1[j]==palabra[i]){
+                aux1[j]='-';
+                k++;
+                termina=1;
+            }
+        }
+    }
+    if(strlen(palabra)==k){
+        for(int i=0; i<50;i++){
+            Tab[i]=aux1[i];
+        }
+    }else{
+        k=0;
+    }
+    return k;
+}
+void gazpacho (void){
+    printf("Gazpacho de letras\n------------------\n");
+    char Tab[50];
+    char palabra[50];
+    char aux1[50];
+    rellenar(Tab);
+    int puntuacion=0;
+    do{       
+        printf("\nPUNTUACION:%d", puntuacion);
+        mostrar(Tab);
+        printf("\nIntroduzca palabra (1 para comprar vocal y 2 para comprar consonante):");
+        scanf("%s",palabra);
+        getchar();
+        mayuscula(palabra);
+        if(strcmp(palabra,"1")==0){
+            comprarvocal(&puntuacion,Tab);           
+        }else{
+            if(strcmp(palabra,"2")==0){
+                comprarconsonante(&puntuacion,Tab);
+            }else{
+                int puntos=comprobar(Tab,palabra,aux1);
+                if(puntos!=0){
+                    printf("Se han obtenido %d puntos que se anyaden a la puntuacion global.\n", puntos*10);
+                    puntuacion=puntuacion+puntos*10;
+                }else{
+                    printf("ERROR.La palabra no se puede formar.\n");
+                }
+            }
+        }        
+    }while(cuentaletras(Tab)>0);  
+    return;
+}
+int main(void){
+    srand(time(NULL));
+    gazpacho();
+    getche();
+    return 0;
+}
+

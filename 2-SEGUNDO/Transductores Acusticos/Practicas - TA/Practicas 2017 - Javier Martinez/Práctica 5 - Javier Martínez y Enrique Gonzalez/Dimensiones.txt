@@ -1,0 +1,26 @@
+Caja 1
+Tweeter diametro = 2.5cm
+Graves	diametro = 11 cm
+Sub	diametro = 2.5cm
+Re = 6.5 Ohmios
+
+Caja 2
+Tweeter diametro = 2 cm
+Medios  diametro = 7.5cm
+Graves	diametro = 14 cm
+Sub	diametro = 5.5cm
+Re = 7.5 Ohmios
+
+Caja 3
+Graves	diametro = 18 cm
+Re = 6.3 Ohmios
+
+Caja 4
+Tweeter diametro = 2.5cm
+Graves  diametro = 16 cm
+Sub	diametro = 5 cm
+Re = 4.5 Ohmios
+
+
+Vef = 2.8 Voltios
+r=1m

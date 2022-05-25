@@ -1,0 +1,21 @@
+1. Descripción de los programas en C:
+- capt.c: obtiene muestras del dispositivo de sonido y las almacena en un fichero.
+- repr.c: obtiene muestras de un fichero y los envía al dispostivo de sonido.
+- pdsaudio1.c: obtiene muestras de un fichero, las procesa, y las almacena en otro fichero.
+- pdsaudio2.c: realiza lo mismo que pdsaudio1.c, pero de manera independiente de la arquitectura
+
+2. Compilación de los programas
+gcc -o capt capt.c -lasound
+gcc -o repr repr.c -lasound
+gcc -o pdsaudio1 pdsaudio1.c
+gcc -o pdsaudio2 pdsaudio2.c (este no es necesario)
+
+3. Ejecución de los programas
+./capt > muestras
+./pdsaudio1 < muestras > muestrasprocesadas
+./repr < muestrasprocesadas
+
+muestras y muestrasprocesadas son nombres de fichero.
+
+Cada vez que se modifica un archivo en C, hay que volverlo a compilar.
+El fichero pdsaudio1.c lee y escribe del fichero, pero no realiza ningún procesamiento. En el propio fichero se indica dónde hay que incluir las líneas de código, y con un ejemplo.

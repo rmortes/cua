@@ -1,0 +1,66 @@
+MESAS
+
+1:
+Centro de mesa:		8.45	6.74	1.50
+Silla norte: 		9.22	6.74	1.50
+Silla sur:		7.80	6.74	1.50
+Silla este:		8.45	5.94	1.50
+Silla oeste:		8.45	7.35	1.50
+
+2:
+Centro de mesa:		8.45	4.10	1.50
+Silla norte: 		9.22	4.10	1.50
+Silla sur:		7.80	4.10	1.50
+Silla este:		8.45	3.38	1.50
+Silla oeste:		8.45	4.79	1.50
+
+3:
+Centro de mesa:		8.45	1.55	1.50
+Silla norte: 		9.22	1.55	1.50
+Silla sur:		7.80	1.55	1.50
+Silla este:		8.45	0.85	1.50
+Silla oeste:		8.45	2.19	1.50
+
+4:
+Centro de mesa:		6.11	6.74	1.50
+Silla norte: 		6.83	6.74	1.50
+Silla sur:		5.47	6.74	1.50
+Silla este:		6.11	5.94	1.50
+Silla oeste:		6.11	7.35	1.50
+
+5:
+Centro de mesa:		6.11	4.10	1.50
+Silla norte: 		6.83	4.10	1.50
+Silla sur:		5.47	4.10	1.50
+Silla este:		6.11	3.38	1.50
+Silla oeste:		6.11	4.79	1.50
+
+6:
+Centro de mesa:		6.11	1.55	1.50
+Silla norte: 		6.83	1.55	1.50
+Silla sur:		5.47	1.55	1.50
+Silla este:		6.11	0.85	1.50
+Silla oeste:		6.11	2.19	1.50
+
+7:
+Centro de mesa:		3.62	5.27	1.50
+Silla este:		3.62	4.54	1.50
+Silla oeste:		3.62	5.96	1.50
+
+8:
+Centro de mesa:		3.62	2.95	1.50
+Silla este:		3.62	2.23	1.50
+Silla oeste:		3.62	3.60	1.50
+
+BARRA
+3 fuentes 3 Receptores
+
+Fuentes:
+0.30 6.18 1.50
+0.30 4.10 1.50
+0.30 1.75 1.50
+
+Receptores:
+1.15 7.84 1.50
+1.15 4.10 1.50
+1.15 0.56 1.50

@@ -1,0 +1,67 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=12.837cm,
+height=5cm,
+at={(0cm,0cm)},
+scale only axis,
+xmode=log,
+xmin=10,
+xmax=10000,
+xtick={16,31.5,63,125,250,500,1000,2000,4000,8000,16000},
+xticklabels={{16},{31.5},{63},{125},{250},{500},{1000},{2000},{4000},{8000},{16000}},
+xminorticks=true,
+xlabel style={font=\color{white!15!black}},
+xlabel={Frecuencia (Hz)},
+ymin=-500000000000,
+ymax=2500000000000,
+ylabel style={font=\color{white!15!black}},
+ylabel={Modulo de Young (Pa)},
+axis background/.style={fill=white},
+xmajorgrids,
+xminorgrids,
+ymajorgrids,
+legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+29.297	278450453239.364\\
+191.895	304173987200.624\\
+1070.801	1208061794391.78\\
+2655.762	1935171241125.45\\
+4984.863	2494870102628.17\\
+};
+\addlegendentry{Original}
+
+\addplot [color=mycolor2, mark=o, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+26.367	-73560687725.4691\\
+190.43	-6338355054.38872\\
+1066.406	-12852392906.3126\\
+2635.254	-40813533372.711\\
+4902.832	-114811598536.05\\
+};
+\addlegendentry{Con fibra}
+
+\addplot [color=mycolor3, mark=o, mark options={solid, mycolor3}]
+  table[row sep=crcr]{%
+30.762	19764561321.3635\\
+169.922	-10087525167.1065\\
+921.387	-56383758716.3114\\
+2269.043	-96506453454.4091\\
+4164.551	-148750175814.275\\
+};
+\addlegendentry{Con metal}
+
+\end{axis}
+\end{tikzpicture}%

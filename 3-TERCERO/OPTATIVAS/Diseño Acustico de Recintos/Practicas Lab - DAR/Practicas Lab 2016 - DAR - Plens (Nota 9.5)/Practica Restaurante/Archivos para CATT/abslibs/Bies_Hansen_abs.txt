@@ -1,0 +1,161 @@
+;CATT Exchange text for import into CATT-Acoustic
+
+;"Sound absorption in Enclosures"
+;David B. Bies, Colin. H. Hansen
+;Ref. code: [Bies_Hansen]
+;Malcolm J. Crocker (Ed.), "Encyclopedia of Acoustics"
+;John Wiley & Sons, Inc.
+;1997
+;ISBN: 0-471-80465-7 (all volumes)
+
+;Note this ref. seems to contain several typing and formatting
+;mistakes in the tables shown, several materials have been 
+;omitted here.
+
+AUDIENCE50 = <52 68 85 97 93 85> L <30 40 50 60 70 70>
+ C:Audiences
+ D:100% occupied upholstered seats
+ R:[Bies_Hansen]
+
+AUDIENCE51 = <44 60 77 89 82 70> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Unoccupied average well upholstered seats
+ R:[Bies_Hansen]
+
+AUDIENCE52 = <40 50 58 61 58 50> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Unoccupied leather-covered upholstered seats
+ R:[Bies_Hansen]
+
+PEWS50 = <57 61 75 86 91 86> L <30 40 50 60 70 70>
+ C:Chairs
+ D:Wooden pews, 100% occupied
+ R:[Bies_Hansen]
+
+CHAIRS50 = <60 74 88 96 93 85> L <30 40 50 60 70 70>
+ C:Chairs
+ D:Wooden chairs, 100% occupied
+ R:[Bies_Hansen]
+
+CHAIRS51 = <46 56 65 75 72 65> L <30 40 50 60 70 70>
+ C:Chairs
+ D:Wooden chairs, 75% occupied
+ R:[Bies_Hansen]
+
+FIBERGLASS50 = <18 24 68 85 99 99>
+ C:Walls
+ D:25 mm fiberglass or Rockwool (60 kg/m3) typical
+ R:[Bies_Hansen]
+
+FIBERGLASS51 = <25 83 99 99 99 99> 
+ C:Walls
+ D:50 mm fiberglass or Rockwool (60 kg/m3) typical
+ R:[Bies_Hansen]
+
+PLATFORM50 = <40 30 20 17 15 10> 
+ C:Floors
+ D:Wood platform with large space beneath
+ R:[Bies_Hansen]
+
+CONCRETE50 = <1 1  2 2 2 2> 
+ C:Floors
+ D:Concrete or terrazzo
+ R:[Bies_Hansen]
+
+LINOLEUM50 = <2 3 3 3 3 2>
+ C:Floors
+ D:Linoleum, asphalt, rubber or cork tile on concrete
+ R:[Bies_Hansen]
+
+WOOD_FLOOR50 = <15 12 10 7 6 7>
+ C:Floors
+ D:Varnished wood joist floor
+ R:[Bies_Hansen]
+
+CARPET_HEAVY50 = <2 6 14 37 60 65>
+ C:Floors
+ D:Carpet, heavy on concrete
+ R:[Bies_Hansen]
+
+CARPET_HEAVY51 = <8 24 57 69 71 73> 
+ C:Floors
+ D:Carpet, heavy, on 1.35 kg/m2 hair felt or rubber
+ R:[Bies_Hansen]
+
+CARPET_5MM = <2 3 5 10 30 50> 
+ C:Floors
+ D:Carpet, 5 mm thick, on hard floor
+ R:[Bies_Hansen]
+
+CORK50 = <8 2 8 19 21 22> 
+ C:Floors
+ D:Cork floor tiles (3/4 inch thick), glued down
+ R:[Bies_Hansen]
+
+MARBLE50 = <1 1 1 1 2 2>
+ C:Floors
+ D:Glazed tile/marble
+ R:[Bies_Hansen]
+
+CURTAIN_PLUSH50 = <15 45 90 92 95 95> 
+ C:Curtains
+ D:Plush curtain, deeply folded
+ R:[Bies_Hansen]
+
+FOAM50 = <8 22 55 70 85 75> 
+ C:Walls
+ D:Polyurethane foam, 27 kg/m3, 15 mm thick
+ R:[Bies_Hansen]
+
+PLASTER_AC50 = <8 15 30 50 60 70>
+ C:Walls
+ D:Acoustic plaster, 10 mm thick, sprayed on solid wall
+ R:[Bies_Hansen]
+
+BRICK50 = <2 2 3 3 4 5> 
+ C:Walls
+ D:Hard surfaces (brick walls, plaster, hard floats)
+ R:[Bies_Hansen]
+
+VIBRATING50 = <10 7 5  4 4 5> 
+ C:Walls
+ D:Slightly vibrating walls (suspened ceilings etc.)
+ R:[Bies_Hansen]
+
+VIBRATING51 = <40 20 12 7 5 5> 
+ C:Walls
+ D:Strongly vibrating walls (wooden panel. over airspace etc.)
+ R:[Bies_Hansen]
+
+VELOUR_LIGHT = <3 4 11 17 24 35> 
+ C:Curtains
+ D:Light velour, 10 oz/yd2, hung
+ R:[Bies_Hansen]
+
+VELOUR_MEDIUM = <7 31 49 75 70 60>
+ C:Curtains
+ D:Medium velour, 14 oz/yd2, draped to 50% area
+ R:[Bies_Hansen]
+
+VELOUR_HEAVY = <14 35 55 72 70 65> 
+ C:Curtains
+ D:Medium velour, 18 oz/yd2, draped to 50% area
+ R:[Bies_Hansen]
+
+GLASS_HEAVY50 = <18 6 4 3 2 2> 
+ C:Windows
+ D:Glass, heavy plate
+ R:[Bies_Hansen]
+
+WINDOW50 = <35 25 18 12 7 4>
+ C:Windows
+ D:Ordinary window
+ R:[Bies_Hansen]
+
+WATER_SURF50 = <1 1 1 1.5 2 3>
+ C:Misc
+ D:Water (surface of pool)
+ R:[Bies_Hansen]
+
+
+

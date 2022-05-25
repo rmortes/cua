@@ -1,0 +1,36 @@
+#HEADER
+CATT-Acoustic v8.0b    Copyright © CATT 1988-2003
+
+ Project                : Restaurante
+
+ GEOMETRICAL INFORMATION
+ Src id and loc     [m] :   I3           0,300        1,750        1,500
+ Rec id and loc     [m] :   02           8,450        4,100        1,500
+
+ 02       24,7056
+
+ VARIABLE SOURCE DATA
+ Directivity
+   Type (library)       :  OMNI.SD0
+   Dir. Index (DI) [dB] :       0,0      0,0      0,0      0,0      0,0      0,0
+ Level
+   On axis 1m      [dB] :      81,0     84,0     87,0     90,0     93,0     96,0
+   Total power     [dB] :      91,9     94,9     97,9    100,9    103,9    106,9
+   Auxiliary delay [ms] :       0,0
+
+ VARIABLE AIR DATA
+ Temperature       [°C] :      20
+ Relative humidity  [%] :      70
+ Density        [kg/m³] :       1,2
+ Sound speed      [m/s] :     343
+ Impedance      [Ns/m³] :     412
+ Diss. coeff. [0.001/m] :      0,08     0,26     0,64     1,15     2,08     5,31      (estimated)
+
+#DATAFIELDS
+ TYPE DELAY ORDER AZIMUTH ELEVATION SPL125 SPL250 SPL500 SPL1K SPL2K SPL4K
+#DATA
+*	    15,8105	 1	 53,57	 84,08	  21,0	  29,1	  29,4	  32,9	  39,0	  38,6
+*	    15,1689	 1	 50,55	 83,81	  21,4	  29,6	  29,9	  33,3	  39,4	  39,1
+s	    34,8435	 2	156,52	 89,34	  53,7	  56,2	  58,2	  59,0	  61,8	  59,0
+s	    35,3606	 3	156,72	 81,82	  52,6	  54,6	  55,1	  55,0	  54,7	  50,7
+#END

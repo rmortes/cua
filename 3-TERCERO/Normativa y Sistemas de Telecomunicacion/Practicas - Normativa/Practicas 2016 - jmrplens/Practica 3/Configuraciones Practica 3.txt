@@ -1,0 +1,327 @@
+
+Los comandos “ip host” dan una etiqueta a una ip para realizar operaciones mas fácilmente, en vez de usar: ping xxx.xxx.xxx.xxx, al configurar una ip con una etiqueta se puede hacer: ping R1, y hara ping a la ip asociada a la etiqueta R1.
+
+Los comandos description añaden una descripción a la interfaz, para que al mostrar la configuración se vea una frase unida a la interfaz como por ejemplo nuestro caso, al mostrar las interfaces aparece cada una con la frase que indica a que otro dispositivo esta conectado
+
+---------------------------------------------------------------------------
+####RI
+---------------------------------------------------------------------------
+
+enable
+configure terminal
+no cdp log mismatch duplex
+
+interface fastEthernet 0/0
+description Enlace con R1
+no shutdown
+ip address 80.34.254.242 255.255.255.252
+full-duplex
+speed 100
+
+interface fastEthernet 0/1
+description Enlace con R3
+no shutdown
+ip address 199.234.12.50 255.255.255.252
+full-duplex
+speed 100
+
+interface fastEthernet 1/0
+description Enlace con R4
+no switchport
+ip address 199.236.27.58 255.255.255.252
+duplex full
+speed 100
+
+interface fastEthernet 1/1
+description Enlace con R5
+no switchport
+ip address 97.25.32.26 255.255.255.252
+duplex full
+speed 100
+
+interface fastEthernet 1/2
+description Enlace con R2
+no switchport
+ip address 91.32.54.178 255.255.255.252
+duplex full
+speed 100
+
+exit
+exit
+copy running-config startup-config
+
+---------------------------------------------------------------------------
+####R1 —> fastEthernet 0/0 de RI
+---------------------------------------------------------------------------
+
+enable
+configure terminal
+no cdp log mismatch duplex
+
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 80.34.254.241 255.255.255.252
+
+interface fastEthernet 0/1
+description Enlace con HUB1
+no shutdown
+ip address 10.71.0.1 255.255.0.0
+standby 1 ip 10.71.0.4
+standby 1 priority 110
+standby 1 preempt
+standby 1 track FastEthernet0/0
+
+exit
+router eigrp 100passive-interface FastEthernet0/0
+network 10.70.0.0
+exit
+
+interface Tunnel1
+no shutdown
+ip address 10.70.0.1 255.255.255.0
+ip nhrp authentication nstip nhrp map multicast dynamic 
+ip nhrp network-id 2014 
+keepalive 5 3
+tunnel source 80.34.254.241
+tunnel mode gre multipoint
+tunnel key 2014
+no ip split-horizon eigrp 100
+no ip next-hop-self eigrp 100
+bandwidth 10000
+delay 51050
+
+exit
+ip route 0.0.0.0 0.0.0.0 80.34.254.242
+exit
+copy running-config startup-config
+
+---------------------------------------------------------------------------
+####R2 —> fastEthernet 1/2 de RI
+---------------------------------------------------------------------------
+
+enable
+configure terminal
+no cdp log mismatch duplex
+
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 91.32.54.177 255.255.255.252
+
+interface fastEthernet 0/1
+description Enlace con HUB1
+no shutdown
+ip address 10.71.0.3 255.255.0.0
+standby 1 ip 10.71.0.4
+standby 1 preempt
+standby 1 track FastEthernet0/0
+
+exit
+router eigrp 100passive-interface FastEthernet0/0
+network 10.70.0.0
+exit
+
+interface Tunnel2
+no shutdown
+ip address 10.70.1.1 255.255.255.0
+ip nhrp authentication nst2ip nhrp map multicast dynamic 
+ip nhrp network-id 2015 
+keepalive 5 3
+tunnel source 91.32.54.177
+tunnel mode gre multipoint
+tunnel key 2015
+no ip split-horizon eigrp 100
+bandwidth 5000
+
+exit
+ip route 0.0.0.0 0.0.0.0 91.32.54.178
+exit
+copy running-config startup-config
+
+---------------------------------------------------------------------------
+####R3 —> fastEthernet 0/1 de RI
+---------------------------------------------------------------------------
+
+enable
+configure terminal
+no cdp log mismatch duplex
+
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 199.234.12.49 255.255.255.252
+
+interface fastEthernet 0/1
+description Enlace con HUB3
+no shutdown
+ip address 10.72.3.1 255.255.255.0
+exit
+
+router eigrp 100passive-interface FastEthernet0/0
+network 10.70.0.0
+exit
+
+interface Tunnel1
+no shutdown
+ip address 10.70.0.3 255.255.255.0
+ip nhrp authentication nstip nhrp map multicast dynamicip nhrp map 10.70.0.1 80.34.254.241ip nhrp map multicast 80.34.254.241ip nhrp network-id 2014ip nhrp nhs 10.70.0.1
+keepalive 5 3
+tunnel source FastEthernet0/0
+tunnel mode gre multipoint
+tunnel key 2014
+no ip split-horizon eigrp 100
+no ip next-hop-self eigrp 100
+bandwidth 4000
+
+interface Tunnel2
+no shutdown
+ip address 10.70.1.3 255.255.255.0
+ip nhrp authentication nst2ip nhrp map multicast dynamicip nhrp map 10.70.1.1 91.32.54.177ip nhrp map multicast 91.32.54.177ip nhrp network-id 2015ip nhrp nhs 10.70.1.1
+keepalive 5 3
+tunnel source FastEthernet0/0
+tunnel mode gre multipoint
+tunnel key 2015
+no ip split-horizon eigrp 100
+bandwidth 2000
+
+exit
+ip route 0.0.0.0 0.0.0.0 199.234.12.50
+exit
+copy running-config startup-config
+
+---------------------------------------------------------------------------
+####R4 —> fastEthernet 1/0 de RI
+---------------------------------------------------------------------------
+
+enable
+configure terminal
+no cdp log mismatch duplex
+
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 199.236.27.57 255.255.255.252
+
+interface fastEthernet 0/1
+description Enlace con HUB4
+no shutdown
+ip address 10.72.4.1 255.255.255.0
+
+exit
+router eigrp 100passive-interface FastEthernet0/0
+network 10.70.0.0
+exit
+
+interface Tunnel1
+no shutdown
+ip address 10.70.0.4 255.255.255.0
+ip nhrp authentication nstip nhrp map multicast dynamicip nhrp map 10.70.0.1 80.34.254.241ip nhrp map multicast 80.34.254.241ip nhrp network-id 2014ip nhrp nhs 10.70.0.1
+keepalive 5 3
+tunnel source FastEthernet0/0
+tunnel mode gre multipoint
+tunnel key 2014
+no ip split-horizon eigrp 100
+no ip next-hop-self eigrp 100
+bandwidth 4000
+
+interface Tunnel2
+no shutdown
+ip address 10.70.1.4 255.255.255.0
+ip nhrp authentication nst2ip nhrp map multicast dynamicip nhrp map 10.70.1.1 91.32.54.177ip nhrp map multicast 91.32.54.177ip nhrp network-id 2015ip nhrp nhs 10.70.1.1
+keepalive 5 3
+tunnel source FastEthernet0/0
+tunnel mode gre multipoint
+tunnel key 2015
+no ip split-horizon eigrp 100
+bandwidth 2000
+
+exit
+ip route 0.0.0.0 0.0.0.0 199.236.27.58
+exit
+copy running-config startup-config
+
+---------------------------------------------------------------------------
+####R5 —> fastEthernet 1/1 de RI
+---------------------------------------------------------------------------
+
+enable
+configure terminal
+no cdp log mismatch duplex
+
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 97.25.32.25 255.255.255.252
+
+interface fastEthernet 0/1
+description Enlace con HUB5
+no shutdown
+ip address 10.72.5.1 255.255.255.0
+
+exit
+router eigrp 100passive-interface FastEthernet0/0
+network 10.70.0.0
+exit
+
+interface Tunnel1
+no shutdown
+ip address 10.70.0.5 255.255.255.0
+ip nhrp authentication nstip nhrp map multicast dynamicip nhrp map 10.70.0.1 80.34.254.241ip nhrp map multicast 80.34.254.241ip nhrp network-id 2014ip nhrp nhs 10.70.0.1
+keepalive 5 3
+tunnel source FastEthernet0/0
+tunnel mode gre multipoint
+tunnel key 2014
+no ip split-horizon eigrp 100
+no ip next-hop-self eigrp 100
+bandwidth 4000
+
+interface Tunnel2
+no shutdown
+ip address 10.70.1.5 255.255.255.0
+ip nhrp authentication nst2ip nhrp map multicast dynamicip nhrp map 10.70.1.1 91.32.54.177ip nhrp map multicast 91.32.54.177ip nhrp network-id 2015ip nhrp nhs 10.70.1.1
+keepalive 5 3
+tunnel source FastEthernet0/0
+tunnel mode gre multipoint
+tunnel key 2015
+no ip split-horizon eigrp 100
+bandwidth 2000
+
+exit
+ip route 0.0.0.0 0.0.0.0 97.25.32.26
+exit
+copy running-config startup-config
+
+---------------------------------------------------------------------------
+#####Servidor
+login
+tc
+---------------------------------------------------------------------------
+./setup.sh eth0 10.71.0.2 255.255.0.0 10.71.0.4
+
+---------------------------------------------------------------------------
+#####Cliente1
+login
+tc
+---------------------------------------------------------------------------
+./setup.sh eth0 10.72.3.2 255.255.255.0 10.72.3.1
+
+---------------------------------------------------------------------------
+#####Cliente2
+login
+tc
+---------------------------------------------------------------------------
+./setup.sh eth0 10.72.3.3 255.255.255.0 10.72.3.1
+
+---------------------------------------------------------------------------
+#####Cliente3
+login
+tc
+---------------------------------------------------------------------------
+./setup.sh eth0 10.72.4.2 255.255.255.0 10.72.4.1
+
+---------------------------------------------------------------------------
+#####PC1
+---------------------------------------------------------------------------
+ip 10.72.5.2 255.255.255.0 10.72.5.1
+

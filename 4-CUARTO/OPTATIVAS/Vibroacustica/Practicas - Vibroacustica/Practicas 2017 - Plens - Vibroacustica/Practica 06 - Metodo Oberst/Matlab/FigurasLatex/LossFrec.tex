@@ -1,0 +1,67 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=10.717cm,
+height=5cm,
+at={(0cm,0cm)},
+scale only axis,
+xmode=log,
+xmin=10,
+xmax=10000,
+xtick={16,31.5,63,125,250,500,1000,2000,4000,8000,16000},
+xticklabels={{16},{31.5},{63},{125},{250},{500},{1000},{2000},{4000},{8000},{16000}},
+xminorticks=true,
+xlabel style={font=\color{white!15!black}},
+xlabel={Frecuencia (Hz)},
+ymin=-5,
+ymax=4,
+ylabel style={font=\color{white!15!black}},
+ylabel={Factor de perdidas},
+axis background/.style={fill=white},
+xmajorgrids,
+xminorgrids,
+ymajorgrids,
+legend style={at={(1.03,1)}, anchor=north west, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+29.297	0.710588170380497\\
+191.895	0.0352699147493137\\
+1070.801	0.0174661194514567\\
+2655.762	0.0128119064693169\\
+4984.863	0.0081453100274607\\
+};
+\addlegendentry{Original}
+
+\addplot [color=mycolor2, mark=o, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+26.367	-3.05928746401824\\
+190.43	-3.07727190582452\\
+1066.406	-4.59071058068589\\
+2635.254	-1.41742125876781\\
+4902.832	-0.300122697187478\\
+};
+\addlegendentry{Con fibra}
+
+\addplot [color=mycolor3, mark=o, mark options={solid, mycolor3}]
+  table[row sep=crcr]{%
+30.762	3.04642221805416\\
+169.922	-0.384093687621852\\
+921.387	-0.0587907994223943\\
+2269.043	-0.0304498380699767\\
+4164.551	-0.052922454332186\\
+};
+\addlegendentry{Con metal}
+
+\end{axis}
+\end{tikzpicture}%

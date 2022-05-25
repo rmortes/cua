@@ -1,0 +1,10 @@
+- No need to illustrate your report with theoretical results we all already know from theoretical lectures. 
+- Please use decimal points instead of commas!!! 
+- Errors in added absorptions? 
+- Making average calculations for all the microphones of some configurations makes absolutely no sense!!! 
+- Average values of RT with their associated errors for all the similar configurations? 
+- Comments about the different directivity factors considered? 
+- Optimum RT is definitevely higher than the experimental one!!! 
+- Please comment about this last issue!!! 
+. More graphical comparisons between different configurations would be welcome!!! 
+- Comments about Schroeder's frequency?

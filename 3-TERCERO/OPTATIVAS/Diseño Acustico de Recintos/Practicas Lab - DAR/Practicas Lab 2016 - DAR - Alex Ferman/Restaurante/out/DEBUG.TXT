@@ -1,0 +1,17 @@
+CATT-Acoustic v8.0b debug :  restvacio
+----------------------------------------------------------------------
+DUPLICATE PLANE  ID's    : 
+  472 noname and noname
+  361 noname and noname
+  583 noname and noname
+PLANES MODELLED TWICE    :  no !
+DUPLICATE CORNER ID's    :  no !
+DUPLICATE CORNERS        :  no !
+SINGLE-CONNECTED CORNERS : 
+   Corner   593 (only used in plane   584)
+   Corner   594 (only used in plane   584)
+INACCURATE PLANE CORNERS :  no !
+EDGES CUTTING/TOUCHING   :  no !
+POSSIBLY REVERSED PLANES :  no !
+----------------------------------------------------------------------
+

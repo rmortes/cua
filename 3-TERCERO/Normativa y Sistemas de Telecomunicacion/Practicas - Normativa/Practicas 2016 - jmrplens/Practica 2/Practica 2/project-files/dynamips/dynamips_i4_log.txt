@@ -1,0 +1,7 @@
+Feb 19 13:29:53.975 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Feb 19 13:29:53.975 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49981.
+Feb 19 13:29:54.049 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 19 13:29:54.054 HYPERVISOR: exec_cmd: hypervisor uuid 
+Feb 19 13:29:54.061 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 2/Practica 2/project-files/dynamips 
+Feb 19 13:29:54.061 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 2/Practica 2/project-files/dynamips
+Feb 19 13:29:54.066 HYPERVISOR: exec_cmd: nio_bridge create HUB4 

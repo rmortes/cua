@@ -1,0 +1,59 @@
+;CATT Exchange text for import into CATT-Acoustic
+
+;"Room acoustics"
+;Heinrich Kuttruff
+;Ref code: [Kuttruff]
+;Applied Science Publishers Ltd
+;London 1976
+;ISBN: 0 85334 573 2
+
+AUDIENCE70 = <24 40 78 98 96 87> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Seated audience on wooden chairs, ca. 2 pers/m2
+ R:[Kuttruff]
+
+AUDIENCE71 = <16 24 56 69 81 78> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Seated audience on wooden chairs, ca. 1 pers/m2
+ R:[Kuttruff]
+
+AUDIENCE72 = <72 82 91 93 94 87> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Audience on moderatelly upholstered chairs (0.85 m x 0.63 m)
+ R:[Kuttruff]
+
+AUDIENCE73 = <55 86 83 87 90 87> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Audience on moderatelly upholstered chairs (0.90 m x 0.55 m)
+ R:[Kuttruff]
+
+CHAIRS70 = <44 56 67 74 83 87> L <30 40 50 60 70 70>
+ C:Chairs
+ D:Unoccupied moderatelly upholstered chairs (0.90 m x 0.55 m)
+ R:[Kuttruff]
+
+AUDIENCE74 = <60 74 88 96 93 85> L <30 40 50 60 70 70>
+ C:Audiences
+ D:Average occupoed audience, orchestra and chorus areas (max 1 m ailes)
+ R:[Kuttruff]
+
+CHAIRS71 = <49 66 80 88 82 70> L <30 40 50 60 70 70>
+ C:Chairs
+ D:Unoccupied average cloth-covered well upholstered areaes (seast with perforated bottoms)
+ R:[Kuttruff]
+
+HARDSURF70 = <2 2 3 3 4 5>
+ C:Walls
+ D:Hard surfaces average (brick walls, plaster, hard floors etc.)
+ R:[Kuttruff]
+
+VIBRATING70 = <10 7 5  4 4 5>
+ C:Walls
+ D:Slightly vibrating walls (suspened ceilings etc.)
+ R:[Kuttruff]
+
+VIBRATING71 = <40 20 12 7 5 5>
+ C:Walls
+ D:Strongly vibrating walls (e.g. wooden panelling over air space)
+ R:[Kuttruff]
+

@@ -1,0 +1,43 @@
+
+Placa de pruebas para SED.pdsprj
+
+IMPORTANTE: Interrupciones NMI/RESET no funcionan, prueba el código sin esa interrupción 
+
+v1.0.0
+Versión final
+
+v1.0.1
+Añadidos un osciloscopio y un analizador lógico.
+Añadidas nuevas fuentes de tensión continua de 0.5V,1V,1.5V,2V y 2.5V.
+Corregido un problema de conexión del altavoz, ahora funciona correctamente.
+Información importante:
+	Para hacer uso del osciloscopio y/o el analizado lógico, se debe
+ 	reiniciar las ventanas emergentes en Proteus. En la ventana de
+ 	Proteus, haz clic en “Debug” y dentro de la lista desplegada haz 
+	clic sobre “Reset Debug Popup Windows”, confirma que quieres 
+	reiniciar y listo, cada vez que compiles aparecerán las ventanas 
+	de medida (Si las cierras deberas reiniciar de nuevo las ventanas 
+	emergentes).
+
+v1.0.5
+Cambiado el microcontrolador a MSP430F2132. Es mas similar al G2553 que utilizamos en el laboratorio.
+Pequeñas correcciones.
+
+v1.0.6
+Añadido un switch para configurar los pulsadores para “Pull Down” o “Pull Up”.
+Modificada la caída de tensión en la barra de les.
+Añadido sondas lógicas de todos los pines del MSP, en un vistazo rápido se ven los 1’s y 0’s.
+
+v1.1.0
+Mejorado el diseño.
+Pulsadores rediseñados para ocupar menos espacio.
+Añadido pulsador para el pin TEST y cristal de cuarzo de 32.768Khz.
+
+v1.1.2
+Añadidas resistencias de carga en la barra de leds e información para eliminar la barra si la simulación tiene un rendimiento bajo.
+Reducida la intensidad necesaria para iluminarse los leds.
+Aumentado el buffer del altavoz a 1 segundo y el voltaje nominal a 3V.
+
+v2.0
+Con la nueva versión de Proteus 8.3 SP2 ya está disponible el MSP430G2553. Se ha actualizado el proyecto para usar ese microcontrolador.
+

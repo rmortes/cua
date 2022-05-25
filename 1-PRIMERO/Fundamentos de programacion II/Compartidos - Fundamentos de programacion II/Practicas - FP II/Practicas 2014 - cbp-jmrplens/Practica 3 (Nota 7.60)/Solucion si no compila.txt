@@ -1,0 +1,51 @@
+Si hay problemas para compilar cambiar esto:
+
+Opcion 1:
+En el archivo .pro:
+**********************
+QT       += core gui\
+        widgets
+**********************
+
+POR
+
+*********************
+QT       += core gui
+*********************
+
+Y en el archivo main.cpp:
+*******************
+#include <QtWidgets/QApplication>
+*******************
+
+POR
+
+******************
+#include <QtGui/QApplication>
+******************
+
+…………………………………………………………
+
+Opcion 2, lo mismo que lo anterior pero haciendo el cambio al revea:
+En el archivo .pro:
+**********************
+QT       += core gui
+**********************
+
+POR
+
+*********************
+QT       += core gui\
+        widgets
+*********************
+
+Y en el archivo main.cpp:
+*******************
+#include <QtGui/QApplication>
+*******************
+
+POR
+
+******************
+#include <QtWidgets/QApplication>
+******************

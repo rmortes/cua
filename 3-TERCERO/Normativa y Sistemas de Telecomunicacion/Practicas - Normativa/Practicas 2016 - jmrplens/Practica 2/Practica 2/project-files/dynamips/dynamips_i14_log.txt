@@ -1,0 +1,46 @@
+Feb 13 23:48:04.791 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Feb 13 23:48:04.792 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59473.
+Feb 13 23:48:04.811 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 13 23:48:04.812 HYPERVISOR: exec_cmd: hypervisor uuid 
+Feb 13 23:48:04.813 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Normativa gay/Practicas/Practica 2/Practica 2/project-files/dynamips 
+Feb 13 23:48:04.813 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Normativa gay/Practicas/Practica 2/Practica 2/project-files/dynamips
+Feb 13 23:48:04.814 HYPERVISOR: exec_cmd: vm create R2 10 c2691 
+Feb 13 23:48:04.815 VM: VM R2 created.
+Feb 13 23:48:04.815 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 2004 
+Feb 13 23:48:04.816 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+Feb 13 23:48:04.817 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Feb 13 23:48:04.818 HYPERVISOR: exec_cmd: vm get_status R2 
+Feb 13 23:48:04.819 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x606eaea8 
+Feb 13 23:48:04.820 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Feb 13 23:48:04.821 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Feb 13 23:48:04.822 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/jmrplens/GNS3/images/IOS/c2691-advsecurityk9-mz.124-25d.image 
+Feb 13 23:48:04.823 HYPERVISOR: exec_cmd: vm set_config R2 configs/i10_startup-config.cfg 
+Feb 13 23:48:09.661 HYPERVISOR: exec_cmd: vm rename R2 R5 
+Feb 13 23:50:50.842 HYPERVISOR: exec_cmd: nio create_udp udp-f589f904-0c42-4205-adee-0f19bef60b4d 10006 127.0.0.1 10007 
+Feb 13 23:50:50.848 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-f589f904-0c42-4205-adee-0f19bef60b4d 
+Feb 13 23:50:50.850 HYPERVISOR: exec_cmd: vm get_status R5 
+Feb 13 23:51:28.603 HYPERVISOR: exec_cmd: nio create_udp udp-a0ec266d-739c-435e-8589-f9ca45041245 10022 127.0.0.1 10023 
+Feb 13 23:51:28.611 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-a0ec266d-739c-435e-8589-f9ca45041245 
+Feb 13 23:51:28.612 HYPERVISOR: exec_cmd: vm get_status R5 
+Feb 13 23:51:34.815 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Feb 13 23:51:34.824 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c2691-advsecurityk9-mz.124-25d.image-192.ghost 
+Feb 13 23:51:34.830 HYPERVISOR: exec_cmd: vm get_status R5 
+Feb 13 23:51:34.834 HYPERVISOR: exec_cmd: vm start R5 
+Feb 14 00:12:13.154 HYPERVISOR: exec_cmd: vm get_status R5 
+Feb 14 00:12:13.160 HYPERVISOR: exec_cmd: vm stop R5 
+Feb 14 00:12:13.273 VM: VM R5 shutdown.
+Feb 14 00:12:13.278 HYPERVISOR: exec_cmd: vm extract_config R5 
+Feb 14 00:12:16.209 HYPERVISOR: exec_cmd: vm get_status R5 
+Feb 14 00:12:16.225 HYPERVISOR: exec_cmd: vm start R5 
+Feb 14 00:20:28.056 HYPERVISOR: exec_cmd: vm extract_config R5 
+Feb 14 00:20:35.350 HYPERVISOR: exec_cmd: vm get_status R5 
+Feb 14 00:20:35.356 HYPERVISOR: exec_cmd: vm stop R5 
+Feb 14 00:20:35.482 VM: VM R5 shutdown.
+Feb 14 00:20:35.487 HYPERVISOR: exec_cmd: vm extract_config R5 
+Feb 14 00:20:37.958 HYPERVISOR: exec_cmd: vm get_status R5 
+Feb 14 00:20:37.962 HYPERVISOR: exec_cmd: vm extract_config R5 
+Feb 14 00:20:37.970 HYPERVISOR: exec_cmd: vm delete R5 
+Feb 14 00:20:37.970 VM: VM R5 destroyed.
+Feb 14 00:20:37.976 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 14 00:20:38.131 HYPERVISOR: Stopped.
+Feb 14 00:20:38.131 GENERAL: reset done.

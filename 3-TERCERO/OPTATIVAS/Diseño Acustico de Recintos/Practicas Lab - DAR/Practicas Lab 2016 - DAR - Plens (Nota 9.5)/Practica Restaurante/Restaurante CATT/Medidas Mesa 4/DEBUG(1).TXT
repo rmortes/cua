@@ -1,0 +1,2189 @@
+CATT-Acoustic v8.0b debug :  Restaurante
+----------------------------------------------------------------------
+DUPLICATE PLANE  ID's    :  no !
+PLANES MODELLED TWICE    :  no !
+DUPLICATE CORNER ID's    :  no !
+DUPLICATE CORNERS        :  no !
+SINGLE-CONNECTED CORNERS :  no !
+INACCURATE PLANE CORNERS :  no !
+EDGES CUTTING/TOUCHING   :  no !
+----------------------------------------------------------------------
+
+Plane ID:    1
+Name    : Pared oeste (S=  28,5m²)
+Corners :    17   306   307    18    19   308   305    20
+Equation:    0,0000   -1,0000    0,0000    8,2000
+SubDiv:  V. pequeña -* (S=  0,33m²)
+Corners :     1     2     3     4
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. pequeña -* (S=  0,29m²)
+Corners :     5     6     7     8
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. pequeña -* (S=  0,33m²)
+Corners :    13    14    15    16
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. pequeña -* (S=  0,33m²)
+Corners :    36    35    34    37
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. pequeña -* (S=  0,33m²)
+Corners :    22    25    24    23
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. pequeña -* (S=  0,33m²)
+Corners :    38    41    40    39
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. pequeña -* (S=  0,33m²)
+Corners :    26    29    28    27
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. pequeña -* (S=  0,33m²)
+Corners :    31    30    33    32
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  Pared -* (S= 25,90m²)
+Corners :    17    18    19    20    21
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:    2
+Name    : Pared norte (S=  23,4m²)
+Corners :    46    17    20    43
+Equation:   -1,0000    0,0000    0,0000   10,0000
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :   102   103   104   105
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :     9    10    11    12
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    84    85    86    87
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    90    91    92    93
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    80    81    82    83
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    98    99   100   101
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  Madera par -* (S=  7,20m²)
+Corners :    21    20    43    47
+Abs/Diff:MADERA_LAB <25 34 18 10 10  6 :  3  3> L <30 13 25 10 23 10 : 25 37>
+SubDiv:  Pared -* (S=  4,29m²)
+Corners :    46    17    21    47
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:    3
+Name    : Pared este (S=  28,5m²)
+Corners :    42    45   319   313    46    43   314   324
+Equation:    0,0000    1,0000    0,0000    0,0000
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    57    56    59    58
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    63    62    61    60
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    67    66    65    64
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    71    70    69    68
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    75    74    73    72
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. puerta  -* (S=  0,99m²)
+Corners :    77    76    79    78
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  V. grande  -* (S=  1,98m²)
+Corners :    55    54    53    52
+Abs/Diff:VIDRIO_LAB < 6  5  8  7  8  7 :  7  7> L < 4 14  8  9 18  9 : 19 14>
+SubDiv:  Puerta -* (S=  3,49m²)
+Corners :    48    89    88    51    50    49
+Abs/Diff:MADERA_LAB <25 34 18 10 10  6 :  3  3> L <30 13 25 10 23 10 : 25 37>
+SubDiv:  Madera par -* -c (S=  7,39m²)
+Corners :    42    44    51    88    89    48    47    43
+On hull :     x     x     x     -     -     *     *     *
+Abs/Diff:MADERA_LAB <25 34 18 10 10  6 :  3  3> L <30 13 25 10 23 10 : 25 37>
+SubDiv:  Pared -* -c (S=  4,75m²)
+Corners :    44    45    46    47    48    49    50    51
+On hull :     x     x     x     *     *     -     -     *
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:    4
+Name    : Pared sur (S=  23,4m²)
+Corners :    42   205   202    19    18    45
+Equation:    1,0000    0,0000    0,0000    0,0000
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:    5 -c
+Name    : Suelo (S=  78,5m²)
+Corners :    42   324   314    43    20   305   308    19   202   201   206   205
+On hull :     x     x     *     *     x     *     *     *     *     -     -     *
+Equation:    0,0000    0,0000    1,0000    0,0000
+Abs/Diff:SUELO_LAB < 1  1  2  2  2  2 :  2  2> L <66 89 70 86 77 83 : 86 90>
+
+Plane ID:    6
+Name    : Techo (S=  82,0m²)
+Corners :    46   313   319    45    18   307   306    17
+Equation:    0,0000    0,0000   -1,0000    2,8500
+Abs/Diff:TECHO_LAB <20 30 50 60 80 85 : 90 90> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  201 -o
+Name    : Barra (S=   0,9m²)
+Corners :   201   202   203   204
+Equation:    0,0000    1,0000    0,0000   -6,9523
+Abs/Diff:BARRA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  202 -o
+Name    : Barra (S=   0,9m²)
+Corners :   205   206   207   208
+Equation:    0,0000   -1,0000    0,0000    1,2523
+Abs/Diff:BARRA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  203 -o
+Name    : Barra (S=   3,5m²)
+Corners :   203   208   207   204
+Equation:    0,0000    0,0000    1,0000   -1,4000
+Abs/Diff:BARRA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  204 -o
+Name    : Barra (S=   8,0m²)
+Corners :   201   204   207   206
+Equation:    1,0000    0,0000    0,0000   -0,6200
+Abs/Diff:BARRA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  301 -o
+Name    : Separador oeste (S=   0,1m²)
+Corners :   301   302   303   304
+Equation:    0,0000   -1,0000    0,0000    5,2900
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  307 -o
+Name    : Separador central (S=   0,1m²)
+Corners :   309   310   311   312
+Equation:    0,0000    1,0000    0,0000   -6,7045
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  309 -o
+Name    : Separador oeste (S=   8,3m²)
+Corners :   302   301   307   308
+Equation:   -1,0000    0,0000    0,0000    1,6486
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  311 -o
+Name    : Separador oeste (S=   8,3m²)
+Corners :   305   306   304   303
+Equation:    1,0000    0,0000    0,0000   -1,6986
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  314 -o
+Name    : Separador este (S=   8,3m²)
+Corners :   313   314   315   316
+Equation:    1,0000    0,0000    0,0000   -1,6986
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  316 -o
+Name    : Separador este (S=   0,1m²)
+Corners :   317   318   316   315
+Equation:    0,0000    1,0000    0,0000   -2,9100
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  320 -o
+Name    : Separador central (S=  14,8m²)
+Corners :   320   310   309   321
+Equation:   -1,0000    0,0000    0,0000    2,8473
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  322 -o
+Name    : Separador central (S=   0,1m²)
+Corners :   320   321   322   323
+Equation:    0,0000   -1,0000    0,0000    1,5045
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  324 -o
+Name    : Separador este (S=   8,3m²)
+Corners :   324   319   318   317
+Equation:   -1,0000    0,0000    0,0000    1,6486
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  330 -o
+Name    : Separador central (S=  14,8m²)
+Corners :   311   323   322   312
+Equation:    1,0000    0,0000    0,0000   -2,8973
+Abs/Diff:PARED_LAB < 6 11 15  1  8  9 :  9  9> L <12 17 29 63 61 89 : 64 89>
+
+Plane ID:  401 -o
+Name    : Mesa 1 (S=   0,1m²)
+Corners :   401   402   403   404
+Equation:    1,0000    0,0000    0,0000   -8,5472
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  403 -o
+Name    : Mesa 1 (S=   0,0m²)
+Corners :   404   403   405   406
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  405 -o
+Name    : Mesa 1 (S=   0,8m²)
+Corners :   407   408   409   410
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  407 -o
+Name    : Mesa 1 (S=   0,0m²)
+Corners :   402   401   411   412
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  409 -o
+Name    : Mesa 1 (S=   0,8m²)
+Corners :   413   414   415   416
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  411 -o
+Name    : Mesa 1 (S=   0,0m²)
+Corners :   407   410   415   414
+Equation:    0,0000   -1,0000    0,0000    6,1988
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  413 -o
+Name    : Mesa 1 (S=   0,0m²)
+Corners :   408   407   414   413
+Equation:   -1,0000    0,0000    0,0000    8,0113
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  415 -o
+Name    : Mesa 1 (S=   0,0m²)
+Corners :   409   408   413   416
+Equation:    0,0000    1,0000    0,0000   -7,0988
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  417 -o
+Name    : Mesa 1 (S=   0,0m²)
+Corners :   410   409   416   415
+Equation:    1,0000    0,0000    0,0000   -8,9113
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  419 -o
+Name    : Mesa 1 (S=   0,1m²)
+Corners :   411   401   404   406
+Equation:    0,0000    1,0000    0,0000   -6,7346
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  421 -o
+Name    : Mesa 1 (S=   0,1m²)
+Corners :   402   412   405   403
+Equation:    0,0000   -1,0000    0,0000    6,5630
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  423 -o
+Name    : Mesa 1 (S=   0,1m²)
+Corners :   412   411   406   405
+Equation:   -1,0000    0,0000    0,0000    8,3755
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  501 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   501   502   503   504
+Equation:    0,0000    1,0000    0,0000   -7,5850
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  503 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   503   502   505   506
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  505 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   504   503   506   507   508   509
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -8,7708
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  507 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   509   508   510   511
+Equation:    0,0000   -1,0000    0,0000    7,1450
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  509 -o
+Name    : SILLAS 1 (S=   0,2m²)
+Corners :   512   513   514   515
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  511 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   516   517   518   514   513   519
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -8,7608
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  513 -o
+Name    : SILLAS 1 (S=   0,3m²)
+Corners :   517   520   521   518
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  515 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   522   516   519   523
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  517 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   505   524   507   506
+Equation:    0,0000   -1,0000    0,0000    7,5450
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  519 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   502   501   511   510   524   505
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    8,1708
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  521 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   520   522   523   512   515   521
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    8,1608
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  523 -o
+Name    : SILLAS 1 (S=   0,3m²)
+Corners :   501   504   509   511
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  525 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   521   515   514   518
+Equation:    0,0000    1,0000    0,0000   -6,1415
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  527 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   525   526   527   528
+Equation:   -1,0000    0,0000    0,0000    9,3576
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  529 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   529   530   525   528
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  531 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   531   529   528   527   532   533
+On hull :     x     x     x     -     *     *
+Equation:    0,0000   -1,0000    0,0000    6,3382
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  533 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   530   534   535   536   526   525
+On hull :     x     x     x     *     -     *
+Equation:    0,0000    1,0000    0,0000   -6,9382
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  535 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   533   532   536   535
+Equation:   -1,0000    0,0000    0,0000    8,9576
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  537 -o
+Name    : SILLAS 1 (S=   0,3m²)
+Corners :   534   531   533   535
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  539 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   537   538   539   540   541   542
+On hull :     x     x     x     -     *     *
+Equation:    0,0000    1,0000    0,0000   -6,9482
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  541 -o
+Name    : SILLAS 1 (S=   0,3m²)
+Corners :   543   537   542   544
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  543 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   543   545   538   537
+Equation:   -1,0000    0,0000    0,0000    7,5141
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  545 -o -c
+Name    : SILLAS 1 (S=   0,1m²)
+Corners :   545   543   544   546   547   548
+On hull :     x     x     x     *     -     *
+Equation:    0,0000   -1,0000    0,0000    6,3482
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  547 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   517   516   522   520
+Equation:    0,0000   -1,0000    0,0000    5,7015
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  549 -o
+Name    : SILLAS 1 (S=   0,2m²)
+Corners :   507   524   510   508
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  551 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   519   513   512   523
+Equation:    0,0000    1,0000    0,0000   -5,7415
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  553 -o
+Name    : SILLAS 1 (S=   0,2m²)
+Corners :   527   526   536   532
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  555 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   534   530   529   531
+Equation:    1,0000    0,0000    0,0000   -9,3976
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  557 -o
+Name    : SILLAS 1 (S=   0,6m²)
+Corners :   548   547   540   539
+Equation:    1,0000    0,0000    0,0000   -7,5541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  559 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   542   541   546   544
+Equation:    1,0000    0,0000    0,0000   -7,9541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  561 -o
+Name    : SILLAS 1 (S=   0,2m²)
+Corners :   540   547   546   541
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  563 -o
+Name    : SILLAS 1 (S=   0,0m²)
+Corners :   538   545   548   539
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  601 -o
+Name    : Mesa 2 (S=   0,1m²)
+Corners :   601   602   603   604
+Equation:   -1,0000    0,0000    0,0000    8,3723
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  603 -o
+Name    : Mesa 2 (S=   0,1m²)
+Corners :   605   601   604   606
+Equation:    0,0000   -1,0000    0,0000    4,0142
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  605 -o
+Name    : Mesa 2 (S=   0,1m²)
+Corners :   602   607   608   603
+Equation:    0,0000    1,0000    0,0000   -4,1859
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  607 -o
+Name    : Mesa 2 (S=   0,0m²)
+Corners :   609   610   611   612
+Equation:    0,0000    1,0000    0,0000   -4,5501
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  609 -o
+Name    : Mesa 2 (S=   0,0m²)
+Corners :   608   606   604   603
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  611 -o
+Name    : Mesa 2 (S=   0,1m²)
+Corners :   607   605   606   608
+Equation:    1,0000    0,0000    0,0000   -8,5440
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  613 -o
+Name    : Mesa 2 (S=   0,8m²)
+Corners :   613   610   609   614
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  615 -o
+Name    : Mesa 2 (S=   0,0m²)
+Corners :   605   607   602   601
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  617 -o
+Name    : Mesa 2 (S=   0,0m²)
+Corners :   613   614   615   616
+Equation:    0,0000   -1,0000    0,0000    3,6501
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  619 -o
+Name    : Mesa 2 (S=   0,0m²)
+Corners :   614   609   612   615
+Equation:    1,0000    0,0000    0,0000   -8,9081
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  621 -o
+Name    : Mesa 2 (S=   0,0m²)
+Corners :   610   613   616   611
+Equation:   -1,0000    0,0000    0,0000    8,0081
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  623 -o
+Name    : Mesa 2 (S=   0,8m²)
+Corners :   611   616   615   612
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  701 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   701   702   703   704
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  703 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   705   706   707   708
+Equation:    0,0000   -1,0000    0,0000    3,1547
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  705 -o
+Name    : SILLAS 2 (S=   0,3m²)
+Corners :   705   708   709   710
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  707 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   708   707   711   712   713   709
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    8,1608
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  709 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   714   715   716   717
+Equation:    0,0000   -1,0000    0,0000    4,5982
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  711 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   702   718   717   716   719   703
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    8,1708
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  713 -o
+Name    : SILLAS 2 (S=   0,2m²)
+Corners :   720   721   722   723
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  715 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   724   725   726   722   721   727
+On hull :     x     x     x     *     -     *
+Equation:    0,0000   -1,0000    0,0000    3,8015
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  717 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   727   721   720   728
+Equation:    1,0000    0,0000    0,0000   -7,5541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  719 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   729   724   727   728
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  721 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   718   702   701   730
+Equation:    0,0000    1,0000    0,0000   -5,0382
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  723 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   731   732   733   734   735   736
+On hull :     x     x     x     *     -     *
+Equation:    0,0000    1,0000    0,0000   -4,3915
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  725 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   730   701   704   737   715   714
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -8,7708
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  727 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   706   705   710   738   739   740
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -8,7608
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  729 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   740   739   712   711
+Equation:    0,0000    1,0000    0,0000   -3,1947
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  731 -o
+Name    : SILLAS 2 (S=   0,3m²)
+Corners :   718   730   714   717
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  733 -o
+Name    : SILLAS 2 (S=   0,2m²)
+Corners :   737   719   716   715
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  735 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   736   735   741   742
+Equation:   -1,0000    0,0000    0,0000    9,3576
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  737 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   725   724   729   743
+Equation:   -1,0000    0,0000    0,0000    7,5141
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  739 -o
+Name    : SILLAS 2 (S=   0,3m²)
+Corners :   725   743   744   726
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  741 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   743   729   728   720   723   744
+On hull :     x     x     x     -     *     *
+Equation:    0,0000    1,0000    0,0000   -4,4015
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  743 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   703   719   737   704
+Equation:    0,0000   -1,0000    0,0000    4,9982
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  745 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   744   723   722   726
+Equation:    1,0000    0,0000    0,0000   -7,9541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  747 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   745   731   736   742
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  749 -o
+Name    : SILLAS 2 (S=   0,6m²)
+Corners :   732   731   745   746
+Equation:    1,0000    0,0000    0,0000   -9,3976
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  751 -o -c
+Name    : SILLAS 2 (S=   0,1m²)
+Corners :   746   745   742   741   747   748
+On hull :     x     x     x     -     *     *
+Equation:    0,0000   -1,0000    0,0000    3,7915
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  753 -o
+Name    : SILLAS 2 (S=   0,3m²)
+Corners :   732   746   748   733
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  755 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   748   747   734   733
+Equation:   -1,0000    0,0000    0,0000    8,9576
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  757 -o
+Name    : SILLAS 2 (S=   0,2m²)
+Corners :   741   735   734   747
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  759 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   707   706   740   711
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  761 -o
+Name    : SILLAS 2 (S=   0,0m²)
+Corners :   709   713   738   710
+Equation:    0,0000    1,0000    0,0000   -3,5947
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  763 -o
+Name    : SILLAS 2 (S=   0,2m²)
+Corners :   712   739   738   713
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  801 -o
+Name    : Mesa 3 (S=   0,0m²)
+Corners :   801   802   803   804
+Equation:    0,0000   -1,0000    0,0000    1,0922
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  803 -o
+Name    : Mesa 3 (S=   0,0m²)
+Corners :   802   805   806   803
+Equation:    1,0000    0,0000    0,0000   -8,9040
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  805 -o
+Name    : Mesa 3 (S=   0,0m²)
+Corners :   805   807   808   806
+Equation:    0,0000    1,0000    0,0000   -1,9922
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  807 -o
+Name    : Mesa 3 (S=   0,0m²)
+Corners :   809   810   811   812
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  809 -o
+Name    : Mesa 3 (S=   0,1m²)
+Corners :   813   814   810   809
+Equation:    1,0000    0,0000    0,0000   -8,5399
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  811 -o
+Name    : Mesa 3 (S=   0,1m²)
+Corners :   815   816   812   811
+Equation:   -1,0000    0,0000    0,0000    8,3682
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  813 -o
+Name    : Mesa 3 (S=   0,1m²)
+Corners :   814   815   811   810
+Equation:    0,0000   -1,0000    0,0000    1,4564
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  815 -o
+Name    : Mesa 3 (S=   0,0m²)
+Corners :   807   801   804   808
+Equation:   -1,0000    0,0000    0,0000    8,0040
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  817 -o
+Name    : Mesa 3 (S=   0,8m²)
+Corners :   801   807   805   802
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  819 -o
+Name    : Mesa 3 (S=   0,0m²)
+Corners :   814   813   816   815
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  821 -o
+Name    : Mesa 3 (S=   0,8m²)
+Corners :   808   804   803   806
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  823 -o
+Name    : Mesa 3 (S=   0,1m²)
+Corners :   816   813   809   812
+Equation:    0,0000    1,0000    0,0000   -1,6280
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  901 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   901   902   903   904
+Equation:    0,0000    1,0000    0,0000   -1,0385
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  903 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   905   906   904   903   907   908
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -8,7434
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  905 -o
+Name    : SILLAS 3 (S=   0,2m²)
+Corners :   909   907   903   902
+Equation:    0,0000    0,0000    1,0000   -0,4682
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  907 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   910   911   912   913
+Equation:    0,0000    0,0000    1,0000   -1,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  909 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   906   905   914   915
+Equation:    0,0000   -1,0000    0,0000    0,5985
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  911 -o
+Name    : SILLAS 3 (S=   0,3m²)
+Corners :   916   917   918   919
+Equation:    0,0000    0,0000   -1,0000    0,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  913 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   920   921   922   923
+Equation:    0,0000   -1,0000    0,0000    2,0420
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  915 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   924   925   926   927   921   920
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -8,7534
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  917 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   928   929   930   931
+Equation:   -1,0000    0,0000    0,0000    9,3402
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  919 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   915   914   932   909   902   901
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    8,1434
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  921 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   916   911   910   917
+Equation:   -1,0000    0,0000    0,0000    7,4967
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  923 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   911   916   919   933   934   912
+On hull :     x     x     x     *     -     *
+Equation:    0,0000   -1,0000    0,0000    1,2453
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  925 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   935   936   923   922   937   938
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    8,1534
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  927 -o
+Name    : SILLAS 3 (S=   0,2m²)
+Corners :   927   937   922   921
+Equation:    0,0000    0,0000    1,0000   -0,4682
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  929 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   917   910   913   939   940   918
+On hull :     x     x     x     -     *     *
+Equation:    0,0000    1,0000    0,0000   -1,8453
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  931 -o
+Name    : SILLAS 3 (S=   0,3m²)
+Corners :   906   915   901   904
+Equation:    0,0000    0,0000   -1,0000    0,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  933 -o
+Name    : SILLAS 3 (S=   0,3m²)
+Corners :   936   924   920   923
+Equation:    0,0000    0,0000   -1,0000    0,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  935 -o
+Name    : SILLAS 3 (S=   0,2m²)
+Corners :   939   934   933   940
+Equation:    0,0000    0,0000    1,0000   -0,4682
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  937 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   918   940   933   919
+Equation:    1,0000    0,0000    0,0000   -7,9367
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  939 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   938   937   927   926
+Equation:    0,0000   -1,0000    0,0000    2,4420
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  941 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   914   905   908   932
+Equation:    0,0000    0,0000    1,0000   -1,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  943 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   912   934   939   913
+Equation:    1,0000    0,0000    0,0000   -7,5367
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  945 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   925   935   938   926
+Equation:    0,0000    0,0000    1,0000   -1,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  947 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   908   907   909   932
+Equation:    0,0000    1,0000    0,0000   -0,6385
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  949 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   941   942   928   931
+Equation:    0,0000    0,0000    1,0000   -1,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  951 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   943   942   941   944
+Equation:    1,0000    0,0000    0,0000   -9,3802
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  953 -o
+Name    : SILLAS 3 (S=   0,2m²)
+Corners :   930   929   945   946
+Equation:    0,0000    0,0000    1,0000   -0,4682
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  955 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   942   943   947   945   929   928
+On hull :     x     x     x     *     -     *
+Equation:    0,0000    1,0000    0,0000   -1,8353
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  957 -o -c
+Name    : SILLAS 3 (S=   0,1m²)
+Corners :   944   941   931   930   946   948
+On hull :     x     x     x     -     *     *
+Equation:    0,0000   -1,0000    0,0000    1,2353
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  959 -o
+Name    : SILLAS 3 (S=   0,3m²)
+Corners :   943   944   948   947
+Equation:    0,0000    0,0000   -1,0000    0,4002
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  961 -o
+Name    : SILLAS 3 (S=   0,0m²)
+Corners :   948   946   945   947
+Equation:   -1,0000    0,0000    0,0000    8,9402
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID:  963 -o
+Name    : SILLAS 3 (S=   0,6m²)
+Corners :   936   935   925   924
+Equation:    0,0000    1,0000    0,0000   -2,4820
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1001 -o
+Name    : Mesa 4 (S=   0,8m²)
+Corners :  1001  1002  1003  1004
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1003 -o
+Name    : Mesa 4 (S=   0,1m²)
+Corners :  1005  1006  1007  1008
+Equation:    0,0000   -1,0000    0,0000    6,5630
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1005 -o
+Name    : Mesa 4 (S=   0,0m²)
+Corners :  1009  1010  1002  1001
+Equation:   -1,0000    0,0000    0,0000    5,6775
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1007 -o
+Name    : Mesa 4 (S=   0,1m²)
+Corners :  1006  1011  1012  1007
+Equation:   -1,0000    0,0000    0,0000    6,0417
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1009 -o
+Name    : Mesa 4 (S=   0,0m²)
+Corners :  1013  1014  1004  1003
+Equation:    1,0000    0,0000    0,0000   -6,5775
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1011 -o
+Name    : Mesa 4 (S=   0,8m²)
+Corners :  1010  1009  1014  1013
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1013 -o
+Name    : Mesa 4 (S=   0,0m²)
+Corners :  1005  1015  1011  1006
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1015 -o
+Name    : Mesa 4 (S=   0,1m²)
+Corners :  1011  1015  1016  1012
+Equation:    0,0000    1,0000    0,0000   -6,7346
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1017 -o
+Name    : Mesa 4 (S=   0,0m²)
+Corners :  1014  1009  1001  1004
+Equation:    0,0000    1,0000    0,0000   -7,0988
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1019 -o
+Name    : Mesa 4 (S=   0,0m²)
+Corners :  1010  1013  1003  1002
+Equation:    0,0000   -1,0000    0,0000    6,1988
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1021 -o
+Name    : Mesa 4 (S=   0,0m²)
+Corners :  1016  1008  1007  1012
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1023 -o
+Name    : Mesa 4 (S=   0,1m²)
+Corners :  1015  1005  1008  1016
+Equation:    1,0000    0,0000    0,0000   -6,2133
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1101 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1101  1102  1103  1104
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1103 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1105  1101  1104  1106  1107  1108
+On hull :     x     x     x     -     *     *
+Equation:    0,0000    1,0000    0,0000   -6,9488
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1105 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1108  1107  1109  1110
+Equation:    1,0000    0,0000    0,0000   -5,6241
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1107 -o
+Name    : SILLAS 4 (S=   0,3m²)
+Corners :  1111  1105  1108  1110
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1109 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1102  1111  1110  1109  1112  1103
+On hull :     x     x     x     *     -     *
+Equation:    0,0000   -1,0000    0,0000    6,3488
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1111 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1113  1114  1115  1116
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1113 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1115  1117  1118  1116
+Equation:   -1,0000    0,0000    0,0000    7,0276
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1115 -o
+Name    : SILLAS 4 (S=   0,2m²)
+Corners :  1106  1112  1109  1107
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1117 -o
+Name    : SILLAS 4 (S=   0,3m²)
+Corners :  1119  1120  1121  1122
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1119 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1123  1124  1125  1126
+Equation:    0,0000    1,0000    0,0000   -6,1420
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1121 -o
+Name    : SILLAS 4 (S=   0,3m²)
+Corners :  1127  1128  1123  1126
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1123 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1128  1129  1130  1131  1124  1123
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    5,8308
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1125 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1132  1127  1126  1125  1133  1134
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -6,4308
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1127 -o
+Name    : SILLAS 4 (S=   0,2m²)
+Corners :  1131  1133  1125  1124
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1129 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1135  1136  1137  1138  1139  1140
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    5,8408
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1131 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1141  1142  1138  1137
+Equation:    0,0000   -1,0000    0,0000    7,1455
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1133 -o
+Name    : SILLAS 4 (S=   0,2m²)
+Corners :  1143  1139  1138  1142
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1135 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1121  1144  1145  1122
+Equation:   -1,0000    0,0000    0,0000    6,6276
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1137 -o
+Name    : SILLAS 4 (S=   0,2m²)
+Corners :  1118  1117  1145  1144
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1139 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1120  1113  1116  1118  1144  1121
+On hull :     x     x     x     -     *     *
+Equation:    0,0000   -1,0000    0,0000    6,3388
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1141 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1119  1114  1113  1120
+Equation:    1,0000    0,0000    0,0000   -7,0676
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1143 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1129  1132  1134  1130
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1145 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1114  1119  1122  1145  1117  1115
+On hull :     x     x     x     *     -     *
+Equation:    0,0000    1,0000    0,0000   -6,9388
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1147 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1140  1139  1143  1146
+Equation:    0,0000   -1,0000    0,0000    7,5455
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1149 -o
+Name    : SILLAS 4 (S=   0,0m²)
+Corners :  1147  1135  1140  1146
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1151 -o -c
+Name    : SILLAS 4 (S=   0,1m²)
+Corners :  1148  1147  1146  1143  1142  1141
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -6,4408
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1153 -o
+Name    : SILLAS 4 (S=   0,3m²)
+Corners :  1136  1148  1141  1137
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1155 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1127  1132  1129  1128
+Equation:    0,0000   -1,0000    0,0000    5,7020
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1157 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1111  1102  1101  1105
+Equation:   -1,0000    0,0000    0,0000    5,1841
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1159 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1136  1135  1147  1148
+Equation:    0,0000    1,0000    0,0000   -7,5855
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1161 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1134  1133  1131  1130
+Equation:    0,0000    1,0000    0,0000   -5,7420
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1163 -o
+Name    : SILLAS 4 (S=   0,6m²)
+Corners :  1103  1112  1106  1104
+Equation:    1,0000    0,0000    0,0000   -5,2241
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1201 -o
+Name    : Mesa 5 (S=   0,0m²)
+Corners :  1201  1202  1203  1204
+Equation:    0,0000   -1,0000    0,0000    3,6501
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1203 -o
+Name    : Mesa 5 (S=   0,0m²)
+Corners :  1202  1205  1206  1203
+Equation:    1,0000    0,0000    0,0000   -6,5743
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1205 -o
+Name    : Mesa 5 (S=   0,0m²)
+Corners :  1205  1207  1208  1206
+Equation:    0,0000    1,0000    0,0000   -4,5501
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1207 -o
+Name    : Mesa 5 (S=   0,0m²)
+Corners :  1209  1210  1211  1212
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1209 -o
+Name    : Mesa 5 (S=   0,1m²)
+Corners :  1213  1214  1210  1209
+Equation:    1,0000    0,0000    0,0000   -6,2101
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1211 -o
+Name    : Mesa 5 (S=   0,1m²)
+Corners :  1215  1216  1212  1211
+Equation:   -1,0000    0,0000    0,0000    6,0385
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1213 -o
+Name    : Mesa 5 (S=   0,1m²)
+Corners :  1214  1215  1211  1210
+Equation:    0,0000   -1,0000    0,0000    4,0142
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1215 -o
+Name    : Mesa 5 (S=   0,0m²)
+Corners :  1207  1201  1204  1208
+Equation:   -1,0000    0,0000    0,0000    5,6743
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1217 -o
+Name    : Mesa 5 (S=   0,8m²)
+Corners :  1201  1207  1205  1202
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1219 -o
+Name    : Mesa 5 (S=   0,0m²)
+Corners :  1214  1213  1216  1215
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1221 -o
+Name    : Mesa 5 (S=   0,8m²)
+Corners :  1208  1204  1203  1206
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1223 -o
+Name    : Mesa 5 (S=   0,1m²)
+Corners :  1216  1213  1209  1212
+Equation:    0,0000    1,0000    0,0000   -4,1859
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1301 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1301  1302  1303  1304  1305  1306
+On hull :     x     x     x     *     -     *
+Equation:    0,0000   -1,0000    0,0000    3,8055
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1303 -o
+Name    : SILLAS 5 (S=   0,3m²)
+Corners :  1302  1307  1308  1303
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1305 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1309  1301  1306  1310
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1307 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1306  1305  1311  1310
+Equation:    1,0000    0,0000    0,0000   -5,2241
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1309 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1308  1312  1304  1303
+Equation:    1,0000    0,0000    0,0000   -5,6241
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1311 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1307  1309  1310  1311  1312  1308
+On hull :     x     x     x     -     *     *
+Equation:    0,0000    1,0000    0,0000   -4,4055
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1313 -o
+Name    : SILLAS 5 (S=   0,2m²)
+Corners :  1311  1305  1304  1312
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1315 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1302  1301  1309  1307
+Equation:   -1,0000    0,0000    0,0000    5,1841
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1317 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1313  1314  1315  1316
+Equation:    0,0000   -1,0000    0,0000    5,0022
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1319 -o
+Name    : SILLAS 5 (S=   0,2m²)
+Corners :  1315  1314  1317  1318
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1321 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1319  1320  1316  1315  1318  1321
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -6,4408
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1323 -o
+Name    : SILLAS 5 (S=   0,3m²)
+Corners :  1322  1319  1321  1323
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1325 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1324  1322  1323  1317  1314  1313
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    5,8408
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1327 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1320  1324  1313  1316
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1329 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1322  1324  1320  1319
+Equation:    0,0000    1,0000    0,0000   -5,0422
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1331 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1325  1326  1327  1328
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1333 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1326  1329  1330  1331  1332  1327
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -6,4308
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1335 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1321  1318  1317  1323
+Equation:    0,0000   -1,0000    0,0000    4,6022
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1337 -o
+Name    : SILLAS 5 (S=   0,3m²)
+Corners :  1329  1333  1334  1330
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1339 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1327  1332  1335  1328
+Equation:    0,0000    1,0000    0,0000   -3,1988
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1341 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1329  1326  1325  1333
+Equation:    0,0000   -1,0000    0,0000    3,1588
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1343 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1334  1336  1331  1330
+Equation:    0,0000    1,0000    0,0000   -3,5988
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1345 -o
+Name    : SILLAS 5 (S=   0,2m²)
+Corners :  1335  1332  1331  1336
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1347 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1333  1325  1328  1335  1336  1334
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    5,8308
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1349 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1337  1338  1339  1340  1341  1342
+On hull :     x     x     x     -     *     *
+Equation:    0,0000   -1,0000    0,0000    3,7955
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1351 -o
+Name    : SILLAS 5 (S=   0,3m²)
+Corners :  1343  1337  1342  1344
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1353 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1343  1345  1338  1337
+Equation:    1,0000    0,0000    0,0000   -7,0676
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1355 -o -c
+Name    : SILLAS 5 (S=   0,1m²)
+Corners :  1345  1343  1344  1346  1347  1348
+On hull :     x     x     x     *     -     *
+Equation:    0,0000    1,0000    0,0000   -4,3955
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1357 -o
+Name    : SILLAS 5 (S=   0,6m²)
+Corners :  1348  1347  1340  1339
+Equation:   -1,0000    0,0000    0,0000    7,0276
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1359 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1342  1341  1346  1344
+Equation:   -1,0000    0,0000    0,0000    6,6276
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1361 -o
+Name    : SILLAS 5 (S=   0,2m²)
+Corners :  1340  1347  1346  1341
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1363 -o
+Name    : SILLAS 5 (S=   0,0m²)
+Corners :  1338  1345  1348  1339
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1401 -o
+Name    : Mesa 6 (S=   0,0m²)
+Corners :  1401  1402  1403  1404
+Equation:    1,0000    0,0000    0,0000   -6,5702
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1403 -o
+Name    : Mesa 6 (S=   0,0m²)
+Corners :  1402  1405  1406  1403
+Equation:    0,0000    1,0000    0,0000   -1,9922
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1405 -o
+Name    : Mesa 6 (S=   0,0m²)
+Corners :  1407  1408  1409  1410
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1407 -o
+Name    : Mesa 6 (S=   0,1m²)
+Corners :  1411  1412  1408  1407
+Equation:    1,0000    0,0000    0,0000   -6,2060
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1409 -o
+Name    : Mesa 6 (S=   0,1m²)
+Corners :  1413  1414  1410  1409
+Equation:   -1,0000    0,0000    0,0000    6,0344
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1411 -o
+Name    : Mesa 6 (S=   0,1m²)
+Corners :  1412  1413  1409  1408
+Equation:    0,0000   -1,0000    0,0000    1,4564
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1413 -o
+Name    : Mesa 6 (S=   0,0m²)
+Corners :  1405  1415  1416  1406
+Equation:   -1,0000    0,0000    0,0000    5,6702
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1415 -o
+Name    : Mesa 6 (S=   0,8m²)
+Corners :  1415  1405  1402  1401
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1417 -o
+Name    : Mesa 6 (S=   0,0m²)
+Corners :  1412  1411  1414  1413
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1419 -o
+Name    : Mesa 6 (S=   0,8m²)
+Corners :  1406  1416  1404  1403
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1421 -o
+Name    : Mesa 6 (S=   0,1m²)
+Corners :  1414  1411  1407  1410
+Equation:    0,0000    1,0000    0,0000   -1,6280
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1423 -o
+Name    : Mesa 6 (S=   0,0m²)
+Corners :  1415  1401  1404  1416
+Equation:    0,0000   -1,0000    0,0000    1,0922
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1501 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1501  1502  1503  1504  1505  1506
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    5,8308
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1503 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1507  1508  1504  1503
+Equation:    0,0000    1,0000    0,0000   -0,6355
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1505 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1509  1510  1511  1512  1508  1507
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -6,4308
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1507 -o
+Name    : SILLAS 6 (S=   0,3m²)
+Corners :  1510  1501  1506  1511
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1509 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1502  1509  1507  1503
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1511 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1510  1509  1502  1501
+Equation:    0,0000   -1,0000    0,0000    0,5955
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1513 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1506  1505  1512  1511
+Equation:    0,0000    1,0000    0,0000   -1,0355
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1515 -o
+Name    : SILLAS 6 (S=   0,2m²)
+Corners :  1504  1508  1512  1505
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1517 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1513  1514  1515  1516  1517  1518
+On hull :     x     x     x     -     *     *
+Equation:    0,0000    1,0000    0,0000   -1,8422
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1519 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1514  1519  1520  1515
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1521 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1518  1517  1521  1522
+Equation:    1,0000    0,0000    0,0000   -5,6241
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1523 -o
+Name    : SILLAS 6 (S=   0,3m²)
+Corners :  1523  1513  1518  1522
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1525 -o
+Name    : SILLAS 6 (S=   0,2m²)
+Corners :  1516  1524  1521  1517
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1527 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1519  1523  1522  1521  1524  1520
+On hull :     x     x     x     *     -     *
+Equation:    0,0000   -1,0000    0,0000    1,2422
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1529 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1520  1524  1516  1515
+Equation:    1,0000    0,0000    0,0000   -5,2241
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1531 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1525  1526  1527  1528
+Equation:   -1,0000    0,0000    0,0000    6,6276
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1533 -o
+Name    : SILLAS 6 (S=   0,2m²)
+Corners :  1529  1530  1527  1526
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1535 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1531  1532  1533  1534  1535  1536
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -6,4408
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1537 -o
+Name    : SILLAS 6 (S=   0,3m²)
+Corners :  1537  1531  1536  1538
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1539 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1537  1539  1532  1531
+Equation:    0,0000    1,0000    0,0000   -2,4790
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1541 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1539  1537  1538  1540  1541  1542
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    5,8408
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1543 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1543  1530  1529  1544
+Equation:   -1,0000    0,0000    0,0000    7,0276
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1545 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1545  1546  1528  1527  1530  1543
+On hull :     x     x     x     *     -     *
+Equation:    0,0000    1,0000    0,0000   -1,8322
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1547 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1547  1545  1543  1544
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1549 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1546  1545  1547  1548
+Equation:    1,0000    0,0000    0,0000   -7,0676
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1551 -o -c
+Name    : SILLAS 6 (S=   0,1m²)
+Corners :  1548  1547  1544  1529  1526  1525
+On hull :     x     x     x     -     *     *
+Equation:    0,0000   -1,0000    0,0000    1,2322
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1553 -o
+Name    : SILLAS 6 (S=   0,3m²)
+Corners :  1546  1548  1525  1528
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1555 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1542  1541  1534  1533
+Equation:    0,0000   -1,0000    0,0000    2,4390
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1557 -o
+Name    : SILLAS 6 (S=   0,6m²)
+Corners :  1523  1519  1514  1513
+Equation:   -1,0000    0,0000    0,0000    5,1841
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1559 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1532  1539  1542  1533
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1561 -o
+Name    : SILLAS 6 (S=   0,0m²)
+Corners :  1536  1535  1540  1538
+Equation:    0,0000   -1,0000    0,0000    2,0390
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1563 -o
+Name    : SILLAS 6 (S=   0,2m²)
+Corners :  1534  1541  1540  1535
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1601 -o
+Name    : Mesa 7 (S=   0,0m²)
+Corners :  1601  1602  1603  1604
+Equation:    0,0000   -1,0000    0,0000    4,8155
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1603 -o
+Name    : Mesa 7 (S=   0,0m²)
+Corners :  1602  1605  1606  1603
+Equation:    1,0000    0,0000    0,0000   -4,0923
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1605 -o
+Name    : Mesa 7 (S=   0,0m²)
+Corners :  1605  1607  1608  1606
+Equation:    0,0000    1,0000    0,0000   -5,7155
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1607 -o
+Name    : Mesa 7 (S=   0,0m²)
+Corners :  1609  1610  1611  1612
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1609 -o
+Name    : Mesa 7 (S=   0,1m²)
+Corners :  1613  1614  1610  1609
+Equation:    1,0000    0,0000    0,0000   -3,7282
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1611 -o
+Name    : Mesa 7 (S=   0,1m²)
+Corners :  1615  1616  1612  1611
+Equation:   -1,0000    0,0000    0,0000    3,5565
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1613 -o
+Name    : Mesa 7 (S=   0,1m²)
+Corners :  1614  1615  1611  1610
+Equation:    0,0000   -1,0000    0,0000    5,1797
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1615 -o
+Name    : Mesa 7 (S=   0,0m²)
+Corners :  1607  1601  1604  1608
+Equation:   -1,0000    0,0000    0,0000    3,1923
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1617 -o
+Name    : Mesa 7 (S=   0,8m²)
+Corners :  1601  1607  1605  1602
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1619 -o
+Name    : Mesa 7 (S=   0,0m²)
+Corners :  1614  1613  1616  1615
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1621 -o
+Name    : Mesa 7 (S=   0,8m²)
+Corners :  1608  1604  1603  1606
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1623 -o
+Name    : Mesa 7 (S=   0,1m²)
+Corners :  1616  1613  1609  1612
+Equation:    0,0000    1,0000    0,0000   -5,3513
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1625 -o
+Name    : Mesa 8 (S=   0,0m²)
+Corners :  1617  1618  1619  1620
+Equation:    1,0000    0,0000    0,0000   -4,1021
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1627 -o
+Name    : Mesa 8 (S=   0,0m²)
+Corners :  1621  1617  1620  1622
+Equation:    0,0000   -1,0000    0,0000    2,4864
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1629 -o
+Name    : Mesa 8 (S=   0,1m²)
+Corners :  1623  1624  1625  1626
+Equation:    0,0000    1,0000    0,0000   -3,0222
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1631 -o
+Name    : Mesa 8 (S=   0,0m²)
+Corners :  1618  1627  1628  1619
+Equation:    0,0000    1,0000    0,0000   -3,3864
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1633 -o
+Name    : Mesa 8 (S=   0,0m²)
+Corners :  1627  1621  1622  1628
+Equation:   -1,0000    0,0000    0,0000    3,2021
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1635 -o
+Name    : Mesa 8 (S=   0,1m²)
+Corners :  1624  1629  1630  1625
+Equation:    1,0000    0,0000    0,0000   -3,7379
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1637 -o
+Name    : Mesa 8 (S=   0,1m²)
+Corners :  1629  1631  1632  1630
+Equation:    0,0000   -1,0000    0,0000    2,8505
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1639 -o
+Name    : Mesa 8 (S=   0,8m²)
+Corners :  1628  1622  1620  1619
+Equation:    0,0000    0,0000    1,0000   -0,8300
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1641 -o
+Name    : Mesa 8 (S=   0,0m²)
+Corners :  1625  1630  1632  1626
+Equation:    0,0000    0,0000   -1,0000    0,0000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1643 -o
+Name    : Mesa 8 (S=   0,1m²)
+Corners :  1631  1623  1626  1632
+Equation:   -1,0000    0,0000    0,0000    3,5663
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1645 -o
+Name    : Mesa 8 (S=   0,8m²)
+Corners :  1621  1627  1618  1617
+Equation:    0,0000    0,0000   -1,0000    0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1647 -o
+Name    : Mesa 8 (S=   0,0m²)
+Corners :  1629  1624  1623  1631
+Equation:    0,0000    0,0000    1,0000   -0,8000
+Abs/Diff:MADERA_MESA <27 33 30 33 24 24 :  8  8> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1701 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1701  1702  1703  1704  1705  1706
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -3,9541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1703 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1707  1708  1702  1701
+Equation:    0,0000    1,0000    0,0000   -3,8690
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1705 -o
+Name    : SILLAS 7 y 8 (S=   0,2m²)
+Corners :  1704  1709  1710  1705
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1707 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1711  1709  1704  1703
+Equation:    0,0000   -1,0000    0,0000    3,8290
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1709 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1708  1707  1712  1710  1709  1711
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    3,3541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1711 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1702  1708  1711  1703
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1713 -o
+Name    : SILLAS 7 y 8 (S=   0,3m²)
+Corners :  1707  1701  1706  1712
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1715 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1706  1705  1710  1712
+Equation:    0,0000   -1,0000    0,0000    3,4290
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1717 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1713  1714  1715  1716
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1719 -o
+Name    : SILLAS 7 y 8 (S=   0,2m²)
+Corners :  1717  1718  1719  1720
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1721 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1715  1718  1717  1716
+Equation:    0,0000   -1,0000    0,0000    6,1690
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1723 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1714  1721  1722  1719  1718  1715
+On hull :     x     x     x     *     -     *
+Equation:   -1,0000    0,0000    0,0000    3,3541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1725 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1723  1720  1719  1722
+Equation:    0,0000   -1,0000    0,0000    5,7690
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1727 -o
+Name    : SILLAS 7 y 8 (S=   0,3m²)
+Corners :  1721  1724  1723  1722
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1729 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1724  1713  1716  1717  1720  1723
+On hull :     x     x     x     -     *     *
+Equation:    1,0000    0,0000    0,0000   -3,9541
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1731 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1721  1714  1713  1724
+Equation:    0,0000    1,0000    0,0000   -6,2090
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1733 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1725  1726  1727  1728  1729  1730
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    3,3441
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1735 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1730  1729  1731  1732
+Equation:    0,0000    1,0000    0,0000   -2,4255
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1737 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1733  1734  1732  1731  1735  1736
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -3,9441
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1739 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1734  1733  1726  1725
+Equation:    0,0000   -1,0000    0,0000    1,9855
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1741 -o
+Name    : SILLAS 7 y 8 (S=   0,3m²)
+Corners :  1734  1725  1730  1732
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1743 -o
+Name    : SILLAS 7 y 8 (S=   0,2m²)
+Corners :  1728  1735  1731  1729
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1745 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1726  1733  1736  1727
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1747 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1736  1735  1728  1727
+Equation:    0,0000    1,0000    0,0000   -2,0255
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1749 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1737  1738  1739  1740
+Equation:    0,0000    1,0000    0,0000   -4,3655
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1751 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1741  1742  1743  1744
+Equation:    0,0000    1,0000    0,0000   -4,7655
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1753 -o
+Name    : SILLAS 7 y 8 (S=   0,6m²)
+Corners :  1745  1746  1747  1748
+Equation:    0,0000   -1,0000    0,0000    4,3255
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1755 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1748  1747  1740  1739  1742  1741
+On hull :     x     x     x     -     *     *
+Equation:   -1,0000    0,0000    0,0000    3,3441
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1757 -o -c
+Name    : SILLAS 7 y 8 (S=   0,1m²)
+Corners :  1746  1745  1744  1743  1738  1737
+On hull :     x     x     x     *     -     *
+Equation:    1,0000    0,0000    0,0000   -3,9441
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1759 -o
+Name    : SILLAS 7 y 8 (S=   0,0m²)
+Corners :  1747  1746  1737  1740
+Equation:    0,0000    0,0000    1,0000   -1,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1761 -o
+Name    : SILLAS 7 y 8 (S=   0,2m²)
+Corners :  1739  1738  1743  1742
+Equation:    0,0000    0,0000    1,0000   -0,4685
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+Plane ID: 1763 -o
+Name    : SILLAS 7 y 8 (S=   0,3m²)
+Corners :  1745  1748  1741  1744
+Equation:    0,0000    0,0000   -1,0000    0,4004
+Abs/Diff:SILLAS <68 75 82 85 86 86 : 90 90> L <30 13 25 10 23 10 : 25 37>
+
+

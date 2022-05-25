@@ -1,0 +1,37 @@
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+Cisco Router Simulation Platform (version 0.2.14-x86/Windows stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Sep 23 2014 19:09:19
+
+Local UUID: 169e7266-2422-4b77-8a72-aab497169abf
+
+Log file: writing to dynamips_i3_log.txt
+ILT: loaded table "mips64j" from cache.
+ILT: loaded table "mips64e" from cache.
+ILT: loaded table "ppc32j" from cache.
+ILT: loaded table "ppc32e" from cache.
+Hypervisor TCP control server started (IP 172.27.136.8 port 59808).
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C7200 instance 'R1' (id 1):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  IOMEM size : 256 Mb
+  NVRAM size : 512 Kb
+  NPE model  : npe-400
+  Midplane   : vxr
+  IOS image  : C:/Users/javie/GNS3/images/IOS/c7200-advsecurityk9-mz.151-4.M1.image
+
+Loading ELF file 'C:/Users/javie/GNS3/images/IOS/c7200-advsecurityk9-mz.151-4.M1.image'...
+ELF entry point: 0x80008000
+
+C7200 'R1': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+
+C7200 'R1': stopping simulation.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

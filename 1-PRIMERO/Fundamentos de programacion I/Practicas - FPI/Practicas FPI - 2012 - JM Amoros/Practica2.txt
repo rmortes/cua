@@ -1,0 +1,35 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<conio.h>
+
+int main (void){//esta sin terminar pero para que lo vallais haciendo cortesia de JM Amorós Mora
+
+    int tamano;//tamaño
+
+    int x,y;
+
+    printf("introduce un tamaño entre 1-10\n");
+    scanf("%d",&tamano);
+
+
+    for(int i=0;i<tamano;i++){
+
+
+        if(i>0)for( x=0;x<i;x++){
+            printf(" ");//bucle que incremnta espacios al principio
+        }
+        printf("\\");//pinta el caracter a
+
+        for( y=3;y>0+i;y--){
+            printf("  ");//bucle que decrementa espacios interiores
+        }
+        printf("/\n");//pinta el caracter b
+
+        //for( x=0;x<tamano;x++)printf("|");//falta por terminar
+
+
+
+    }
+    getch();
+    return (0);
+}

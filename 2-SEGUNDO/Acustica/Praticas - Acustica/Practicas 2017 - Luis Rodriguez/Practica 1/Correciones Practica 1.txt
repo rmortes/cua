@@ -1,0 +1,9 @@
+Nota:7
+
+Observaciones prof.: - Ejercicio 2, 3, 4, 5: Algunos de los errores no tienen las cifras significativas correctas. 
+- Ejercicio 6: es imposible que el error de la frecuencia medida sea el mismo a frecuencias altas 
+que a frecuencias bajas. No se indica en los ejes de la gráfica las magnitudes y unidades. 
+- Ejercicio 7: Faltan las unidades y el error en una de las medidas no está bien expresado. 
+- Ejercicio 8: Algunas de las medidas no están bien expresadas.
+ - Cuestión 2: Haciendo un ajuste por mínimos cuadrados de (omega0/omega0')^2 frente a m0,
+ la pendiente de la gráfica sería 1/m.

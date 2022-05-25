@@ -1,0 +1,18 @@
+www.kernel.org/pub/linux/kernel/v1.0/linux-1.0.tar.gz      1.0
+
+descargar drivers
+
+tar xzvf archivo.tar.gz
+tar xjvf archivo.tar.bz2
+
+/dev
+
+
+
+
+* -1- resetea controlador                                Proceso
+* -2- encender motor  |  int                                |
+* -3- calcular brazo  |                                     v 
+* -4- brusqueda brazo                                 _-   FS
+* -5- L/E sectores                                   /     Ext
+		                                 Buffer    Driver Disp

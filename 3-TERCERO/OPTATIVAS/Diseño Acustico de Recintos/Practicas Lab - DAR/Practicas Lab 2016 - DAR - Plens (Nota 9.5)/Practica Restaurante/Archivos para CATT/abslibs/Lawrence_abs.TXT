@@ -1,0 +1,60 @@
+;CATT Exchange text for import into CATT-Acoustic
+;Note that some versions < v7.2f may fail to import
+;data without diffusion. If so, switch on "zig-zag"
+;diffusion below and switch off again after import.
+
+;"Architectural Acoustics"
+;Anita Lawrence
+;Ref. code: [Lawrence]
+;Elsevier Publishing Company Ltd.
+;1970
+
+BRICK_RENDERED = <1 2 2 3 3 4>
+ C:Walls
+ D:Rendered or plastered brickwork or concrete
+ R:[Lawrence]
+
+HARDBOARDS10 = <30 20 15 13 10 8>
+ C:Walls
+ D:Hardboard or plywood on battens fixed to solid backing
+ R:[Lawrence]
+
+PLASTER10 = <20 15 10 8 4 2>
+ C:Ceilings
+ D:Plasterboard ceiling on battens with large air space above
+ R:[Lawrence]
+
+TIMBER_FLOOR = <11 11 12 11 10 8>
+ C:Floors
+ D:Timber floor on timber joists
+ R:[Lawrence]
+
+WINDOW10 = <20 10 8 6 4 2>
+ C:Windows
+ D:Window glass
+ R:[Lawrence]
+
+CURTAIN10 = <5 12 15 27 37 50>
+ C:Curtains
+ D:Curtain
+ R:[Lawrence]
+
+METAL_PERF = <76 76 90 99 85 70>
+ C:Misc
+ D:Perforated metal tile with mineral pad backicg over 410 mm air space
+ R:[Lawrence]
+
+FIBRE_PERF = <10 40 68 97 86 62>
+ C:Walls
+ D:Perforated mineral fibre tile on battens over 20 mm air space
+ R:[Lawrence]
+
+FIBRE_FISS10 = <8 32 79 93 87 80>
+ C:Misc
+ D:Fissured mineral fibre tile against rigid backing
+ R:[Lawrence]
+
+FIBRE_FISS11 = <53 49 57 82 90 83>
+ C:Walls
+ D:Fissured mineral fibre tile over 410 mm air space
+ R:[Lawrence]

@@ -1,0 +1,17 @@
+Mar 10 16:47:49.620 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Mar 10 16:47:49.620 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49433.
+Mar 10 16:47:49.710 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 10 16:47:49.717 HYPERVISOR: exec_cmd: hypervisor uuid 
+Mar 10 16:47:49.725 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 3/Practica 3/project-files/dynamips 
+Mar 10 16:47:49.725 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 3/Practica 3/project-files/dynamips
+Mar 10 16:47:49.735 HYPERVISOR: exec_cmd: nio_bridge create HUB3 
+Mar 10 16:47:50.111 HYPERVISOR: exec_cmd: nio create_udp udp-776a6d0e-4d65-4c71-99d2-480ccd340c68 10006 127.0.0.1 10008 
+Mar 10 16:47:50.118 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB3 udp-776a6d0e-4d65-4c71-99d2-480ccd340c68 
+Mar 10 16:47:50.168 HYPERVISOR: exec_cmd: nio create_udp udp-dfcc00c7-64c5-4173-87a4-cec1e0c70ece 10009 127.0.0.1 10010 
+Mar 10 16:47:50.185 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB3 udp-dfcc00c7-64c5-4173-87a4-cec1e0c70ece 
+Mar 10 16:47:50.271 HYPERVISOR: exec_cmd: nio create_udp udp-580be567-4cfa-48b5-97a5-afdbf677468c 10019 127.0.0.1 10018 
+Mar 10 16:47:50.284 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB3 udp-580be567-4cfa-48b5-97a5-afdbf677468c 
+Mar 10 16:57:11.035 HYPERVISOR: exec_cmd: nio_bridge delete HUB3 
+Mar 10 16:57:11.107 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 10 16:57:11.264 HYPERVISOR: Stopped.
+Mar 10 16:57:11.264 GENERAL: reset done.

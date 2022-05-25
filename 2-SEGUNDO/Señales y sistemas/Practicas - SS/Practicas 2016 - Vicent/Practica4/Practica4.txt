@@ -1,0 +1,18 @@
+Considera un periodo de muestreo de valor Ts = 0.0001. Varía la frecuencia
+de la señal sinusoidal continua y escoge:
+a. Un caso donde se cumpla el Teorema de Muestreo. Observa el
+resultado.
+b. Un caso donde no se cumpla, es decir, donde se esté produciendo
+aliasing. Observa el resultado.
+
+• ¿Cuántas muestras por ciclo se toman cuando la relación entre periodo de
+muestreo y frecuencia de la señal es la correspondiente al límite para asegurar
+la reconstrucción según el Teorema de Muestreo de Nyquist?
+
+Se observan tres muestras cuando la f0max es mayor que 5000. (1000>2f0max) 
+
+
+b=3;
+n=0:199;
+x=sen(2*pi*f0*n);
+xmax=1;

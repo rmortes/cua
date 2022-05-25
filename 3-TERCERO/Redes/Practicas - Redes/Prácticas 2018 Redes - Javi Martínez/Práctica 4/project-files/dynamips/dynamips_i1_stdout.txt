@@ -1,0 +1,37 @@
+cygwin warning:
+  MS-DOS style path detected: C:\Users\Javier\Google Drive\Universidad de Alicante\Asignaturas\Tercero\Primer Cuatrimestre\REDES\Pr\xC3\xA1cticas\Pr\xC3\xA1ctica 4\practica4\project-files\dynamips
+  Preferred POSIX equivalent is: /cygdrive/c/Users/Javier/Google Drive/Universidad de Alicante/Asignaturas/Tercero/Primer Cuatrimestre/REDES/Pr\xC3\xA1cticas/Pr\xC3\xA1ctica 4/practica4/project-files/dynamips
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+Cisco Router Simulation Platform (version 0.2.14-x86/Windows stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Sep 23 2014 19:09:19
+
+Local UUID: 6b9afdc8-e8ce-4065-a79c-c5f5b54ff6b6
+
+Log file: writing to dynamips_i1_log.txt
+Hypervisor TCP control server started (IP 172.27.136.8 port 59720).
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C7200 instance 'R1' (id 1):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  IOMEM size : 256 Mb
+  NVRAM size : 512 Kb
+  NPE model  : npe-400
+  Midplane   : vxr
+  IOS image  : C:/Users/javie/GNS3/images/IOS/c7200-advsecurityk9-mz.151-4.M1.image
+
+Loading ELF file 'C:/Users/javie/GNS3/images/IOS/c7200-advsecurityk9-mz.151-4.M1.image'...
+ELF entry point: 0x80008000
+
+C7200 'R1': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

@@ -1,0 +1,13 @@
+Feb 11 12:57:51.354 HYPERVISOR: Release 0.2.12-amd64/Darwin (tag 2014032722)
+Feb 11 12:57:51.354 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58657.
+Feb 11 12:57:51.364 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 11 12:57:51.365 HYPERVISOR: exec_cmd: hypervisor uuid 
+Feb 11 12:57:51.365 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 1/Practica 1/project-files/dynamips 
+Feb 11 12:57:51.365 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 1/Practica 1/project-files/dynamips
+Feb 11 12:57:51.365 HYPERVISOR: exec_cmd: nio_bridge create HUB3 
+Feb 11 12:57:52.729 HYPERVISOR: exec_cmd: nio create_udp udp-5bb281de-62f5-4d16-baea-afa387e37b0a 10007 127.0.0.1 10006 
+Feb 11 12:57:52.753 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB3 udp-5bb281de-62f5-4d16-baea-afa387e37b0a 
+Feb 11 16:29:55.365 HYPERVISOR: exec_cmd: nio_bridge delete HUB3 
+Feb 11 16:29:55.379 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 11 16:29:55.790 HYPERVISOR: Stopped.
+Feb 11 16:29:55.790 GENERAL: reset done.

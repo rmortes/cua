@@ -1,0 +1,14 @@
+CATT-Acoustic v8.0b debug :  Auditorio
+----------------------------------------------------------------------
+DUPLICATE PLANE  ID's    :  no !
+PLANES MODELLED TWICE    :  no !
+DUPLICATE CORNER ID's    :  no !
+DUPLICATE CORNERS        :  no !
+SINGLE-CONNECTED CORNERS :  no !
+INACCURATE PLANE CORNERS :  no !
+EDGES CUTTING/TOUCHING   :  no !
+POSSIBLY REVERSED PLANES : 
+  201  226  401  501  601  701  801  802  901  902 1001 1002
+ 1101 1102 1201 1202 1301 1302 1509 1659
+----------------------------------------------------------------------
+

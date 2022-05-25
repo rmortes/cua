@@ -1,0 +1,39 @@
+Feb 19 13:29:54.013 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Feb 19 13:29:54.013 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50034.
+Feb 19 13:29:54.073 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 19 13:29:54.097 HYPERVISOR: exec_cmd: hypervisor uuid 
+Feb 19 13:29:54.114 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 2/Practica 2/project-files/dynamips 
+Feb 19 13:29:54.114 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 2/Practica 2/project-files/dynamips
+Feb 19 13:29:54.120 HYPERVISOR: exec_cmd: vm create R1 6 c2691 
+Feb 19 13:29:54.120 VM: VM R1 created.
+Feb 19 13:29:54.124 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 2001 
+Feb 19 13:29:54.129 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+Feb 19 13:29:54.136 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/jmrplens/GNS3/images/IOS/c2691-advsecurityk9-mz.124-25d.image 
+Feb 19 13:29:54.140 HYPERVISOR: exec_cmd: c2691 set_mac_addr R1 c006.8c51.0000 
+Feb 19 13:29:54.145 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Feb 19 13:29:54.150 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Feb 19 13:29:54.154 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 19 13:29:54.158 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x606eaea8 
+Feb 19 13:29:54.163 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Feb 19 13:29:54.174 HYPERVISOR: exec_cmd: vm set_config R1 configs/i6_startup-config.cfg 
+Feb 19 13:29:54.602 HYPERVISOR: exec_cmd: nio create_udp udp-19f91780-d173-4a9d-9862-9082d9c811a5 10004 127.0.0.1 10005 
+Feb 19 13:29:54.612 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-19f91780-d173-4a9d-9862-9082d9c811a5 
+Feb 19 13:29:54.615 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 19 13:29:54.631 HYPERVISOR: exec_cmd: nio create_udp udp-76c7b4f3-6294-4541-803f-ee9d20f70a1e 10006 127.0.0.1 10007 
+Feb 19 13:29:54.643 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-76c7b4f3-6294-4541-803f-ee9d20f70a1e 
+Feb 19 13:29:54.646 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 19 13:29:57.971 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Feb 19 13:29:57.973 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c2691-advsecurityk9-mz.124-25d.image-192.ghost 
+Feb 19 13:29:57.974 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 19 13:29:57.975 HYPERVISOR: exec_cmd: vm start R1 
+Feb 19 13:32:56.167 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 19 13:32:56.168 HYPERVISOR: exec_cmd: vm stop R1 
+Feb 19 13:32:56.272 VM: VM R1 shutdown.
+Feb 19 13:32:56.274 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 19 13:33:36.601 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 19 13:33:36.605 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 19 13:33:36.610 HYPERVISOR: exec_cmd: vm delete R1 
+Feb 19 13:33:36.610 VM: VM R1 destroyed.
+Feb 19 13:33:36.616 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 19 13:33:36.675 HYPERVISOR: Stopped.
+Feb 19 13:33:36.675 GENERAL: reset done.

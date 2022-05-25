@@ -1,0 +1,52 @@
+Feb 11 12:57:51.218 HYPERVISOR: Release 0.2.12-amd64/Darwin (tag 2014032722)
+Feb 11 12:57:51.218 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58648.
+Feb 11 12:57:51.232 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 11 12:57:51.233 HYPERVISOR: exec_cmd: hypervisor uuid 
+Feb 11 12:57:51.233 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 1/Practica 1/project-files/dynamips 
+Feb 11 12:57:51.233 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 1/Practica 1/project-files/dynamips
+Feb 11 12:57:51.234 HYPERVISOR: exec_cmd: vm create RI 7 c2691 
+Feb 11 12:57:51.234 VM: VM RI created.
+Feb 11 12:57:51.239 HYPERVISOR: exec_cmd: vm set_con_tcp_port RI 2005 
+Feb 11 12:57:51.249 HYPERVISOR: exec_cmd: c2691 get_mac_addr RI 
+Feb 11 12:57:51.250 HYPERVISOR: exec_cmd: vm set_ram RI 192 
+Feb 11 12:57:51.250 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:57:51.250 HYPERVISOR: exec_cmd: vm set_idle_pc RI 0x606eb07c 
+Feb 11 12:57:51.251 HYPERVISOR: exec_cmd: vm set_nvram RI 256 
+Feb 11 12:57:51.251 HYPERVISOR: exec_cmd: c2691 set_mac_addr RI c007.0ab1.0000 
+Feb 11 12:57:51.252 HYPERVISOR: exec_cmd: vm set_ios RI /Users/jmrplens/GNS3/images/IOS/c2691-advsecurityk9-mz.124-25d.image 
+Feb 11 12:57:51.252 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:57:51.252 HYPERVISOR: exec_cmd: vm slot_add_binding RI 1 0 NM-16ESW 
+Feb 11 12:57:51.253 HYPERVISOR: exec_cmd: vm set_disk0 RI 0 
+Feb 11 12:57:51.253 HYPERVISOR: exec_cmd: vm set_config RI configs/i7_startup-config.cfg 
+Feb 11 12:57:52.002 HYPERVISOR: exec_cmd: vm set_ghost_status RI 2 
+Feb 11 12:57:52.005 HYPERVISOR: exec_cmd: vm set_ghost_file RI c2691-advsecurityk9-mz.124-25d.image-192.ghost 
+Feb 11 12:57:52.559 HYPERVISOR: exec_cmd: nio create_udp udp-1ca1381f-2607-4fb4-a81d-5d14f1c2d4fd 10012 127.0.0.1 10015 
+Feb 11 12:57:52.584 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 1 1 udp-1ca1381f-2607-4fb4-a81d-5d14f1c2d4fd 
+Feb 11 12:57:52.597 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:57:52.620 HYPERVISOR: exec_cmd: nio create_udp udp-54048658-e300-4a7e-b502-88eb18834e13 10008 127.0.0.1 10009 
+Feb 11 12:57:52.633 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 1 0 udp-54048658-e300-4a7e-b502-88eb18834e13 
+Feb 11 12:57:52.645 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:57:52.739 HYPERVISOR: exec_cmd: nio create_udp udp-132bac63-59e6-490f-b36b-646ef6ae8744 10005 127.0.0.1 10002 
+Feb 11 12:57:52.753 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 0 1 udp-132bac63-59e6-490f-b36b-646ef6ae8744 
+Feb 11 12:57:52.754 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:57:52.821 HYPERVISOR: exec_cmd: nio create_udp udp-6f514ca8-3382-40d7-9505-97ca887d8129 10004 127.0.0.1 10003 
+Feb 11 12:57:52.822 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 0 0 udp-6f514ca8-3382-40d7-9505-97ca887d8129 
+Feb 11 12:57:52.822 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:58:10.321 HYPERVISOR: exec_cmd: nio create_udp udp-d947001e-3cb7-41d4-8e96-889c4d9d7f26 10016 127.0.0.1 10017 
+Feb 11 12:58:10.321 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 1 1 udp-d947001e-3cb7-41d4-8e96-889c4d9d7f26 
+Feb 11 12:58:10.322 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding RI 1 1 
+Feb 11 12:58:10.322 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 1 1 udp-d947001e-3cb7-41d4-8e96-889c4d9d7f26 
+Feb 11 12:58:10.323 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:58:12.236 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 12:58:12.238 HYPERVISOR: exec_cmd: vm start RI 
+Feb 11 16:29:21.927 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 16:29:21.929 HYPERVISOR: exec_cmd: vm stop RI 
+Feb 11 16:29:22.056 VM: VM RI shutdown.
+Feb 11 16:29:55.370 HYPERVISOR: exec_cmd: vm extract_config RI 
+Feb 11 16:29:55.796 HYPERVISOR: exec_cmd: vm get_status RI 
+Feb 11 16:29:55.797 HYPERVISOR: exec_cmd: vm extract_config RI 
+Feb 11 16:29:55.800 HYPERVISOR: exec_cmd: vm delete RI 
+Feb 11 16:29:55.800 VM: VM RI destroyed.
+Feb 11 16:29:55.802 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 11 16:29:56.291 HYPERVISOR: Stopped.
+Feb 11 16:29:56.292 GENERAL: reset done.

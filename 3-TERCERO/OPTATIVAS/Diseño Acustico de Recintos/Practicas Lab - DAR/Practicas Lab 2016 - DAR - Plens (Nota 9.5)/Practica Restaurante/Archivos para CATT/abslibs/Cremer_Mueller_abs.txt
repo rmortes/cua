@@ -1,0 +1,23 @@
+;CATT Exchange text for import into CATT-Acoustic
+
+;"Principles and applications of room acoustics, vol 1", p 411
+;L. Cremer, H. A. Mueller
+;Translated by T. Schultz
+;Applied Science Publishers
+;London/New York, 1982
+;ISBN: 0-85334-113-3
+
+VIBRATING80 = <37 20 15 8 6 8>
+ C:Walls
+ D:Vibrating gypsum plasterboards, 50 mm wool in front of rigid wall
+ R:[Cremer_Mueller]
+
+TAPESTRY80 = <17 40 70 86 84 82>
+ C:Curtains
+ D:Tapestries 50 mm from rigid wall
+ R:[Cremer_Mueller]
+
+WOOD_WALL80 = <11 7 3 1 1 2>
+ C:Walls
+ D:Thick wood-chip board in from of air cushion
+ R:[Cremer_Mueller]

@@ -1,0 +1,124 @@
+
+Los comandos “ip host” dan una etiqueta a una ip para realizar operaciones mas fácilmente, en vez de usar: ping xxx.xxx.xxx.xxx, al configurar una ip con una etiqueta se puede hacer: ping R1, y hara ping a la ip asociada a la etiqueta R1.
+
+Los comandos description añaden una descripción a la interfaz, para que al mostrar la configuración se vea una frase unida a la interfaz como por ejemplo nuestro caso, al mostrar las interfaces aparece cada una con la frase que indica a que otro dispositivo esta conectado
+
+####RI
+
+enable
+configure terminal
+interface fastEthernet 0/0
+description Enlace con R1
+no shutdown
+ip address 80.34.254.242 255.255.255.252
+full-duplex
+speed 100
+interface fastEthernet 0/1
+description Enlace con R3
+no shutdown
+ip address 199.234.12.50 255.255.255.252
+full-duplex
+speed 100
+interface fastEthernet 1/0
+description Enlace con R4
+no switchport
+ip address 199.236.27.58 255.255.255.252
+duplex full
+speed 100
+interface fastEthernet 1/1
+description Enlace con R5
+no switchport
+ip address 97.25.32.26 255.255.255.252
+duplex full
+speed 100
+exit
+ip host R1 80.34.254.241
+ip host R3 199.234.12.49
+ip host R4 199.236.27.57
+ip host R5 97.25.32.25
+exit
+copy running-config startup-config
+
+####R1 —> fastEthernet 0/0 de RI
+
+enable
+configure terminal
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 80.34.254.241 255.255.255.252
+interface fastEthernet 0/1
+description Enlace con HUB1
+no shutdown
+ip address 10.71.0.1 255.255.0.0
+exit
+ip host RI 80.34.254.242
+ip host R3 199.234.12.49
+ip host R4 199.236.27.57
+ip host R5 97.25.32.25
+ip route 0.0.0.0 0.0.0.0 80.34.254.242
+exit
+copy running-config startup-config
+
+####R3 —> fastEthernet 0/1 de RI
+
+enable
+configure terminal
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 199.234.12.49 255.255.255.252
+interface fastEthernet 0/1
+description Enlace con HUB3
+no shutdown
+ip address 10.72.3.1 255.255.255.0
+exit
+ip host RI 199.234.12.50
+ip host R1 80.34.254.241
+ip host R4 199.236.27.57
+ip host R5 97.25.32.25
+ip route 0.0.0.0 0.0.0.0 199.234.12.50
+exit
+copy running-config startup-config
+
+####R4 —> fastEthernet 1/0 de RI
+
+enable
+configure terminal
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 199.236.27.57 255.255.255.252
+interface fastEthernet 0/1
+description Enlace con HUB4
+no shutdown
+ip address 10.72.4.1 255.255.255.0
+exit
+ip host RI 199.236.27.58
+ip host R1 80.34.254.241
+ip host R3 199.234.12.49
+ip host R5 97.25.32.25
+ip route 0.0.0.0 0.0.0.0 199.236.27.58
+exit
+copy running-config startup-config
+
+####R5 —> fastEthernet 1/1 de RI
+
+enable
+configure terminal
+interface fastEthernet 0/0
+description Enlace con RI
+no shutdown
+ip address 97.25.32.25 255.255.255.252
+interface fastEthernet 0/1
+description Enlace con HUB5
+no shutdown
+ip address 10.72.5.1 255.255.255.0
+exit
+ip host RI 97.25.32.26
+ip host R1 80.34.254.241
+ip host R3 199.234.12.49
+ip host R4 199.236.27.57
+ip route 0.0.0.0 0.0.0.0 97.25.32.26
+exit
+copy running-config startup-config

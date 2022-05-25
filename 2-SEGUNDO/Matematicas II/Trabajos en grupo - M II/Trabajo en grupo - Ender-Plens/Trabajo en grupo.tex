@@ -1,0 +1,1368 @@
+\documentclass[a4paper,11pt,spanish,answers]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{mathtools,amsfonts}
+\usepackage{array,tabularx,calc}
+\usepackage{makeidx}
+\usepackage{bigints}
+\newlength{\conditionwd}
+
+\newenvironment{conditions}[1][donde:]
+  {%
+   #1\tabularx{\textwidth-\widthof{#1}}[t]{
+     >{$}l<{$} @{}>{${}}c<{{}$}@{} >{\raggedright\arraybackslash}X
+   }%
+  }
+  {\endtabularx\\[\belowdisplayskip]}
+  \newenvironment{conditionsc}[1][Despejando términos:]
+  {%
+   #1\tabularx{\textwidth-\widthof{#1}}[t]{
+     >{$}l<{$} @{}>{${}}c<{{}$}@{} >{\raggedright\arraybackslash}X
+   }%
+  }
+  {\endtabularx\\[\belowdisplayskip]}
+  \newenvironment{conditionsb}[1][]
+  {%
+   #1\tabularx{\textwidth-\widthof{#1}}[t]{
+     >{$}l<{$} @{}>{${}}c<{{}$}@{} >{\raggedright\arraybackslash}X
+   }%
+  }
+  {\endtabularx\\[\belowdisplayskip]}
+
+\newcommand{\ProjectTitle}{TRABAJO EN GRUPO} 
+\newcommand{\PROJECTTITLE}{TRABAJO EN GRUPO} 
+\newcommand{\ShortProjectTitle}{TRABAJO EN GRUPO} 
+\newcommand{\MyName}{Jose Manuel Requena Plens}
+\newcommand{\myemail}{jmrp15@alu.ua.es}
+\newcommand{\supervisoremailA}{Supervisor's email}
+\newcommand{\SupervisorA}{Supervisor's name}
+\renewcommand*\contentsname{Exámenes}
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\par\noindent}
+\usepackage{etoolbox}
+
+\renewcommand{\thequestion}{\thesection.\arabic{question}}
+\patchcmd{\questions}{10.}{\thequestion.}{}{}
+
+
+\begin{document}
+
+% Portada
+\begin{coverpages}
+	\begin{center}
+	\begin{figure}[h]
+	\end{figure}
+	\vspace*{2.5cm}
+	\begin{Large}
+		\textbf{\PROJECTTITLE}
+	\end{Large}
+	\vspace*{1cm}
+	\begin{large}
+	\\
+		\textbf{{\small Matemáticas II}\\[20pt]
+		Gabriel Mejía Melgarejo\\
+		\MyName}
+		\vspace*{2cm}
+		\vspace*{2cm}
+	\vfill
+		\textbf{Alicante, 19 de enero de 2018}
+	\end{large}
+\end{center}
+\end{coverpages}
+\tableofcontents
+
+\noindent\rule[-1ex]{\textwidth}{2pt}\\[3.5ex] % Linea
+\setcounter{page}{1}
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{
+	\thepage
+}
+\rfoot{}
+
+%% INICIO
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ENERO 2012
+\section{Examen final 2012}
+\begin{questions}
+
+%% 1
+\question 
+Resolver el siguiente sistema de ecuaciones diferenciales:
+\[
+  \begin{cases}
+    y'_1 =y_1-6y_2+5   \\
+    y'_2=-y_1+y_2-x+9
+  \end{cases}
+\]
+\begin{solution}
+Pasamos la ecuación a sistema matricial:
+\begin{flalign*}
+	\begin{bmatrix}y'_1 \\ y'_2 \end{bmatrix}=\begin{bmatrix}1 & 6 \\-1 & 1 \end{bmatrix}\cdot\begin{bmatrix}y_1 \\ y_2 \end{bmatrix}+\begin{bmatrix}5 \\-x+9 \end{bmatrix} &&
+\end{flalign*}
+Para obtener la solución homogénea primero se deben obtener los valores propios de la matriz identidad:
+\begin{flalign*}
+	|A-\lambda I|=\begin{vmatrix}1-\lambda & 6 \\-1 & 1-\lambda \end{vmatrix}=&(1-\lambda)(1-\lambda)-(-6)=\\
+	=&\lambda^2-2\lambda+7=0 \rightarrow \left\{ \begin{matrix} \lambda_1=1+\sqrt{6}\cdot i \\ \lambda_2=1-\sqrt{6}\cdot i\end{matrix}\right. &&
+\end{flalign*}
+A continuación se obtienen el vector propio asociado a cada valor propio:
+\begin{flalign*}
+	&\text{Con } \lambda_1\\
+	&\begin{bmatrix}1-\left(1+\sqrt{6}\cdot i\right) & 6 \\ -1 & 1-\left(1+\sqrt{6}\cdot i\right) \end{bmatrix}\cdot\begin{bmatrix}x \\ y \end{bmatrix}=\begin{bmatrix}0 \\ 0 \end{bmatrix}\rightarrow\begin{bmatrix}-\sqrt{6}ix+6y-y=0 \\ -x-\sqrt{6}iy=0 \end{bmatrix}\\   & \text{Por lo que } \left(\frac{\sqrt{6}i}{6}\right)x=y &&
+\end{flalign*}
+No es necesario calcular con $\lambda_2$ ya que es su conjugado.
+Los vectores propios son:
+\begin{flalign*}
+	E_{\lambda_1}&=\left[x,\left(\frac{\sqrt{6}i}{6}\right)x\right] \rightarrow \left[1,\left(\frac{\sqrt{6}i}{6}\right)\right]\rightarrow \left[6,\left(\sqrt{6}i\right)\right]&&
+\end{flalign*}
+Para poder operar se descompone en  parte real e imaginaria, para ello se trabaja con el vector verticalmente:
+\begin{flalign*}
+	E_{\lambda_1}=\begin{bmatrix}6 \\ \sqrt{6}i \end{bmatrix}=\begin{bmatrix}6 \\0 \end{bmatrix}+\begin{bmatrix}0 \\ \sqrt{6}i \end{bmatrix}i  &&
+\end{flalign*}	
+	Sabiendo que:
+\begin{flalign*}
+	y_{h_1}=\left[B_1\cdot\cos(\beta x)-B_2\cdot\sin(\beta x) \right]\cdot e^{\alpha x} \\
+	y_{h_2}=\left[B_2\cdot\cos(\beta x)+B_1\cdot\sin(\beta x) \right]\cdot e^{\alpha x} &&
+\end{flalign*}
+	\begin{conditions}
+		B_1 &\rightarrow & Es la parte real del vector propio.\\
+		B_2 &\rightarrow & Es la parte imaginaria del vector propio.\\
+		\alpha &\rightarrow & Es la parte real del valor propio.\\
+		\beta &\rightarrow & Es la parte imaginaria del valor propio.
+	\end{conditions}
+El sistema queda de la siguiente manera:
+\begin{flalign*}
+	y_{h_1}=&\left[\begin{bmatrix}6 \\0 \end{bmatrix}\cdot\cos(\sqrt{6}x)-\begin{bmatrix}0 \\\sqrt{6} \end{bmatrix}\cdot\sin(\sqrt{6} x) \right]\cdot e^{ x} \\
+	y_{h_2}=&\left[\begin{bmatrix}0 \\\sqrt{6} \end{bmatrix}\cdot\cos(\sqrt{6} x)+\begin{bmatrix}6 \\0 \end{bmatrix}\cdot\sin(\sqrt{6} x) \right]\cdot e^x &&
+\end{flalign*}
+Si seguimos operando:
+\begin{flalign*}
+	y_{h_1}=&\begin{bmatrix}6\cos(\sqrt{6} x) \\ -\sqrt{6}\sin(\sqrt{6}x)\end{bmatrix}e^x\\
+	y_{h_2}=&\begin{bmatrix}6\sin(\sqrt{6} x) \\ \sqrt{6}cos(\sqrt{6}x)\end{bmatrix}e^x &&
+\end{flalign*}
+Por lo que la homogénea queda:
+\begin{flalign*}
+	y_h = C_1 \begin{bmatrix}6\cos(\sqrt{6} x) \\ -\sqrt{6}\sin(\sqrt{6}x)\end{bmatrix}e^x + C_2\begin{bmatrix}6\sin(\sqrt{6} x) \\ \sqrt{6}cos(\sqrt{6}x)\end{bmatrix}e^x &&
+\end{flalign*}
+Como hay términos independientes ($5 ; -x+9$) se obtendrán sus coeficientes mediante la matriz identidad multiplicada por dos ecuaciones de primer grado (ya que las constantes son de primer grado) y sumando las constantes, tal que:
+\begin{flalign*}
+	\begin{bmatrix}A\\C \end{bmatrix}=\begin{bmatrix}1 & 6 \\-1 & 1 \end{bmatrix}\cdot\begin{bmatrix}Ax+B \\Cx+D \end{bmatrix}+\begin{bmatrix}5 \\-x+9 \end{bmatrix}\rightarrow\begin{bmatrix}A=B+6D+Ax+6Cx+5 \\ C=-x-B+D-Ax+Cx+9 \end{bmatrix}&&
+\end{flalign*}
+\begin{conditionsc}\\
+\text{En }x &\rightarrow & $\displaystyle\begin{bmatrix}0&=&A+6C \\0&=&-A+C-1 \end{bmatrix}$ \\ \\
+\text{Independientes} &\rightarrow & $\displaystyle\begin{bmatrix}A&=&B+6D+5 \\C&=&-B+D+9 \end{bmatrix}$ \\
+\end{conditionsc}
+Despejando se obtiene que $A=\frac{-6}{7}$, $B=\frac{331}{49}$, $C=\frac{1}{7}$ y $D=\frac{-103}{49}$. La solución particular es:
+\begin{flalign*}
+	\begin{bmatrix}y_{p_1}\\y_{p_2} \end{bmatrix}=\begin{bmatrix}Ax+B \\Cx+D \end{bmatrix}=\begin{bmatrix}\frac{-6}{7}x+\frac{-331}{49} \\\frac{1}{7}x+\frac{-103}{49} \end{bmatrix} &&
+\end{flalign*}
+Por tanto la solución del sistema es:
+\begin{flalign*}
+	\begin{bmatrix}y_1\\[5pt] y_2 \end{bmatrix}=\begin{bmatrix}y_{h_1}\\[5pt]y_{h_2} \end{bmatrix}+\begin{bmatrix}y_{p_1}\\[5pt]y_{p_2} \end{bmatrix}=C_1 \begin{bmatrix}6\cos(\sqrt{6} x) \\[5pt] -\sqrt{6}\sin(\sqrt{6}x)\end{bmatrix}e^x + C_2\begin{bmatrix}6\sin(\sqrt{6} x) \\[5pt] \sqrt{6}cos(\sqrt{6}x)\end{bmatrix}e^x + \begin{bmatrix}\frac{-6}{7}x+\frac{-331}{49} \\[5pt]\frac{1}{7}x+\frac{-103}{49} \end{bmatrix}&&
+\end{flalign*}
+\end{solution}
+
+%% 2
+\question Encontrar, aplicando la transformada de Laplace, la corriente i(t) en un circuito RLC en serie con $R=20\Omega$, $L=1H$ y $C=0,002F$, que está conectado a una fuente de tensión $V(t)=10\sin10t$, suponiendo una carga y una corriente cero cuando $t=0$.
+
+\small{\bfseries{Nota: Aplicando la ley de Kirchhoff para un circuito en serie RLC, resulta:}}
+$$L\cdot q''(t)+R\cdot q'(t) + \frac{1}{C}q(t)=V(t)$$
+	
+\begin{solution}
+Con los datos del enunciado la ecuación queda:
+\begin{flalign*}
+	 q''+20\cdot q' + 500q=12\sin(10t)  &&
+\end{flalign*}
+Sabiendo que la transformada de Laplace de la derivada:
+\begin{flalign*}
+	L\{f^{(n)}(t)\}=s^nL\{f(t)\}-s^{n-1}f(0)-s^{n-2}f'(0)-...-f^{(n-1)}(0) &&
+\end{flalign*}
+La aplicamos en nuestra ecuación:
+\begin{flalign*}
+	&L\{q''\}+20\cdot L\{q'\} + 500\cdot L\{q\}= L\{12\sin(10t)\} \\
+	&\quad\quad\quad\quad\quad\quad\quad\quad\downarrow \\ 
+	&\left(s^2Q(s)-sq(0)-q'(0) \right)+20\cdot \left( sQ(s)-q(0)\right) + 500\cdot Q(s)=\frac{120}{s^2+100} &&
+\end{flalign*}	
+Como $q(0)=0$ (carga) y $q'(0)=0$ (corriente) entonces:
+\begin{flalign*}
+	& s^2Q(s)+20\cdot sQ(s) + 500\cdot Q(s)=\frac{120}{s^2+100} &&
+\end{flalign*}	
+Agrupando queda:
+\begin{flalign*}
+	\left(s^2 + 20s+500\right)\cdot Q(s)= \frac{120}{s^2+100}&&
+\end{flalign*}
+Ahora despejamos $Q(s)$ para poder operar:
+\begin{flalign*}
+	Q(s)=\frac{120}{(s^2+100)(s^2+20s+500)}&&
+\end{flalign*}
+Descomponemos en fracciones simples:
+\begin{flalign*}
+	Q(s)=&\frac{120}{(s^2+100)(s^2+20s+500)}=\frac{As+B}{s^2+100}+\frac{Cs+D}{s^2+20s+500}=\\[8pt]
+	=&\frac{(As+B)(s^2+20s+500)+(Cs+D)(s^2+100)}{(s^2+100)(s^2+20s+500)} &&
+\end{flalign*}
+Para obtener los valores de A, B, C y D igualamos, se va el denominador y nos queda:
+\begin{flalign*}
+	&(As+B)(s^2+20s+500)+(Cs+D)(s^2+100)=120 \\
+	&\downarrow \\
+	&As^3+Cs^3+20As^2+Bs^2+Ds^2+500As+20Bs+100Cs+500B+100D=120 \\
+	&\downarrow \\
+	&(A+C)s^3+(20A+B+D)s^2+(500A+20B+100C)s+500B+100D=120 &&
+\end{flalign*}
+\begin{conditionsc}\\
+\text{En }s^3 &\rightarrow & $A+C=0$ \\
+\text{En }s^2 &\rightarrow & $20A+B+D=0$ \\
+\text{En }s &\rightarrow & $500A+20B+100C=0$ \\
+\text{Independientes} &\rightarrow & $500B+100D=120$ \\
+\end{conditionsc}
+Por lo que se obtiene que $A=\frac{-3}{250}$, $B=\frac{6}{25}$, $C=\frac{3}{250}$ y $D=0$. Sustituyendo en la ecuación de fracciones simples y aplicando la transformada inversa::
+\begin{flalign*}
+	q(t)&=L^{-1}\left\{\frac{\frac{-3s}{250}+\frac{6}{25}}{s^2+100}\right\}+L^{-1}\left\{\frac{\frac{3s}{250}}{s^2+20s+500}\right\}= \\
+&=L^{-1}\left\{\frac{\frac{-3s}{250}+\frac{6}{25}}{s^2+100}\right\}+L^{-1}\left\{\frac{\frac{3(s+10-10)}{250}}{(s+10)^2+400}\right\}=\\
+&=\frac{-3}{250}\cdot L^{-1}\left\{\frac{s}{s^2+100}\right\}+\frac{6}{250}L^{-1}\left\{\frac{10}{ s^2+100} \right\}+\frac{3}{250}\cdot L^{-1}\left\{\frac{s}{(s+10)^2+400} \right\}  &&
+\end{flalign*}
+Los tres sumandos obtenidos tienen las siguientes transformadas inversas:
+\begin{flalign*}
+	&\frac{-3}{250}\cdot L^{-1}\left\{\frac{s}{s^2+100}\right\}=\frac{-3}{250}\cos(10t) \\
+	&\frac{6}{250}L^{-1}\left\{\frac{10}{ s^2+100} \right\} = \frac{6}{250}\sin(10t)\\
+	& \frac{3}{250}\cdot L^{-1}\left\{\frac{s}{(s+10)^2+400} \right\}=\frac{3}{250}e^{-10t}\cos(20t) &&
+\end{flalign*}
+
+Por lo tanto el valor de la carga será:
+\begin{flalign*}
+ q(t)=\frac{-3}{250}\cos(10t)+ \frac{6}{250}\sin(10t)+\frac{3}{250}e^{-10t}\cos(20t) &&	
+\end{flalign*}
+El valor de la corriente es la derivada de la carga, por lo tanto:
+\begin{flalign*}
+	i(t)=q'(t)=\frac{3}{25}\sin(10t)+ \frac{6}{25}\cos(10t)-\frac{3}{25}e^{-10t}\cos(20t)-\frac{6}{25}e^{-10t}\sin(20t)&&
+\end{flalign*}	
+\end{solution}
+	
+%% 3	
+\question Resolver la integral compleja $\displaystyle\oint_C \frac{\sin z}{z^5+z^4+z^3}\mathrm{d}z$ donde $C$ es la circunferencia $\displaystyle|z|=\frac{1}{2}$, recorrida en sentido antihorario.	
+	
+\begin{solution}
+En primer lugar obtenemos los polos (es cuando el denominador queda igual a 0):
+\begin{flalign*}
+	z^5+z^4+z^3=0 \rightarrow z^3(z^2+z+1)=0 \rightarrow \left\{ \begin{matrix} z^3&=0\rightarrow&z=0\quad{\scriptstyle(m=2)}  \\
+	(z^2+z+1)&=0\rightarrow&z=-\frac{1}{2}\pm\frac{\sqrt{e}}{2}i\quad{\scriptstyle(\text{ambos } m=1)} \\
+	 \end{matrix}\right. &&
+\end{flalign*}
+Solo el polo doble $z=0$ se encuentra en el interior de la curva. Es de multiplicidad 2 por que sustituyendo en la fracción tal que: $\displaystyle\frac{\sin z}{z^3}$, haciendo infinitésimos equivalentes $\sin (z)=z$ y nos queda $\displaystyle\frac{1}{z^2}$, un grado menos de lo que a priori se pensaria. El cálculo por residuos quedaría del siguiente modo:
+\begin{flalign*}
+	\oint_c \frac{\sin z}{z^5+z^4+z^3}\mathrm{d}z=2\pi i\cdot\underset{z=0}{\mathrm{Res}}(f(z)) &&
+\end{flalign*}
+Donde un residuo se define como:
+\begin{flalign*}
+	\underset{z=z_0}{\mathrm{Res}}(f(z))=\frac{1}{(m-1)!}\lim_{z \rightarrow z_0}\left[\frac{\text{d}^{m-1}}{\text{d}z^{m-1}} \left[\left(z-z_0\right)^m f(z) \right] \right] &&
+\end{flalign*}
+\begin{conditions}
+m &\rightarrow & es la multiplicidad del polo $z_0$	\\
+z_0 &\rightarrow & Es la parte que se iguala a 0 con el polo. \\
+f(z) &\rightarrow & es la función contenida en la integral.
+\end{conditions}
+Por lo que con el polo $z=0$ el residuo es:
+\begin{flalign*}
+	\underset{z=0}{\mathrm{Res}}(f(z))&=\frac{1}{(2-1)!}\lim_{z \rightarrow 0}\left[\frac{\text{d}^{2-1}}{\text{d}z^{2-1}} \left[\left(z-0\right)^2 \frac{\sin z}{z^5+z^4+z^3} \right] \right]= \lim_{z \rightarrow 0}\left[\frac{\text{d}}{\text{d}z} \left[z^2 \frac{\sin z}{z^5+z^4+z^3} \right] \right]= \\[10pt]
+	&=\lim_{z \rightarrow 0}\left[\frac{\text{d}}{\text{d}z} \left[ \frac{\sin z}{z^3+z^2+z} \right] \right]= \lim_{z \rightarrow 0}  \frac{\cos z(z^3+z^2+z)-\sin z(3z^2+2z+1)}{(z^3+z^2+z)^2} \underset{\text{\tiny{L'H}}}{\overset{\left(\frac{0}{0} \right)}{=}} \\[10pt]
+	\underset{\text{\tiny{L'H}}}{\overset{\left(\frac{0}{0} \right)}{=}}& \lim_{z \rightarrow 0}\frac{-\sin z(z^3+z^2+z)+\cos z(3z^2+2z+1)-\cos z(3z^2+2z+1)-\sin z(6z+2)}{2(z^3+z^2+z)(3z^2+2z+1)}= \\[10pt]
+	&=\lim_{z \rightarrow 0}\frac{-\sin z(z^3+z^2+z)-\sin z(6z+2)}{2(z^3+z^2+z)(3z^2+2z+1)}\underset{\sin z=z}{=}\lim_{z \rightarrow 0}\frac{-z(z^3+z^2+7z+2)}{2(z^3+z^2+z)(3z^2+2z+1)}= \\[-5pt]
+	&\quad \quad \quad\quad \quad\quad\quad \quad \quad\quad\quad \quad \quad\quad \quad \quad\quad \quad \quad \uparrow\text{\tiny{Infinitesimos equivalentes}} \\
+	& =\lim_{z \rightarrow 0}\frac{-z(z^3+z^2+7z+2)}{2z(z^2+z+1)(3z^2+2z+1)}=\frac{-(0+0+0+2)}{2(0+0+1)(0+0+1)}=\frac{-2}{2}=-1&&
+\end{flalign*}
+Por lo que el valor de la integral es:
+\begin{flalign*}
+	\oint_c \frac{\sin z}{z^5+z^4+z^3}\mathrm{d}z=-2\pi i &&
+\end{flalign*}
+
+	
+\end{solution}
+	
+%% 4
+\question Determinar las series de Laurent de la función $\displaystyle f(z)=\frac{1}{z^3+6iz-9z}$ alrededor de $z=0$
+
+\begin{solution}
+La ecuación se puede reformular del siguiente modo:
+\begin{flalign*}
+	f(z)=\frac{1}{z^3+6iz^2-9z}=\frac{1}{z}\cdot\frac{1}{z^2+6iz-9}=\frac{1}{z}\cdot\frac{1}{(z+3i)^2} &&
+\end{flalign*}
+Utilizando la serie:
+\begin{flalign*}
+	\sum_{n=0}^{+\infty}(w^n)=\frac{1}{1-w}\quad,|w|<1 \quad \rightarrow\quad  \sum_{n=0}^{+\infty}n(w^{n-1})=\frac{1}{(1-w)^2}\quad,|w|<1&&
+\end{flalign*}
+Vamos a obtener las series de la segunda fracción $\frac{1}{(z+3i)^2}$ y al final añadiremos el $\frac{1}{z}$. En este caso se nos pide las series, por lo que ya se deja entender que hay más de una, para obtener una se dividirá  arriba y abajo de la fracción entre $z^2$ (una de las partes del paréntesis) y la otra dividiendo entre $(3i)^2$ (la otra parte del paréntesis).
+\\
+\\
+Para el caso de $z^2$:
+\begin{flalign*}
+	\frac{1}{(z+3i)^2}&=\frac{\frac{1}{z^2}}{(z+3i)^2\cdot\frac{1}{z^2}}=\frac{\frac{1}{z^2}}{\left(1+\frac{3i}{z} \right)^2}=\frac{1}{z^2}\cdot\frac{1}{\left(1+\frac{3i}{z} \right)^2}=\frac{1}{z^2}\cdot\frac{1}{\left(1-\left(-\frac{3i}{z}\right) \right)^2}=\\
+	&=\frac{1}{z^2}\sum_{n=0}^{+\infty}n\left( -\frac{3i}{z}\right)^{n-1}=\frac{1}{z^2}\sum_{n=0}^{+\infty}n\left( -3i\right)^{n-1}\cdot z^{-(n-1)}=\frac{1}{z^2}\sum_{n=0}^{+\infty}n\left( -3i\right)^{n-1}\cdot z^{-n+1}=\\
+	&=\sum_{n=0}^{+\infty}n\left( -3i\right)^{n-1}\cdot z^{-n-1} \quad,\,|z|>3 &&
+\end{flalign*}
+Nota para $|z|>3 $:
+\begin{flalign*}
+	\left|\frac{-3i}{z}\right|<1 \quad\rightarrow \quad\left|z\right|>\left|-3i\right|\quad\rightarrow \quad\left|z\right|>3 &&
+\end{flalign*}
+El módulo de $-3i$ se calcula como $|-3i|=\sqrt{\text{Re}^2(z)+\text{Im}^2(z)}=\sqrt{0^2+(-3)^2}=\sqrt{9}=3$
+\\
+\\
+Para el caso de $(3i)^2$:
+\begin{flalign*}
+	\frac{1}{(z+3i)^2}&=\frac{\frac{1}{(3i)^2}}{(z+3i)^2\cdot\frac{1}{(3i)^2}}=-\frac{1}{9}\cdot\frac{1}{\frac{z}{3i}+1}=-\frac{1}{9}\cdot\frac{1}{1-\left(-\frac{z}{3i}\right)}=-\frac{1}{9}\sum_{n=0}^{+\infty}n\left(-\frac{z}{3i} \right)^{n-1}= \\
+	&=\sum_{n=0}^{+\infty}-\frac{n}{9}\left(-\frac{z\cdot i}{3i\cdot i} \right)^{n-1}=\sum_{n=0}^{+\infty}-\frac{n}{9}\left(\frac{z i}{3} \right)^{n-1}= \\
+	&=\sum_{n=0}^{+\infty}-\frac{n}{9}\left(\frac{ i}{3} \right)^{n-1}\cdot z^{n-1} \quad,\, 0<|z|<3&&
+\end{flalign*}
+Nota para $0<|z|<3$:
+\begin{flalign*}
+	\left|\frac{z}{3i}\right|<1 \quad\rightarrow \quad\left|z\right|<\left|3i\right|\quad\rightarrow \quad0<\left|z\right|<3 &&
+\end{flalign*}
+El módulo de $3i$ se calcula como $|3i|=\sqrt{\text{Re}^2(z)+\text{Im}^2(z)}=\sqrt{0^2+3^2}=\sqrt{9}=3$
+\\
+\\
+Por ultimo volvemos a introducir el $\frac{1}{z}$ que habiamos dejado fuera y la serie de Laurent queda:
+\begin{flalign*}
+f(z)=\frac{1}{z^3+6iz^2-9z}=\frac{1}{z}\cdot\frac{1}{(z+3i)^2}=\left\{\begin{matrix}\displaystyle\frac{1}{z}\sum_{n=0}^{+\infty}n\left( -3i\right)^{n-1}\cdot z^{-n-1}=\displaystyle\sum_{n=0}^{+\infty}n\left( -3i\right)^{n-1}\cdot z^{-n-2} \\ \\ \displaystyle\frac{1}{z}\sum_{n=0}^{+\infty}-\frac{n}{9}\left(\frac{ i}{3} \right)^{n-1}\cdot z^{n-1}=\sum_{n=0}^{+\infty}-\frac{n}{9}\left(\frac{ i}{3} \right)^{n-1}\cdot z^{n-2} \end{matrix} \right. &&
+\end{flalign*}
+\end{solution}
+
+%% 5
+\question La ecuación lineal en diferencias del sistema lineal e invariante con el tiempo que se muestra en la figura (\textit{no se muestra aqui}) es: \\
+$y_n=-4y_{n-1}-4y_{n-2}+x_n-x_{n-1}$, como este sistema es invariante en el tiempo se puede reemplazar n por n+2, resultando: $y_{n+2}=-4y_{n+1}-4y_{n}+x_{n+2}-x_{n+1}$. Considerando que $x_n=3^n$ y que $y_0=0$ e $y_1=0$. Aplicar la transformada z para determinar la sucesión $y_n$, salida del sistema.
+
+\begin{solution}
+Ordenando la ecuación queda:
+\begin{flalign*}
+	y_{n+2}+4y_{n+1}+4y_n=x_{n+2}-x_{n+1} &&
+\end{flalign*}
+Como $x_n=3^n$
+\begin{flalign*}
+	y_{n+2}+4y_{n+1}+4y_n=3^{n+2}-3^{n+1}=6\cdot 3^n &&
+\end{flalign*}
+La transformada z de esta ecuación se realiza mediante:
+\begin{flalign*}
+	aZ[y_{n+2}]+bZ[y_{n+1}]+cZ[y_{n}]=Z[d] &&
+\end{flalign*}
+Donde a,b,c son los coeficientes constantes de $y$. Y aplicando la segunda propiedad de traslación:
+\begin{flalign*}
+	Z[f(t+kT)]=z^n\left[ F(z)-\sum_{m=0}^{n-1}f(mT)z^{-m} \right] &&
+\end{flalign*}
+
+Este caso quedaría así:
+\begin{flalign*}
+	&Z[y_{n+2}]+4Z[y_{n+1}]+4z[y_{n}]=Z[6\cdot3^n] \\
+	& \downarrow \\
+	&[z^2Y(z)-z^2y_0-zy_1]+4[zY(z)-zy_0]+4Y(z)=\frac{6z}{z-3} \\
+	& \downarrow \text{\small{dado que $y_0=0$ e $y_1=0$}} \\
+	& (z^2+4z+4)Y(z)=\frac{6z}{z-3}\\
+	& \downarrow \text{\small{simplificando}} \\
+	& (z+2)^2Y(z)=\frac{6z}{z-3} &&
+\end{flalign*}
+Ahora despejamos $Y(z)$.
+\begin{flalign*}
+	Y(z)=\frac{6z}{(z-3)(z+2)^2} &&
+\end{flalign*}
+Pasamos al otro lado de la igualdad el denominador para facilitar la resolución y resolvemos:
+\begin{flalign*}
+	\frac{Y(z)}{z}&=\frac{6}{(z-3)(z+2)^2}=\frac{A}{z-3}+\frac{B}{z+2}+\frac{C}{(z+2)^2}= \\
+&\frac{A(z+2)^2+B(z-3)(z+2)+C(z-3)}{(z-3)(z+2)^2} \\
+&\downarrow \\
+&	 Az^2+4Az+4A+Bz^2-Bz-6B +Cz-3C=6 \\
+&	 \downarrow \\
+&	 (A+B)z^2 +(4A-B+C)z +4A-6B-3C=6 &&
+\end{flalign*}
+\begin{conditionsc}\\
+	\text{En }z^2 &\rightarrow & $A+B=0 \quad\quad\quad\quad\rightarrow A=-B$ \\
+	\text{En }z &\rightarrow & $4A-B+C=0 \quad\;\;\rightarrow C=-(4A-B)=-5A$ \\
+	\text{Independientes } &\rightarrow & $4A-6B-3C=6\;\;\rightarrow 4A+6A+15A=6$
+\end{conditionsc}
+Se obtiene que $A=\frac{6}{25}$, $B=\frac{-6}{25}$ y $C=\frac{-6}{5}$, que sustituyendo en la ecuación:
+\begin{flalign*}
+	\frac{Y(z)}{z}=\frac{\frac{6}{25}}{(z-3)}+\frac{\frac{-6}{25}}{(z+2)}+\frac{\frac{-6}{5}}{(z+2)^2} \rightarrow Y(z)=\frac{\frac{6}{25}z}{(z-3)}+\frac{\frac{-6}{25}z}{(z+2)}+\frac{\frac{-6}{5}z}{(z+2)^2} &&
+\end{flalign*}
+Sabiendo que $\frac{z}{z-a}=Z[a^n]$ (tabla de transformadas):
+
+\begin{conditionsb}
+	\frac{z}{z-3} &=& $Z[3^n]$ \\
+	\frac{z}{z+2} &=& $\frac{z}{z-(-2)}=Z[(-2)^n]$ \\
+	\frac{z}{(z+2)^2} &=& $\frac{z}{(z-(-2))^2}=Z[n(-2)^{n-1}]$ 
+\end{conditionsb}
+Finalmente agrupando las transformadas inversas:
+\begin{flalign*}
+	y_n=\frac{6}{25}(3^n)-\frac{6}{25}(-2)^n-\frac{6}{5}n(-2)^{n-1}&&
+\end{flalign*}
+
+\end{solution}
+
+%% 6
+\question Sea X el número de años transcurridos antes de que un tipo particular de componente electrónico requiera ser reemplazado. Suponer que X tiene la función de probabilidad $p(1)=0,05$, $p(2)=0,1$, $p(3)=a$, $p(4)=0.25$, $p(5)=0,45$. Encontrar la probabilidad de que el componente no requiera ser reemplazado durante los 3 primeros años. ¿Cual es su vida útil esperada?
+
+\begin{solution}
+Sabiendo que la suma de las probabilidades es igual a 1:
+\begin{flalign*}
+	\sum_i p(x_i)=1 &&
+\end{flalign*}	
+Podemos obtener $a$:
+\begin{flalign*}
+	&p(1)+p(2)+p(3)+p(4)+p(5)=1 \rightarrow 0,05+0,1+a+0,25+0,45= 1 \\[10pt]
+	&a = 0,15 &&
+\end{flalign*}
+Teniendo $a$ ya podemos calcular la probabilidad durante los 3 primeros años, que no es más que sumar las probabilidades de los 3 primeros años.
+\begin{flalign*}
+	P(X\leq)=p(1)+p(2)+p(3)=0,05+0,1+0,15=0,13 &&
+\end{flalign*}
+La vida util esperada (esperanza o media) se calcula como:
+\begin{flalign*}
+	E(X)=\sum_i x_\cdot p(x_i)=1\cdot p(1)+2\cdot p(2)+3\cdot p(3)+4\cdot p(4)+5\cdot p(5) = 3,95 \text{ años} &&
+\end{flalign*}
+
+\end{solution}
+
+\end{questions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2012 Recuperacion
+\section{Examen de recuperación 2012}
+\begin{questions}
+
+%% 1
+\question Resolver la siguiente ecuación diferencial:
+$$y''+3y'+2y=2\sin t +3$$
+
+\begin{solution}
+Nota: Utilizamos t=x.
+\\
+Esta ecuación necesita, además de la solución homogénea, una solución particular porque depende de $2\sin x +3$.
+\\
+Se obtiene la homogénea:
+\begin{flalign*}
+	y''+3y'+2y=0 \rightarrow \lambda^2+3\lambda+2=0 \rightarrow \left\{ \begin{matrix} \lambda_1=-1 \\ \lambda_2=-2\end{matrix}\right. &&
+\end{flalign*}
+La homogénea queda:
+\begin{flalign*}
+	y_h=C_1e^{-1x}+C_2e^{-2x} &&
+\end{flalign*}
+Ahora calculamos la solución particular. En este caso tenemos que $r(x)=r_1(x)+C$, donde $r_1(x)=2\sin x$, por lo tanto mediante el método de coeficientes indeterminados:
+\begin{flalign*}
+	  y_p(x)=x^m\left( h_t(x)\cos \beta x +k_t(x)\sin \beta x \right) e^{\alpha x} && 
+\end{flalign*}
+\begin{conditions}
+ m     & = &  0. Dado que ninguna de las raíces de la ecuación característica ($\lambda_1$ y $\lambda_2$) son iguales al valor de $\alpha$, ya que no hay exponencial.\\
+ \beta     & = &  1. Dado que en $\sin x$ hay un 1 multiplicando a t.\\
+ h_t     & = & A. Dado que al no haber polinomio dependiente de $x$ el grado es 0 y por lo tanto solo tiene una constante. \\ 
+ k_t     & = & B. Dado que al no haber polinomio dependiente de $x$ el grado es 0 y por lo tanto solo tiene una constante. \\   
+e^{\alpha x} & = &  1. Porque el valor de $\alpha = 0$ al no haber exponencial. 
+\end{conditions}
+Por lo tanto $y_p$ quedaría:
+\begin{flalign*}
+	y_p=A\cos x+B\sin x+C &&
+\end{flalign*}
+Obtenemos sus derivadas para sustituir en la ecuación:
+\begin{flalign*}
+	y'_p&=-A\sin x+B\cos x \\
+	y''_p&=-A\cos x-B\sin x &&
+\end{flalign*}
+Sustituyendo queda:
+\begin{flalign*}
+	\left( -A\cos x-B\sin x \right)+3\left(-A\sin x+B\cos x \right)+2\left( A\cos x+B\sin x+C \right)=2\sin x +3 &&
+\end{flalign*}
+Y si operamos:
+\begin{flalign*}
+(\cos x)(A+3B)+(\sin x)(-3A+B)+2C=2\sin x +3 &&
+\end{flalign*}
+\begin{conditionsc}\\
+	\text{En }\cos x &\rightarrow & $A+3B=0 \;\;\;\rightarrow A=-3B$ \\
+	\text{En }\sin x &\rightarrow & $-3A+B=2 \rightarrow -3(-3B)+B=2$ \\
+	\text{Independientes } &\rightarrow & $2C=3\quad\quad\;\;\;\rightarrow C=\frac{3}{2}$
+\end{conditionsc}
+Los valores obtenidos son: $A=\frac{-3}{5}$, $B=\frac{1}{5}$ y $C=\frac{3}{2}$.
+\\
+\\
+Por lo que $y_p=\frac{-3}{5}\cos x+\frac{1}{5}\sin x+\frac{3}{2}$
+\\
+\\
+Como $y(x)=y_h(x)+y_p(x)$ la solución general es:
+\begin{flalign*}
+	y(x)=C_1e^{-1x}+C_2e^{-2x}+\frac{-3}{5}\cos x+\frac{1}{5}\sin x+\frac{3}{2} &&
+\end{flalign*}
+	
+\end{solution}
+
+%% 2
+\question El sistema de ecuaciones diferenciales para las corrientes $i_2(t)$ e $i_3(t)$ presentes en la red eléctrica mostrada en la figura (\textit{no se muestra aquí}) es:
+$$\begin{pmatrix}i'_2 \\[7pt]i'_3 \end{pmatrix}=\begin{pmatrix}\frac{-R_1}{L_1} & \frac{-R_1}{L_1} \\[7pt] \frac{-R_1}{L_2} & \frac{-(R_1+R_2)}{L_2} \end{pmatrix}\cdot\begin{pmatrix}i_2 \\[7pt] i_3 \end{pmatrix}+\begin{pmatrix}\frac{E}{L_1} \\[7pt]\frac{E}{L_2} \end{pmatrix}	$$
+\begin{parts}
+\part Utilice el método de los coeficientes indeterminados para resolver el sistema si $R_1=2\Omega$, $R_2=3\Omega$, $L_1=L_2=1H$, $E=60V$, $i_2(0)=i_3(0)=0$.
+\part Determine la corriente $i_1(t)$. ($i_1$ es la suma de 	$i_2(t)$ e $i_3(t)$)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part ~\\
+Sustituimos los valores del enunciado:
+\begin{flalign*}
+	\begin{bmatrix}i'_2 \\ i'_3 \end{bmatrix}=\begin{bmatrix}-2 & -2 \\-2 & -5 \end{bmatrix}\cdot\begin{bmatrix}i_2 \\ i_3 \end{bmatrix}+\begin{bmatrix} 60 \\ 60\end{bmatrix}&&
+\end{flalign*}
+Para obtener la solución homogénea primero se deben obtener los valores propios:
+\begin{flalign*}
+	|A-\lambda I|=\begin{vmatrix}-2-\lambda & -2 \\-2 & -5-\lambda \end{vmatrix}=(-2-\lambda)(-5-\lambda)-4=\lambda^2+7\lambda+6=0 \rightarrow \left\{ \begin{matrix} \lambda_1=-1 \\ \lambda_2=-6\end{matrix}\right. &&
+\end{flalign*}
+A continuación se obtienen el vector propio asociado a cada valor propio:
+\begin{flalign*}
+	\text{Con } \lambda_1\rightarrow
+	\begin{bmatrix}-2+1 & -2 \\ -2 & -5+1 \end{bmatrix}\cdot\begin{bmatrix}x \\ y \end{bmatrix}&=\begin{bmatrix}0 \\ 0 \end{bmatrix}\rightarrow\begin{bmatrix}-x-2y=0 \\ -2x-4y=0 \end{bmatrix} \text{Por lo que }x=-2y \\ \\
+	\text{Con } \lambda_2\rightarrow
+	\begin{bmatrix}-2+1 & -2 \\ -2 & -5+1 \end{bmatrix}\cdot\begin{bmatrix}x \\ y \end{bmatrix}&=\begin{bmatrix}0 \\ 0 \end{bmatrix}\rightarrow\begin{bmatrix}4x+-2y=0 \\ -2x+y=0 \end{bmatrix} \text{Por lo que }y=2x &&
+\end{flalign*}
+Los vectores propios son:
+\begin{flalign*}
+	E_{\lambda_1}&=(-2y,y) \rightarrow (-2,1)\\ 
+	E_{\lambda_2}&=(x,2x) \rightarrow (1,2)&&
+\end{flalign*}
+Por lo que la solución de la homogénea:
+\begin{flalign*}
+	\begin{bmatrix}i_{2_h} \\ i_{3_h} \end{bmatrix}=C_1\begin{bmatrix}-2 \\ 1 \end{bmatrix}e^{-1t}+C_2\begin{bmatrix}1 \\ 2 \end{bmatrix}e^{-6t} &&
+\end{flalign*}
+Como hay términos independientes ($60 ; 60$) se obtendrán sus coeficientes mediante la matriz identidad multiplicada por dos constantes (ya que solo hay constantes), sumando las constantes e igualando todo a 0, tal que:
+\begin{flalign*}
+	\begin{bmatrix}0\\ 0 \end{bmatrix}=\begin{bmatrix}-2 & -2 \\-2 & -5 \end{bmatrix}\cdot\begin{bmatrix}A \\ B  \end{bmatrix}+\begin{bmatrix}60 \\60 \end{bmatrix}\rightarrow\begin{bmatrix}0	=-2A-2B+60 \\ 0=-2A-5B+60 \end{bmatrix}&&
+\end{flalign*}
+Despejando se obtiene que $A=30$ y $B=0$. La solución particular es:
+\begin{flalign*}
+	\begin{bmatrix}i_{p_2}\\i_{p_3} \end{bmatrix}=\begin{bmatrix}A \\ B \end{bmatrix}=\begin{bmatrix}30 \\0 \end{bmatrix} &&
+\end{flalign*}
+Por tanto la solución del sistema es:
+\begin{flalign*}
+	\begin{bmatrix}i_2\\[5pt] i_3 \end{bmatrix}=\begin{bmatrix}i_{h_2}\\[5pt]i_{h_3} \end{bmatrix}+\begin{bmatrix}i_{p_2}\\[5pt]i_{p_3} \end{bmatrix}=C_1\begin{bmatrix}-2 \\ 1 \end{bmatrix}e^{-1t}+C_2\begin{bmatrix}1 \\ 2 \end{bmatrix}e^{-6t} + \begin{bmatrix}30 \\0 \end{bmatrix}&&
+\end{flalign*}
+Aplicando las condiciones iniciales del enunciado podemos obtener las constantes $C_1$ y $C_2$ ($t=0$, $i_2=0$, $i_3=0$):
+\begin{flalign*}
+	\begin{bmatrix}0\\ 0 \end{bmatrix}=C_1\begin{bmatrix}-2 \\ 1 \end{bmatrix}+C_2\begin{bmatrix}1 \\ 2 \end{bmatrix} + \begin{bmatrix}30 \\0 \end{bmatrix}=\begin{bmatrix}-2C_1+C_2+30 \\C_1+2C_2 \end{bmatrix} \rightarrow\left\{\begin{matrix}C_1=12 \\ C_2=-6 \end{matrix}  \right. &&
+\end{flalign*}
+Por lo que en valor de las corrientes son:
+\begin{flalign*}
+	\begin{bmatrix}i_2\\ i_3 \end{bmatrix}=\begin{bmatrix}-24e^{-t}-6e^{-6t}+30\\ 12e^{-t}-12e^{-6t} \end{bmatrix}&&
+\end{flalign*}
+\part ~\\
+Teniendo en cuenta que $i_1(t)=i_2(t)+i_3(t)$:
+\begin{flalign*}
+	i_1(t)=-12e^{-t}-18e^{-6t}+30 &&
+\end{flalign*}
+
+\end{parts}
+\end{solution}
+
+%% 3
+\question Resolver la integral compleja $\displaystyle\oint_c \frac{e^{2iz}}{z^2+z^3}$ donde $C$ es la circunferencia $|z|=\frac{1}{4}$, recorrida en sentido horario.
+\begin{solution}
+En primer lugar obtenemos los polos (es cuando el denominador queda igual a 0):
+\begin{flalign*}
+	z^2+z^3=0 \rightarrow z^2(1+z)=0 \rightarrow \left\{ \begin{matrix} z^2&=0\rightarrow&z=0\quad{\scriptstyle(m=2)}  \\
+	(1+z)&=0\rightarrow&z=-1\quad{\scriptstyle(m=1)} \\
+	 \end{matrix}\right. &&
+\end{flalign*}
+Solo el polo doble $z=0$ se encuentra en el interior de la curva. Es de multiplicidad 2. El cálculo por residuos quedaría del siguiente modo. Al ir en sentido horario se le añade un signo menos:
+\begin{flalign*}
+	\oint_c \frac{e^{2iz}}{z^2+z^3}\mathrm{d}z=-2\pi i\cdot\underset{z=0}{\mathrm{Res}}(f(z)) &&
+\end{flalign*}
+Donde un residuo se define como:
+\begin{flalign*}
+	\underset{z=z_0}{\mathrm{Res}}(f(z))=\frac{1}{(m-1)!}\lim_{z \rightarrow z_0}\left[\frac{\text{d}^{m-1}}{\text{d}z^{m-1}} \left[\left(z-z_0\right)^m f(z) \right] \right] &&
+\end{flalign*}
+\begin{conditions}
+m &\rightarrow & es la multiplicidad del polo $z_0$	\\
+z_0 &\rightarrow & Es la parte que se iguala a 0 con el polo. \\
+f(z) &\rightarrow & es la función contenida en la integral.
+\end{conditions}
+Por lo que con el polo $z=0$ el residuo es:
+\begin{flalign*}
+	\underset{z=0}{\mathrm{Res}}(f(z))&=\frac{1}{(2-1)!}\lim_{z \rightarrow 0}\left[\frac{\text{d}^{2-1}}{\text{d}z^{2-1}} \left[\left(z-0\right)^2 \frac{e^{2iz}}{z^2+z^3} \right] \right]= \lim_{z \rightarrow 0}\left[\frac{\text{d}}{\text{d}z} \left[z^2 \frac{e^{2iz}}{z^2+z^3} \right] \right]= \\[10pt]
+	&=\lim_{z \rightarrow 0}\left[\frac{\text{d}}{\text{d}z} \left[ \frac{e^{2iz}}{1+z} \right] \right]= \lim_{z \rightarrow 0}  \frac{2ie^{2iz}(1+z)-e^{2iz}}{(1+z)^2}=\frac{2ie^{2i0}(1+0)-e^{2i0}}{(1+0)^2}=2i-1&&
+\end{flalign*}
+Por lo que el valor de la integral es:
+\begin{flalign*}
+	\oint_c \frac{e^{2iz}}{z^2+z^3}\mathrm{d}z=-2\pi i\left[2i-1 \right]=2\pi (2+i) &&
+\end{flalign*}
+
+\end{solution}
+
+%% 4
+\question Determina la serie de Laurent de la función $f(z)=\frac{1}{z^3+2z^2+z}$ convergente en la región $|z|>1$.
+
+\begin{solution}
+
+La ecuación se puede reformular del siguiente modo:
+\begin{flalign*}
+	f(z)=\frac{1}{z^3+2z^2+z}=\frac{1}{z}\cdot\frac{1}{z^2+2z+1}=\frac{1}{z}\cdot\frac{1}{(z+1)^2} &&
+\end{flalign*}
+Utilizando la serie:
+\begin{flalign*}
+	\sum_{n=0}^{+\infty}(w^n)=\frac{1}{1-w}\quad,|w|<1 \quad \rightarrow\quad  \sum_{n=0}^{+\infty}n(w^{n-1})=\frac{1}{(1-w)^2}\quad,|w|<1&&
+\end{flalign*}
+Vamos a calcular la serie primero solo con la segunda fracción y después integraremos el $1/z$.
+\begin{flalign*}
+	&\frac{1}{(z+1)^2}=\frac{\frac{1}{z^2}}{(z+1)^2\cdot\frac{1}{z^2}}=\frac{\frac{1}{z^2}}{\left( 1+\frac{1}{z}\right)^2}=\frac{1}{z^2}\cdot\frac{1}{\left( 1-\left(-\frac{1}{z}\right)\right)^2}=\frac{1}{z^2}\sum_{n=0}^{+\infty}n\left(-\frac{1}{z} \right)^{n-1}=\\[10pt]
+&=\frac{1}{z^2}\sum_{n=0}^{+\infty}n(-1)^{n-1}\cdot z^{-(n-1)}=\sum_{n=0}^{+\infty}n(-1)^{n-1}\cdot z^{-n-1} \quad,\;|z|>1&&
+\end{flalign*}
+Por ultimo integramos la fracción que habíamos dejado al principio y solucionamos:
+\begin{flalign*}
+	f(z)=\frac{1}{z^3+2z^2+z}=\frac{1}{z}\sum_{n=0}^{+\infty}n(-1)^{n-1}\cdot z^{-n-1}=\frac{1}{z}\sum_{n=0}^{+\infty}n(-1)^{n-1}\cdot z^{-n-2}&&
+\end{flalign*}
+\end{solution}
+
+%% 5
+\question Dada la ecuación lineal en diferencias de un sistema lineal e inveriante con el tiempo, definida por: $y_{n+2}+4y_{n+1}+4y_n=5^n$, $y_0=0$ e $y_1=0$. Aplicar la transformada z para determinar la sucesión de $y_n$, salida del sistema.
+
+\begin{solution}
+La transformada z de esta ecuación se realiza mediante:
+\begin{flalign*}
+	aZ[y_{n+2}]+bZ[y_{n+1}]+cZ[y_{n}]=Z[d] &&
+\end{flalign*}
+Donde a,b,c son los coeficientes constantes de $y$. Y aplicando la segunda propiedad de traslación:
+\begin{flalign*}
+	Z[f(t+kT)]=z^n\left[ F(z)-\sum_{m=0}^{n-1}f(mT)z^{-m} \right] &&
+\end{flalign*}
+
+Este caso quedaría así:
+\begin{flalign*}
+	&Z[y_{n+2}]+4Z[y_{n+1}]+4z[y_{n}]=Z[5^n] \\
+	& \downarrow \\
+	&[z^2Y(z)-z^2y_0-zy_1]+4[zY(z)-zy_0]+4Y(z)=\frac{z}{z-5} \\
+	& \downarrow \text{\small{dado que $y_0=0$ e $y_1=0$}} \\
+	& (z^2+4z+4)Y(z)=\frac{z}{z-5}\\
+	& \downarrow \text{\small{simplificando}} \\
+	& (z+2)^2Y(z)=\frac{z}{z-5} &&
+\end{flalign*}
+Ahora despejamos $Y(z)$.
+\begin{flalign*}
+	Y(z)=\frac{z}{(z-5)(z+2)^2} &&
+\end{flalign*}
+Pasamos al otro lado de la igualdad el denominador para facilitar la resolución y resolvemos:
+\begin{flalign*}
+	\frac{Y(z)}{z}&=\frac{1}{(z-5)(z+2)^2}=\frac{A}{z-5}+\frac{B}{z+2}+\frac{C}{(z+2)^2}= \\
+&\frac{A(z+2)^2+B(z-5)(z+2)+C(z-5)}{(z-5)(z+2)^2} \\
+&\downarrow \\
+&	 Az^2+4Az+4A+Bz^2-3Bz-10B +Cz-5C=1 \\
+&	 \downarrow \\
+&	 (A+B)z^2 +(4A-3B+C)z +4A-10B-5C=1 &&
+\end{flalign*}
+\begin{conditionsc}\\
+	\text{En }z^2 &\rightarrow & $A+B=0 \quad\quad\quad\quad\rightarrow A=-B$ \\
+	\text{En }z &\rightarrow & $4A-3B+C=0 \quad\rightarrow C=-(4A-3B)=-7A$ \\
+	\text{Indep. } &\rightarrow & $4A-10B-5C=1\rightarrow 4A+10A+35A=1$
+\end{conditionsc}
+Se obtiene que $A=\frac{1}{49}$, $B=\frac{-1}{49}$ y $C=\frac{-1}{7}$, que sustituyendo en la ecuación:
+\begin{flalign*}
+	\frac{Y(z)}{z}=\frac{\frac{1}{49}}{(z-5)}+\frac{\frac{-1}{49}}{(z+2)}+\frac{\frac{-1}{7}}{(z+2)^2} \rightarrow Y(z)=\frac{\frac{1}{49}z}{(z-5)}+\frac{\frac{-1}{49}z}{(z+2)}+\frac{\frac{-1}{7}z}{(z+2)^2} &&
+\end{flalign*}
+Sabiendo que $\frac{z}{z-a}=Z[a^n]$ (tabla de transformadas):
+
+\begin{conditionsb}
+	\frac{z}{z-3} &=& $Z[5^n]$ \\
+	\frac{z}{z+2} &=& $\frac{z}{z-(-2)}=Z[(-2)^n]$ \\
+	\frac{z}{(z+2)^2} &=& $\frac{z}{(z-(-2))^2}=Z[n(-2)^{n-1}]$ 
+\end{conditionsb}
+Finalmente agrupando las transformadas inversas:
+\begin{flalign*}
+	y_n=\frac{1}{49}(5^n)-\frac{1}{49}(-2)^n-\frac{1}{7}n(-2)^{n-1}&&
+\end{flalign*}
+
+\end{solution}
+
+%% 6
+\question El tiempo de vida (en días) de una bombilla es una variable aleatoria continua X con función de distribución:
+\[ F(x) =
+  \begin{cases}
+    0       & \quad \text{si } x < 100\\
+    1-\frac{100}{x}  & \quad \text{si } x\geq100
+  \end{cases}
+\]
+\begin{parts}
+
+\part ¿Cual es la probabilidad de que una bombilla dure más de un año?
+\part Utilizando la función densidad de la variable aleatoria X calcula la probabilidad del apartado anterior.	
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+
+\part ~\\
+Mediante la función distribución:
+\begin{flalign*}
+	F(X)=P(X\leq x)&&
+\end{flalign*}
+Obtenemos la probabilidad de que dure más de un año:
+\begin{flalign*}
+	P(X>365) = 1-P(X\leq365)=1-\left( 1-\frac{100}{365}\right)=\frac{100}{365}&&
+\end{flalign*}
+\part ~\\
+La función densidad es la derivada de la función distribución por lo que:
+\begin{flalign*}
+	F'(x)=f(x)=\frac{100}{x^2}&&
+\end{flalign*}
+Teniendo la función densidad y sabiendo que debemos calcular a partir de más de un año:
+\begin{flalign*}
+	P(X>365)&=\int_{-\infty}^{+\infty} f(x)\mathrm{d}x=\int_{365}^{+\infty}\frac{100}{x^2}\mathrm{d}x=100\cdot\int_{365}^{+\infty}x^{-2}\mathrm{d}x=100\cdot \left[x^{-1} \right]_{365}^\infty =\\
+	&=100\cdot\left( \frac{1}{365}-0\right)=\frac{100}{365}&&
+\end{flalign*}
+
+\end{parts}
+
+\end{solution}
+
+
+
+\end{questions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2014
+\section{Examen final 2014}
+\begin{questions}
+
+%% 1
+\question Sea $X$ una variable aleatoria que tiene como función de densidad de $f(x)=\lambda(1+x^2)$ $x\in(0,1)$ y $0$ en otro caso.\\
+Se pide:
+\begin{parts}
+\part Hallar $\lambda\in\mathbb{R}$ y la función distribución de X.
+\part Hallar el $E(2X+3)$.	
+\end{parts}
+ \begin{solution}
+Otra forma de ver el enunciado ($\in\rightarrow$dentro):
+\begin{flalign*}
+f(x) = \begin{cases}\lambda(1+x^2) \quad &\text{si } 0 < x < 1\\0 \quad &\text{e.o.c }\end{cases} &&
+\end{flalign*}
+ 	
+\begin{parts}
+% Apartado A
+\part ~\\	
+ Propiedad fundamental de la función densidad:	
+\begin{flalign*}
+	\int_{+\infty}^{-\infty}f(x)\mathrm{d}x=1  &&
+\end{flalign*}
+Resolviendo la integral teniendo en cuenta que solo valdrá $1$ si esta entre $0$ y $1$ se obtiene el valor de $\lambda$:
+\begin{flalign*}
+	&\int_{0}^{1} \lambda(1+x^2)\mathrm{d}x=\lambda\cdot\int_0^1(1+x^2)\mathrm{d}x=\lambda\cdot\left[ x+\frac{x^3}{3}\right]_0^1=\lambda\cdot\left( 1+\frac{1}{3}\right)=\frac{4}{3}\lambda=1\\
+	&\lambda=\frac{3}{4} &&
+\end{flalign*}
+Para obtener la función distribución se debe integrar la función densidad (recordar que $\lambda=\frac{3}{4}$)
+\begin{flalign*}
+	\int_{-\infty}^{x}f(t)\mathrm{d}t= \int_{0}^{x}\frac{3}{4}(1+t^2)\mathrm{d}t =\frac{3}{4}\int_{0}^{x}(1+t^2)\mathrm{d}t = \frac{3}{4}\left[t+\frac{t^3}{3} \right]_0^x=\frac{3}{4}\left(x+\frac{x^3}{3} \right) &&	
+\end{flalign*}
+Por lo que la función distribución quedaría del siguiente modo:
+\begin{flalign*}
+f(x) =
+  \begin{cases}
+    \frac{3}{4}\left(x+\frac{x^3}{3}\right)       & \quad \text{si } 0<x<1\\
+    0  & \quad \text{e.o.c}
+  \end{cases}
+   &&
+\end{flalign*}
+% Apartado B
+\part ~\\		
+Para calcular el valor esperado en primer lugar hay que usar las propiedades para simplificar el cálculo:
+\begin{flalign*}
+	E(2X+3)=2\cdot E(X)+3 &&
+\end{flalign*}	
+El valor esperado se calcula del siguiente modo:
+\begin{flalign*}
+E(X)=&\int_{-\infty}^{+\infty}t\cdot f(t)\mathrm{d}t=\int_{0}^{1}x\frac{3}{4}(1+x^2)\mathrm{d}x=\frac{3}{4}\int_{0}^{1}x+x^3\mathrm{d}x=\frac{3}{4}\left[\frac{x^2}{2}+\frac{x^4}{4} \right]_0^1=\\
+ =&\frac{3}{4}\left(\frac{1}{2}+\frac{1}{4} \right)=\frac{3}{4}\cdot \frac{3}{4}=\frac{9}{16} &&
+\end{flalign*} 	
+Por lo que el valor esperado solicitado es:
+\begin{flalign*}
+	E(2X+3)=2\cdot\frac{9}{16}+3=\frac{33}{8}=4.125&&
+\end{flalign*}
+ \end{parts}	
+ \end{solution}
+
+\question Resolver el siguiente sistema de ecuaciones diferenciales:
+\[
+  \begin{cases}
+    y'_1 =2y_1-y_2   \\
+    y'_2=y_1+y_2
+  \end{cases}
+\]
+\begin{solution}
+Pasamos la ecuación a sistema matricial:
+\begin{flalign*}
+	\begin{bmatrix}y'_1 \\ y'_2 \end{bmatrix}=\begin{bmatrix}2 & -1 \\1 & 1 \end{bmatrix}\cdot\begin{bmatrix}y_1 \\ y_2 \end{bmatrix} &&
+\end{flalign*}
+Al no depender de ninguna otra variable o función no tiene solución particular, solo homogénea.\\
+Para obtener la solución homogénea primero se deben obtener los valores propios:
+\begin{flalign*}
+	(A-\lambda I)=\begin{vmatrix}2-\lambda & -1 \\1 & 1-\lambda \end{vmatrix}=&(2-\lambda)(1-\lambda)-(-1)=\\
+	=&\lambda^2-3\lambda+3=0 \rightarrow \left\{ \begin{matrix} \lambda_1=\frac{3}{2}+\frac{\sqrt{3}}{2}\cdot i \\ \lambda_2=\frac{3}{2}-\frac{\sqrt{3}}{2}\cdot i\end{matrix}\right. &&
+\end{flalign*}
+A continuación se obtienen el vector propio asociado a cada valor propio:
+\begin{flalign*}
+	&\text{Con } \lambda_1\\
+	&\begin{bmatrix}2-\left(\frac{3}{2}+\frac{\sqrt{3}}{2}\cdot i\right) & -1 \\ 1 & 1-\left(\frac{3}{2}+\frac{\sqrt{3}}{2}\cdot i\right) \end{bmatrix}\cdot\begin{bmatrix}x \\ y \end{bmatrix}=\begin{bmatrix}0 \\ 0 \end{bmatrix}\rightarrow\begin{bmatrix}\left(\frac{1}{2}+\frac{\sqrt{3}}{2}\cdot i\right)x-y=0 \\ x+\left(\frac{-1}{2}+\frac{\sqrt{3}}{2}\cdot i\right)y=0 \end{bmatrix}\\   & \text{Por lo que } \left(\frac{1}{2}+\frac{\sqrt{3}}{2}\cdot i\right)x=y &&
+\end{flalign*}
+No es necesario calcular con $\lambda_2$ ya que es su conjugado.
+Los vectores propios son:
+\begin{flalign*}
+	E_{\lambda_1}&=\left[x,\left(\frac{1}{2}+\frac{\sqrt{3}}{2}\cdot i\right)x\right] \rightarrow \left[1,\left(\frac{1}{2}+\frac{\sqrt{3}}{2}\cdot i\right)\right]&&\end{flalign*}
+Para poder operar se descompone en  parte real e imaginaria, para ello se trabaja con el vector verticalmente:
+\begin{flalign*}
+	E_{\lambda_1}=\begin{bmatrix}1 \\\frac{1}{2}+\frac{\sqrt{3}}{2}\cdot i \end{bmatrix}=\begin{bmatrix}1 \\\frac{1}{2} \end{bmatrix}+\begin{bmatrix}0 \\\frac{\sqrt{3}}{2} \end{bmatrix}i  &&
+\end{flalign*}	
+	Sabiendo que:
+\begin{flalign*}
+	y_{h_1}=\left[B_1\cdot\cos(\beta x)-B_2\cdot\sin(\beta x) \right]\cdot e^{\alpha x} \\
+	y_{h_2}=\left[B_2\cdot\cos(\beta x)+B_1\cdot\sin(\beta x) \right]\cdot e^{\alpha x} &&
+\end{flalign*}
+	\begin{conditions}
+		B_1 &\rightarrow & Es la parte real del vector propio.\\
+		B_2 &\rightarrow & Es la parte imaginaria del vector propio.\\
+		\alpha &\rightarrow & Es la parte real del valor propio.\\
+		\beta &\rightarrow & Es la parte imaginaria del valor propio.
+	\end{conditions}
+El sistema queda de la siguiente manera:
+\begin{flalign*}
+	y_{h_1}=\left[\begin{bmatrix}1 \\\frac{1}{2} \end{bmatrix}\cdot\cos(\frac{\sqrt{3}}{2} x)-\begin{bmatrix}0 \\\frac{\sqrt{3}}{2} \end{bmatrix}\cdot\sin(\frac{\sqrt{3}}{2} x) \right]\cdot e^{\frac{3}{2} x} \\
+	y_{h_2}=\left[\begin{bmatrix}0 \\\frac{\sqrt{3}}{2} \end{bmatrix}\cdot\cos(\frac{\sqrt{3}}{2} x)+\begin{bmatrix}1 \\\frac{1}{2} \end{bmatrix}\cdot\sin(\frac{\sqrt{3}}{2} x) \right]\cdot e^{\frac{3}{2} x} &&
+\end{flalign*}
+Si seguimos operando:
+\begin{flalign*}
+	y_{h_1}=\begin{bmatrix}\cos(\frac{\sqrt{3}}{2} x) \\ \frac{1}{2}\cos(\frac{\sqrt{3}}{2} x)- \frac{\sqrt{3}}{2}\sin(\frac{\sqrt{3}}{2} x)\end{bmatrix}e^{\frac{3}{2}x}\\
+	y_{h_2}=\begin{bmatrix}\sin(\frac{\sqrt{3}}{2} x) \\ \frac{\sqrt{3}}{2}\cos(\frac{\sqrt{3}}{2} x)+ \frac{1}{2}\sin(\frac{\sqrt{3}}{2} x)\end{bmatrix}e^{\frac{3}{2}x} &&
+\end{flalign*}
+Por lo que la homogénea queda:
+\begin{flalign*}
+	y_h = C_1 \begin{bmatrix}\cos(\frac{\sqrt{3}}{2} x) \\ \frac{1}{2}\cos(\frac{\sqrt{3}}{2} x)- \frac{\sqrt{3}}{2}\sin(\frac{\sqrt{3}}{2} x)\end{bmatrix}e^{\frac{3}{2}x} + C_2\begin{bmatrix}\sin(\frac{\sqrt{3}}{2} x) \\ \frac{\sqrt{3}}{2}\cos(\frac{\sqrt{3}}{2} x)+ \frac{1}{2}\sin(\frac{\sqrt{3}}{2} x)\end{bmatrix}e^{\frac{3}{2}x}
+\end{flalign*}
+\end{solution}
+
+\question Un circuito en serie contiene un inductor, un resistor y un capacitor para los cuales $L=\frac{1}{2}H$, $R=10\Omega$ y $C=0.01F$, respectivamente. El voltaje
+\[ E(t) =
+  \begin{cases}
+    10       & \quad \text{si } 0 \leq t < 5\\
+    0  & \quad \text{si } t\geq5
+  \end{cases}
+\]
+se aplica al circuito. Determine la carga instanténea $q(t)$ presente en el capacitor sí $q(0)=0$, $q'(0)=0$.
+\\
+\small{\bfseries{Nota: Aplicando la ley de Kirchhoff para un circuito en serie RLC, resulta:}}
+$$L\cdot q''(t)+R\cdot q'(t) + \frac{1}{C}q(t)=E(t)$$
+
+\begin{solution}
+Con los datos del enunciado la ecuación queda:
+\begin{flalign*}
+	\frac{1}{2}\cdot q''+10\cdot q' + 100q=10 \quad \text{si } 0 \leq t < 5 &&
+\end{flalign*}
+Sabiendo que la transformada de Laplace de la derivada:
+\begin{flalign*}
+	L\{f^{(n)}(t)\}=s^nL\{f(t)\}-s^{n-1}f(0)-s^{n-2}f'(0)-...-f^{(n-1)}(0) &&
+\end{flalign*}
+La aplicamos en nuestra ecuación:
+\begin{flalign*}
+	&\frac{1}{2}\cdot L\{q''\}+10\cdot L\{q'\} + 100\cdot L\{q\}=10\cdot L\{1\} \\
+	&\quad\quad\quad\quad\quad\quad\quad\quad\downarrow \\ 
+	&\frac{1}{2}\cdot \left(s^2Q(s)-sq(0)-q'(0) \right)+10\cdot \left( sQ(s)-q(0)\right) + 100\cdot Q(s)=10\cdot\frac{1}{s} &&
+\end{flalign*}	
+Como $q(0)=0$ y $q'(0)=0$ entonces:
+\begin{flalign*}
+	&\frac{1}{2}\cdot s^2Q(s)+10\cdot sQ(s) + 100\cdot Q(s)=10\cdot\frac{1}{s} &&
+\end{flalign*}	
+Agrupando queda:
+\begin{flalign*}
+	\left(\frac{1}{2} s^2 + 10s+100\right)\cdot Q(s)= \frac{10}{s}&&
+\end{flalign*}
+Ahora despejamos $Q(s)$ para poder operar:
+\begin{flalign*}
+	Q(s)=\frac{10}{s\left(\frac{1}{2} s^2 + 10s+100\right)}&&
+\end{flalign*}
+Descomponemos en fracciones simples:
+\begin{flalign*}
+	Q(s)=\frac{10}{s\left(\frac{1}{2} s^2 + 10s+100\right)}=\frac{A}{s}+\frac{Bs+C}{\left(\frac{1}{2} s^2 + 10s+100\right)}=\frac{A\left(\frac{1}{2} s^2 + 10s+100\right)+(Bs+C)s}{s\left(\frac{1}{2} s^2 + 10s+100\right)} &&
+\end{flalign*}
+Para obtener los valores de A, B y C, igualamos, se va el denominador y nos queda:
+\begin{flalign*}
+	A\left(\frac{1}{2} s^2 + 10s+100\right)+(Bs+C)s=10 \rightarrow A\left(\frac{1}{2} s^2 + 10s+100\right)+Bs^2+Cs=10 &&
+\end{flalign*}
+\begin{conditionsc}\\
+\text{En }s^2 &\rightarrow & $\frac{1}{2}A+B=0$ \\
+\text{En }s &\rightarrow & $10A+C=0$ \\
+\text{Independientes} &\rightarrow & $100A=10$ \\
+\end{conditionsc}
+Por lo que se obtiene que $A=\frac{1}{10}$, $B=-\frac{1}{20}$ y $C=-1$. Sustituyendo en la ecuación de fracciones simples y aplicando la transformada inversa::
+\begin{flalign*}
+	q(t)=&L^{-1}\left\{\frac{\frac{1}{10}}{s}\right\}+L^{-1}\left\{\frac{-\frac{1}{20}s+(-1)}{\left(\frac{1}{2} s^2 + 10s+100\right)}\right\}= \\
+	=&\frac{1}{10}\cdot L^{-1}\left\{\frac{1}{s}\right\}+\left(-\frac{1}{20}\right)L^{-1}\left\{\frac{s}{\left(\frac{1}{2} s^2 + 10s+100\right)} \right\}+(-1)\cdot L^{-1}\left\{\frac{1}{\left(\frac{1}{2} s^2 + 10s+100\right)} \right\} &&
+\end{flalign*}
+Para el primer sumando existe transformada directa, para los otros dos hay que operar:
+\begin{flalign*}
+	&L^{-1}\left\{\frac{1}{s}\right\}=1 \\[5pt]
+	&\rule{\textwidth}{0.1pt}\\[5pt]
+	&\frac{1}{\left(\frac{1}{2} s^2 + 10s+100\right)}=\frac{1}{\frac{(s+10)^2+100}{2}}=\frac{2}{(s+10)^2+100}=\frac{1}{5}\cdot\frac{10}{(s+10)^2+100} \\[10pt]
+	& \text{Por lo que } \rightarrow  \frac{1}{5}\cdot L^{-1}\left\{\frac{10}{(s+10)^2+100}\right\} =\frac{1}{5}\cdot e^{-10t}\sin(10t)\\[5pt]
+	&\rule{\textwidth}{0.1pt}\\[5pt]
+	&\frac{s}{\left(\frac{1}{2} s^2 + 10s+100\right)}=\frac{s}{\frac{(s+10)^2+100}{2}}=\frac{2s}{(s+10)^2+100}=2\cdot\frac{s}{(s+10)^2+100}=\\[10pt]
+	& =2\cdot\frac{(s+10)-10}{(s+10)^2+100} = 2\cdot\left(\frac{s+10}{(s+10)^2+100}-\frac{10}{(s+10)^2+100}\right)=\\[10pt]
+	& \text{Por lo que } \rightarrow 2\cdot\left( L^{-1}\left\{\frac{s+10}{(s+10)^2+100}\right\} -L^{-1}\left\{\frac{10}{(s+10)^2+100}\right\} \right)= \\[10pt]
+	&\quad\quad\quad\quad\quad\quad =2\cdot\left(e^{-10t}\cos(10t)-e^{-10t}\sin(10t) \right)= 2\cdot e^{-10t}\cdot(\cos(10t)-\sin(10t))\\[5pt]
+	&\rule{\textwidth}{0.1pt} &&
+\end{flalign*}
+
+Por lo tanto el valor de la carga será:
+\begin{flalign*}
+q(t) =
+  \begin{cases}
+    1+\frac{1}{5}\cdot e^{-10t}\sin(10t)+2\cdot e^{-10t}\cdot(\cos(10t)-\sin(10t))       & \quad \text{si } 0\leq t< 5\\
+    0  & \quad \text{si } t \geq 5
+  \end{cases}
+   &&	
+\end{flalign*}
+\end{solution}
+
+%% 4 
+\question Aplicando el teorema de los residuos, calcular el valor de la integral real:
+$$\int_0^{2\pi} \frac{1+\sin(\theta)}{2-\cos(\theta)}\mathrm{d}\theta$$
+	
+\begin{solution}
+En primer lugar se debe tener en cuenta ciertas transformaciones:
+\begin{flalign*}
+	e^{i\theta}=z \rightarrow\left\{\begin{matrix} \cos(\theta)=\frac{e^{i\theta}+e^{-i\theta}}{2}=\frac{1}{2}\left(z+\frac{1}{z}\right) \\[10pt] \sin(\theta)=\frac{e^{i\theta}-e^{-i\theta}}{2i}=\frac{1}{2i}\left(z-\frac{1}{z}\right) \\[10pt] \mathrm{d}z=ie^{i\theta} \rightarrow\mathrm{d}\theta=\frac{\mathrm{d}z}{ie^{i\theta}}=\frac{\mathrm{d}z}{iz} \end{matrix}\right. &&
+\end{flalign*}
+Por lo que sustituyendo en la integral, nos queda:
+\begin{flalign*}
+	\bigintsss_0^{2\pi} \frac{1+\frac{1}{2i}\left(z-\frac{1}{z}\right)}{2-\frac{1}{2}\left(z+\frac{1}{z}\right)}\frac{\mathrm{d}z}{iz} &&
+\end{flalign*}
+Ahora simplificamos la fracción para poder operar:
+\begin{flalign*}
+&\bigintsss_0^{2\pi} \frac{1+\frac{1}{2i}\left(z-\frac{1}{z}\right)}{2-\frac{1}{2}\left(z+\frac{1}{z}\right)}\frac{\mathrm{d}z}{iz}=\bigintsss_0^{2\pi} \frac{1+\frac{z}{2i}-\frac{1}{2iz}}{2-\frac{z}{2}-\frac{1}{2z}}\frac{\mathrm{d}z}{iz}= \bigintsss_0^{2\pi} \frac{z+\frac{z^2}{2i}-\frac{1}{2i}}{2z-\frac{z^2}{2}-\frac{1}{2}}\frac{\mathrm{d}z}{iz}= \\[10pt]
+&\bigintsss_0^{2\pi} \frac{\frac{2i}{2i}\left[z+\frac{z^2}{2i}-\frac{1}{2i} \right]}{\frac{2}{2}\left[2z-\frac{z^2}{2}-\frac{1}{2} \right]}\frac{\mathrm{d}z}{iz}=\frac{1}{i}\bigintsss_0^{2\pi} \frac{z^2+2iz-1}{-z^2+4z-1}\frac{\mathrm{d}z}{iz} &&	
+\end{flalign*}
+Ahora obtenemos los polos para poder aplicar el teorema de residuos:
+\begin{flalign*}
+	&(-z^2+4z-1)iz=0 \rightarrow z=\left\{\begin{array}{c}0\\2-\sqrt{3}\\ 2+\sqrt{3}\end{array} \right.\\
+	&(-z^2+4z-1)iz=\underset{\uparrow}{-}(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})iz \\
+	&\quad \quad \quad\quad \quad \quad\quad \quad \quad \text{Este signo menos es necesario para mantener la igualdad correcta,} \\
+	&\quad \quad \quad\quad \quad \quad\quad \quad \quad \text{sino los signos del resultado del producto salen cambiados} &&
+\end{flalign*}
+Dado que la circunferencia es unitaria $|z|=1$, el polo $2+\sqrt{3}$ se encuentra fuera de la curva, solo se calcula con los polos del interior. Tanto el polo $0$ como el polo $2-\sqrt{3}$ son polos simples ($m=1$).\\
+Teniendo esta integral podemos aplicar el teorema de residuos:
+\begin{flalign*}
+	\frac{1}{i}\bigintsss_0^{2\pi} \frac{z^2+2iz-1}{-(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})}\frac{\mathrm{d}z}{iz}=\frac{1}{i}2\pi i\left[\underset{z=2-\sqrt{3}}{\mathrm{Res}}(f(z))+\underset{z=0}{\mathrm{Res}}(f(z)) \right]&&
+\end{flalign*}
+Donde un residuo se define como:
+\begin{flalign*}
+	\underset{z=z_0}{\mathrm{Res}}(f(z))=\frac{1}{(m-1)!}\lim_{z \rightarrow z_0}\left[\frac{\text{d}^{m-1}}{\text{d}z^{m-1}} \left[\left(z-z_0\right)^m f(z) \right] \right] &&
+\end{flalign*}
+
+\begin{conditions}
+m &\rightarrow & es la multiplicidad del polo $z_0$	\\
+z_0 &\rightarrow & Es la parte que se iguala a 0 con el polo. \\
+f(z) &\rightarrow & es la función contenida en la integral.
+\end{conditions}
+Calculamos los residuos:
+\begin{flalign*}
+	\underset{z=2-\sqrt{3}}{\mathrm{Res}}(f(z))=&\frac{1}{(1-1)!}\lim_{z \rightarrow 2-\sqrt{3}}\left[\frac{\text{d}^{1-1}}{\text{d}z^{1-1}} \left[\left(z-(2-\sqrt{3})\right)^1 \frac{z^2+2iz-1}{-(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})iz} \right] \right]=\\[10pt]
+=&\lim_{z \rightarrow 2-\sqrt{3}} \left[\left(z-2+\sqrt{3}\right) \frac{z^2+2iz-1}{-(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})iz} \right]=\\[10pt]
+=&\lim_{z \rightarrow 2-\sqrt{3}} \left[ \frac{z^2+2iz-1}{-(z-2-\sqrt{3})iz} \right]=\frac{(2-\sqrt{3})^2+2i(2-\sqrt{3})-1}{-((2-\sqrt{3})-2-\sqrt{3})i(2-\sqrt{3})}=\\[10pt]
+=&\frac{(6-4\sqrt{3})+(4-2\sqrt{3})i}{-(-4\sqrt{3}+6)i}==\frac{-1}{i}+\frac{(4-2\sqrt{3})i}{-(-4\sqrt{3}+6)i}=\frac{-1}{i}+\frac{4-2\sqrt{3}}{4\sqrt{3}-6}=\\
+=&\frac{-1}{i}+\frac{(4-2\sqrt{3})(4\sqrt{3}+6)}{(4\sqrt{3}-6)(4\sqrt{3}+6)}=\frac{-1}{i}+\frac{4\sqrt{3}}{12}=\frac{-1}{i}+\frac{\sqrt{3}}{3} \\[15pt]
+~
+\underset{z=0}{\mathrm{Res}}(f(z))\quad=&\frac{1}{(1-1)!}\lim_{z \rightarrow 0}\left[\frac{\text{d}^{1-1}}{\text{d}z^{1-1}} \left[\left(z-0\right)^1 \frac{z^2+2iz-1}{-(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})iz} \right] \right]=\\[10pt]
+=&\lim_{z \rightarrow 0} \left[\left(z\right) \frac{z^2+2iz-1}{-(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})iz} \right]=\lim_{z \rightarrow 0} \left[ \frac{z^2+2iz-1}{-(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})i} \right]=\\[10pt]
+=&\frac{-1}{-(-2+\sqrt{3})\cdot(-2-\sqrt{3})i}=\frac{-1}{-(1)i}=\frac{1}{i}&&
+\end{flalign*}
+Por lo que el valor de la integral es:
+\begin{flalign*}
+	 \frac{1}{i}\bigintsss_0^{2\pi} \frac{z^2+2iz-1}{-(z-2+\sqrt{3})\cdot(z-2-\sqrt{3})}\frac{\mathrm{d}z}{iz}=\frac{1}{i}2\pi i\left[\frac{-1}{i}+\frac{\sqrt{3}}{3}+\frac{1}{i} \right]=\frac{1}{i}2\pi i\left[\frac{\sqrt{3}}{3}\right]=2\pi\cdot \frac{\sqrt{3}}{3} &&
+\end{flalign*}
+\end{solution}
+
+%% 5
+\question Determinar la serie de Laurent de la función $\displaystyle f(z)=\frac{1}{z^2-(1+i)z}$ convergente en la región $|z|>\sqrt{2}$.
+
+\begin{solution}
+
+La ecuación se puede reformular del siguiente modo:
+\begin{flalign*}
+	f(z)=\frac{1}{z^2-(1+i)z}=\frac{1}{z^2}\cdot\frac{1}{1-\frac{1+i}{z}} &&
+\end{flalign*}
+Y utilizando la serie:
+\begin{flalign*}
+	\sum_{n=0}^{+\infty}(w^n)=\frac{1}{1-w}\quad,|w|<1 &&
+\end{flalign*}
+Se obtiene que:
+\begin{flalign*}
+	f(z)=\frac{1}{z^2}\cdot \sum_{n=0}^{+\infty}\left( \frac{1+i}{z}\right)^n=\frac{1}{z^2}\cdot \sum_{n=0}^{+\infty}\left( 1+i\right)^n\cdot z^{-n}=\sum_{n=0}^{+\infty}\left( 1+i\right)^n\cdot z^{-n-2} \quad,|z|>\sqrt{2} &&
+\end{flalign*}
+
+Nota: 
+\begin{flalign*}
+	\left|\frac{1+i}{z}\right|<1 \quad\rightarrow \quad\left|z\right|>\left|1+i\right|\quad\rightarrow \quad\left|z\right|>\sqrt{2} &&
+\end{flalign*}
+El módulo de $1+i$ se calcula como $|1+i|=\sqrt{\text{Re}^2(z)+\text{Im}^2(z)}=\sqrt{1^2+1^2}=\sqrt{2}$
+\end{solution}
+
+%% 6
+\question Dada la ecuación lineal en diferencia de un sistema lineal e invariante con el tiempo, definida por: $y_{n+2}+3y_{n+1}+2y_n=1$, $y_0=0$ e $y_1=0$. Aplicar la transformada z para determinar la sucesión $y_n$, salida del sistema.
+
+\begin{solution}
+
+La transformada z de esta ecuación se realiza mediante:
+\begin{flalign*}
+	aZ[y_{n+2}]+bZ[y_{n+1}]+cZ[y_{n}]=Z[d] &&
+\end{flalign*}
+Donde a,b,c son los coeficientes constantes de $y$. Y aplicando la segunda propiedad de traslación:
+\begin{flalign*}
+	Z[f(t+kT)]=z^n\left[ F(z)-\sum_{m=0}^{n-1}f(mT)z^{-m} \right] &&
+\end{flalign*}
+
+Este caso quedaría así:
+\begin{flalign*}
+	&Z[y_{n+2}]+3Z[y_{n+1}]+2Z[y_{n}]=Z[1] \\
+	& \downarrow \\
+	&[z^2Y(z)-z^2y_0-zy_1]+3[zY(z)-zy_0]+2Y(z)=\frac{z}{z-1} \\
+	& \downarrow \text{\small{dado que $y_0=0$ e $y_1=0$}} \\
+	& (z^2+3z+2)Y(z)=\frac{z}{z-1}\\
+	& \downarrow \text{\small{descomponiendo}} \\
+	& (z+2)(z+1)Y(z)=\frac{z}{z-1} &&
+\end{flalign*}
+Ahora despejamos $Y(z)$.
+\begin{flalign*}
+	Y(z)=\frac{z}{(z-1)(z+2)(z+1)} &&
+\end{flalign*}
+Pasamos al otro lado de la igualdad el denominador para facilitar la resolución y resolvemos:
+\begin{flalign*}
+	\frac{Y(z)}{z}=&\frac{1}{(z-1)(z+2)(z+1)}=\frac{A}{(z-1)}+\frac{B}{(z+2)}+\frac{C}{(z+1)}= \\
+	=& \frac{A(z+2)(z+1)+B(z-1)(z+1)+C(z-1)(z+2)}{(z-1)(z+2)(z+1)} \\
+	& \downarrow &\\
+	& A(z+2)(z+1)+B(z-1)(z+1)+C(z-1)(z+2)=1 \\
+	& \downarrow &\\
+	& (A+B+C)\cdot z+(3A+C)\cdot z+2A-B-2C=1&& 
+\end{flalign*}
+\begin{conditionsc}\\
+	\text{En }z^2 &\rightarrow & $A+B+C=0 \rightarrow A=-B-Cx$ \\
+	\text{En }z &\rightarrow & $3A+C=0 \rightarrow C=-3A$ \\
+	\text{Independientes } &\rightarrow & $2A-B-2C=1$
+\end{conditionsc}
+Se obtiene que $A=\frac{1}{6}$, $B=\frac{1}{3}$ y $C=\frac{-1}{2}$, que sustituyendo en la ecuación:
+\begin{flalign*}
+	\frac{Y(z)}{z}=\frac{\frac{1}{6}}{(z-1)}+\frac{\frac{1}{3}}{(z+2)}+\frac{\frac{-1}{2}}{(z+1)} \rightarrow Y(z)=\frac{\frac{1}{6}z}{(z-1)}+\frac{\frac{1}{3}z}{(z+2)}+\frac{\frac{-1}{2}z}{(z+1)} &&
+\end{flalign*}
+Sabiendo que $\frac{z}{z-a}=Z[a^n]$ (tabla de transformadas):
+
+\begin{conditionsb}
+	\frac{z}{z-1} &=& $Z[1]$ \\
+	\frac{z}{z+2} &=& $\frac{z}{z-(-2)}=Z[(-2)^n]$ \\
+	\frac{z}{z+1} &=& $\frac{z}{z-(-1)}=Z[(-1)^n]$ 
+\end{conditionsb}
+Finalmente agrupando las transformadas inversas:
+\begin{flalign*}
+	y_n=\frac{1}{6}(1)+\frac{1}{3}(-2)^n-\frac{1}{2}(-1)^n=\frac{1}{6}+\frac{1}{3}(-2)^n-\frac{1}{2}(-1)^n &&
+\end{flalign*}
+
+\end{solution}
+
+
+
+\end{questions}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2015
+\section{Examen final 2015}
+\begin{questions}
+
+%% 1
+\question Se ha comprobado que una gran cantidad de fenómenos físicos, tiene asociado una variable aleatoria X cuya función de densidad:
+
+\[ f(x) =
+  \begin{cases}
+    ae^{-ax}       & \quad \text{si } x > 0\\
+    0  & \quad \text{e.o.c }
+  \end{cases}
+  \quad,\quad a>0
+\]
+
+\begin{parts}
+\part
+¿Puede tomar $a$ cualquier valor positivo?
+\part
+Para $a=2$, calcula la función de distribución de la variable aleatoria X y su valor esperado.
+\end{parts}
+
+\begin{solution}
+
+\begin{parts}
+% Apartado A
+\part ~\\
+Propiedad fundamental de la función densidad:	
+\begin{flalign*}
+	\int_{+\infty}^{-\infty}f(x)\mathrm{d}x=1  &&
+\end{flalign*}
+Por lo que resolviendo la integral:
+\begin{flalign*}
+	\int_{0}^{\infty}ae^{-ax}\mathrm{d}x=& \lim_{N \rightarrow \infty}\left( \int_{0}^{N}ae^{-ax}\mathrm{d}x)\right)= \lim_{N \rightarrow \infty}\left(\left. ae^{-ax} \right|_0^N\right)=\\
+	=& \lim_{N \rightarrow \infty}\left(-e^{-aN}-(-1)\right)=1 &&
+\end{flalign*}
+Se puede observar que el resultado no depende de a, por lo que $a$ puede tomar cualquier valor positivo.
+% Apartado B
+\part ~\\
+Para obtener la función distribución se debe integrar la función densidad (Nota: $a=2$)
+\begin{flalign*}
+	\int_{-\infty}^{x}f(t)\mathrm{d}t= \int_{0}^{x}2e^{-2t}\mathrm{d}t =-\left[ e^{-2x}\right]_0^x=\left( -e^{-2x}\right)-(-1)=1-e^{-2x} &&	
+\end{flalign*}
+Por lo que la función distribución quedaría del siguiente modo:
+\begin{flalign*}
+f(x) =
+  \begin{cases}
+    0       & \quad \text{si } x < 0\\
+    1-e^{-2x}  & \quad \text{si } x > 0
+  \end{cases}
+   &&
+\end{flalign*}
+El valor esperado se calcula del siguiente modo:
+\begin{flalign*}
+\int_{-\infty}^{+\infty}t\cdot f(t)\mathrm{d}t=&\int_{0}^{\infty}2te^{-2t}\mathrm{d}t=\lim_{N \rightarrow \infty}\left(\int_{0}^{N}2te^{-2t}\mathrm{d}t \right)=\\
+  =&\lim_{N \rightarrow \infty}\left.\left(-te^{-2t}-\frac{1}{2}e^{-2t} \right) \right|_0^N =\\
+  =&\lim_{N \rightarrow \infty}\left(-Ne^{-2N}-\frac{1}{2}e^{-2N} \right)-\left(-\frac{1}{2} \right)=\frac{1}{2}=0.5 	&&
+\end{flalign*}
+Nota: 
+\begin{flalign*}
+	\int 2te^{-2t}\mathrm{d}t&=\int u\mathrm{d}v=uv-\int u\mathrm{d}v\rightarrow\left|\begin{smallmatrix}u&=&t &\rightarrow &\mathrm{d}u&=&1 \mathrm{d}t \\ \mathrm{d}v&=&2e^{-2t}\mathrm{d}t& \rightarrow& v&=&-e^{-2t} \end{smallmatrix}\right| \\ 
+	&=-te^{-2t}+\int e^{-2t}\mathrm{d}t =-te^{-2t}-\frac{1}{2}e^{-2t}+C &&
+\end{flalign*}
+
+\end{parts}
+\end{solution}
+%% 2
+\question Resolver el siguiente sistema de ecuaciones diferenciales:
+\[
+  \begin{cases}
+    y'_1 =2y_1+y_2   \\
+    y'_2=y_1+2y_2
+  \end{cases}
+\]
+
+\begin{solution}
+Pasamos la ecuación a sistema matricial:
+\begin{flalign*}
+	\begin{bmatrix}y'_1 \\ y'_2 \end{bmatrix}=\begin{bmatrix}2 & 1 \\1 & 2 \end{bmatrix}\cdot\begin{bmatrix}y_1 \\ y_2 \end{bmatrix} &&
+\end{flalign*}
+Al no depender de ninguna otra variable o función no tiene solución particular, solo homogénea.\\
+Para obtener la solución homogénea primero se deben obtener los valores propios:
+\begin{flalign*}
+	(A-\lambda I)=\begin{vmatrix}2-\lambda & 1 \\1 & 2-\lambda \end{vmatrix}=(2-\lambda)(2-\lambda)-1=\lambda^2-4\lambda+3=0 \rightarrow \left\{ \begin{matrix} \lambda_1=3 \\ \lambda_2=1\end{matrix}\right. &&
+\end{flalign*}
+A continuación se obtienen el vector propio asociado a cada valor propio:
+\begin{flalign*}
+	\text{Con } \lambda_1\rightarrow
+	\begin{bmatrix}2-3 & 1 \\ 1 & 2-3 \end{bmatrix}\cdot\begin{bmatrix}x \\ y \end{bmatrix}&=\begin{bmatrix}0 \\ 0 \end{bmatrix}\rightarrow\begin{bmatrix}y-x=0 \\ x-y=0 \end{bmatrix} \text{Por lo que }x=y \\ \\
+	\text{Con } \lambda_2\rightarrow
+	\begin{bmatrix}2-1 & 1 \\ 1 & 2-1 \end{bmatrix}\cdot\begin{bmatrix}x \\ y \end{bmatrix}&=\begin{bmatrix}0 \\ 0 \end{bmatrix}\rightarrow\begin{bmatrix}x+y=0 \\ x+y=0 \end{bmatrix} \text{Por lo que }x=-y &&
+\end{flalign*}
+Los vectores propios son:
+\begin{flalign*}
+	E_{\lambda_1}&=(x,x) \rightarrow (1,1)\\ 
+	E_{\lambda_2}&=(-y,y) \rightarrow (-1,1)&&
+\end{flalign*}
+Por lo que la solución del sistema es:
+\begin{flalign*}
+	\begin{bmatrix}y_1 \\ y_2 \end{bmatrix}=C_1\begin{bmatrix}1 \\ 1 \end{bmatrix}e^{3x}+C_2\begin{bmatrix}-1 \\ 1 \end{bmatrix}e^{1x} &&
+\end{flalign*}
+\end{solution}
+
+%% 3
+\question Resolver la siguiente ecuación diferencial:
+$$y''+y'+y=e^{-x}+\frac{5}{e^{6x}}$$
+
+\begin{solution}
+	En primer lugar simplificamos la fracción:
+\begin{flalign*}
+	y''+y'+y=e^{-x}+5e^{-6x} &&
+\end{flalign*}
+Esta ecuación necesita, además de la solución homogénea, una solución particular porque depende de $e^{-x}+5e^{-6x}$.
+\\
+Se obtiene la homogénea:
+\begin{flalign*}
+	y''+y'+y=0 \rightarrow \lambda^2+\lambda+1=0 \rightarrow \left\{ \begin{matrix} \lambda_1=\frac{-1}{2}+\frac{\sqrt{3}}{2}\cdot i \\ \lambda_2=\frac{-1}{2}-\frac{\sqrt{3}}{2}\cdot i\end{matrix}\right. &&
+\end{flalign*}
+Como las raíces son complejas la homogénea queda:
+\begin{flalign*}
+	y_h=C_1e^{-x/2}\cos\left(\frac{\sqrt{3}}{2}x\right)+C_2e^{-x/2}\sin\left(\frac{\sqrt{3}}{2}x\right) &&
+\end{flalign*}
+Ahora calculamos la solución particular. En este caso tenemos que $r(x)=r_1(x)+r_2(x)$ donde $r_1=e^{-x}$ y $r_2=e^{-6x}$, por lo tanto mediante el método de coeficientes indeterminados:
+\begin{flalign*}
+	  y_p(x)=\left( x^{m_1}q_{r_1}(x)e^{\alpha_1 x} \right) + \left( x^{m_2}q_{r_2}(x)e^{\alpha_2 x} \right) && 
+\end{flalign*}
+\begin{conditions}
+ m_1     & = &  0. Dado que ninguna de las raíces de la ecuación característica ($\lambda_1$ y $\lambda_2$) son iguales al valor de $\alpha_1$, que es $-1$.\\
+ m_2     & = &  0. Dado que ninguna de las raíces de la ecuación característica ($\lambda_1$ y $\lambda_2$) son iguales al valor de $\alpha_2$, que es $-6$.\\
+ q_{r_1}     & = & A. Dado que al no haber polinomio dependiente de $x$ el grado es 0 y por lo tanto solo tiene una constante. \\ 
+ q_{r_2}     & = & B. Dado que al no haber polinomio dependiente de $x$ el grado es 0 y por lo tanto solo tiene una constante. \\   
+e^{\alpha_1 x} & = &  $e^{-x}$. Porque el valor de $\alpha_1 = -1$. \\
+e^{\alpha_2 x} & = &  $e^{-6x}$. Porque el valor de $\alpha_2 = -6$. 
+\end{conditions}
+Por lo tanto $y_p$ quedaría:
+\begin{flalign*}
+	y_p=Ae^{-x}+Be^{-6x} &&
+\end{flalign*}
+Obtenemos sus derivadas para sustituir en la ecuación:
+\begin{flalign*}
+	y'_p&=-Ae^{-x}-6Be^{-6x} \\
+	y''_p&=Ae^{-x}+36Be^{-6x} &&
+\end{flalign*}
+Sustituyendo queda:
+\begin{flalign*}
+	\left( Ae^{-x}+36Be^{-6x} \right)+\left(-Ae^{-x}-6Be^{-6x} \right)+\left( Ae^{-x}+Be^{-6x} \right)=e^{-x}+\frac{5}{e^{6x}} &&
+\end{flalign*}
+Y si operamos:
+\begin{flalign*}
+Ae^{-x}+31Be^{-6x}=e^{-x}+5e^{-6x} &&
+\end{flalign*}
+Igualando los términos:
+
+\begin{conditionsb}
+	e^{-x} &\rightarrow & $A=1$ \\
+	e^{-6x} &\rightarrow & $31B=5 \rightarrow B=\frac{5}{31}$
+\end{conditionsb}
+Por lo que $y_p=e^{-x}+\frac{5}{31}e^{-6x}$
+\\
+\\
+Como $y(x)=y_h(x)+y_p(x)$ la solución general es:
+\begin{flalign*}
+	y(x)=C_1e^{-x/2}\cos\left(\frac{\sqrt{3}}{2}x\right)+C_2e^{-x/2}\sin\left(\frac{\sqrt{3}}{2}x\right)+e^{-x}+\frac{5}{31}e^{-6x} &&
+\end{flalign*}
+
+\end{solution}
+
+
+%% 4
+\question Resolver la integral compleja $\displaystyle\oint_c \frac{2z+i}{\left(z-1-2i\right)^2(z-i)}$ conde $C$ es la circunferencia $|z|=4$, recorrida en sentido antihorario.
+
+\begin{solution}
+En primer lugar obtenemos los polos (es cuando el denominador queda igual a 0):
+\begin{flalign*}
+	\left(z-1-2i\right)^2(z-i)=0 \rightarrow \left\{ \begin{matrix} (z-1-2i)&=0\rightarrow&z=&1+2i  \\(z-i)&=0 \rightarrow &z=&i \end{matrix}\right. &&
+\end{flalign*}
+Ambos polos se encuentran en el interior de la circunferencia ($z<4$). El polo $z=1+2i$ es doble (la parte que se iguala a 0 con este polo es $(z-1-2i)$ y se encuentra al cuadrado) y el polo $z=i$ es simple. El cálculo por residuos quedaría del siguiente modo:
+\begin{flalign*}
+	\oint_c \frac{2z+i}{\left(z-1-2i\right)^2(z-i)}\mathrm{d}z=2\pi i\left[\underset{z=1+2i}{\mathrm{Res}}(f(z))+\underset{z=i}{\mathrm{Res}}(f(z)) \right] &&
+\end{flalign*}
+Donde un residuo se define como:
+\begin{flalign*}
+	\underset{z=z_0}{\mathrm{Res}}(f(z))=\frac{1}{(m-1)!}\lim_{z \rightarrow z_0}\left[\frac{\text{d}^{m-1}}{\text{d}z^{m-1}} \left[\left(z-z_0\right)^m f(z) \right] \right] &&
+\end{flalign*}
+\begin{conditions}
+m &\rightarrow & es la multiplicidad del polo $z_0$	\\
+z_0 &\rightarrow & Es la parte que se iguala a 0 con el polo. \\
+f(z) &\rightarrow & es la función contenida en la integral.
+\end{conditions}
+En el caso del polo $z=1+2i$ el residuo es:
+\begin{flalign*}
+	\underset{z=1+2i}{\mathrm{Res}}(f(z))=&\frac{1}{(2-1)!}\lim_{z \rightarrow 1+2i}\left[\frac{\text{d}^{2-1}}{\text{d}z^{2-1}} \left[\left(z-(1+2i)\right)^2 \frac{2z+i}{\left(z-1-2i\right)^2(z-i)} \right] \right]= \\ 
+	=&\lim_{z \rightarrow 1+2i}\left[\frac{\text{d}}{\text{d}z} \left(\frac{2z+1}{z-i}\right) \right]=\lim_{z \rightarrow 1+2i}\frac{2(z-i)-(2z+i)\cdot1}{\left( z-i\right)^2}= \\
+	=&\lim_{z \rightarrow 1+2i}\frac{-3i}{\left(z-i\right)^2}=\frac{-3i}{\left(1+i\right)^2}=\frac{-3i}{2i}=\frac{-3}{2} &&
+\end{flalign*}
+En el caso del polo $z=i$ el residuo es:
+\begin{flalign*}
+	\underset{z=i}{\mathrm{Res}}(f(z))=&\frac{1}{(1-1)!}\lim_{z \rightarrow i}\left[\frac{\text{d}^{1-1}}{\text{d}z^{1-1}} \left[\left(z-(i)\right)^1 \frac{2z+i}{\left(z-1-2i\right)^2(z-i)} \right] \right]= \\ 
+	=&\lim_{z \rightarrow i}\left[ \left(z-i\right) \frac{2z+i}{\left(z-1-2i\right)^2(z-i)} \right]=\lim_{z \rightarrow i}\frac{2z+i}{\left(z-1-2i\right)^2}=\\
+	=&\frac{2i+i}{\left(i-1-2i\right)^2}= \frac{3i}{\left(-1-i\right)^2}=\frac{3i}{2i}=\frac{3}{2} &&
+\end{flalign*}
+Por lo que el valor de la integral es:
+\begin{flalign*}
+	\oint_c \frac{2z+i}{\left(z-1-2i\right)^2(z-i)}=2\pi i\left[\frac{-3}{2}+\frac{3}{2} \right]=0 &&
+\end{flalign*}
+ \end{solution}
+
+\question Determinar la serie de Laurent de la función $\displaystyle f(z)=\frac{1}{z^2-(3+i)z}$ convergente en la región $|z|>\sqrt{10}$
+
+\begin{solution}
+En primer lugar operamos la ecuación:
+\begin{flalign*}
+	f(z)=\frac{1}{z^2-(3+i)z}=\frac{1}{z(z-3-i)}=\frac{1}{z}\cdot\frac{1}{z-3-i} &&
+\end{flalign*}	
+En primer lugar calculamos la serie de Laurent de $\frac{1}{z-3-i}$. Para ello utilizamos la serie:
+\begin{flalign*}
+	\sum_{n=0}^{+\infty}w^n=\frac{1}{1-w}\quad,\quad|w|<1 &&
+\end{flalign*}
+Asi que:
+\begin{flalign*}
+	\frac{1}{(z-3-i)}=\frac{\frac{1}{z}}{1-\frac{3+i}{z}}=\frac{1}{z}\sum_{n=0}^{+\infty}\left(\frac{3+i}{z}\right)^n=\sum_{n=0}^{+\infty}\left(3+i\right)^n\cdot z^{-n-1}\quad,\;|z|>10 &&
+\end{flalign*}
+Por ultimo se debe añadir el $\frac{1}{z}$ que hemos dejado antes, por lo que la solución final es:
+\begin{flalign*}
+	f(z)=\frac{1}{z}\cdot\frac{1}{z-3-i}= \sum_{n=0}^{+\infty}\left(3+i\right)^n\cdot z^{-n-2} &&
+\end{flalign*}
+
+\end{solution}
+
+\question Dada la ecuación lineal en diferencias de un sistema lineal e invariante con el tiempo definida por: $y_{n+2}+3y_{n+1}+2y_n=1$, $y_0=0$ e $y_1=0$. Aplicar la transformada z para determinar la sucesión $y_n$, salida del sistema.
+\begin{solution}
+La transformada z de esta ecuación se realiza mediante:
+\begin{flalign*}
+	aZ[y_{n+2}]+bZ[y_{n+1}]+cZ[y_{n}]=Z[d] &&
+\end{flalign*}
+Donde a,b,c son los coeficientes constantes de $y$. Y aplicando la segunda propiedad de traslación:
+\begin{flalign*}
+	Z[f(t+kT)]=z^n\left[ F(z)-\sum_{m=0}^{n-1}f(mT)z^{-m} \right] &&
+\end{flalign*}
+
+Este caso quedaría así:
+\begin{flalign*}
+	&Z[y_{n+2}]+3Z[y_{n+1}]+2Z[y_{n}]=Z[1] \\
+	& \downarrow \\
+	&[z^2Y(z)-z^2y_0-zy_1]+3[zY(z)-zy_0]+2Y(z)=\frac{z}{z-1} \\
+	& \downarrow \text{\small{dado que $y_0=0$ e $y_1=0$}} \\
+	& (z^2+3z+2)Y(z)=\frac{z}{z-1}\\
+	& \downarrow \text{\small{descomponiendo}} \\
+	& (z+2)(z+1)Y(z)=\frac{z}{z-1} &&
+\end{flalign*}
+Ahora despejamos $Y(z)$.
+\begin{flalign*}
+	Y(z)=\frac{z}{(z-1)(z+2)(z+1)} &&
+\end{flalign*}
+Pasamos al otro lado de la igualdad el denominador para facilitar la resolución y resolvemos:
+\begin{flalign*}
+	\frac{Y(z)}{z}=&\frac{1}{(z-1)(z+2)(z+1)}=\frac{A}{(z-1)}+\frac{B}{(z+2)}+\frac{C}{(z+1)}= \\
+	=& \frac{A(z+2)(z+1)+B(z-1)(z+1)+C(z-1)(z+2)}{(z-1)(z+2)(z+1)} \\
+	& \downarrow &\\
+	& A(z+2)(z+1)+B(z-1)(z+1)+C(z-1)(z+2)=1 \\
+	& \downarrow &\\
+	& (A+B+C)\cdot z+(3A+C)\cdot z+2A-B-2C=1&& 
+\end{flalign*}
+\begin{conditionsc}\\
+	\text{En }z^2 &\rightarrow & $A+B+C=0 \rightarrow A=-B-C$ \\
+	\text{En }z &\rightarrow & $3A+C=0 \rightarrow C=-3A$ \\
+	\text{Independientes } &\rightarrow & $2A-B-2C=1$
+\end{conditionsc}
+Se obtiene que $A=\frac{1}{6}$, $B=\frac{1}{3}$ y $C=\frac{-1}{2}$, que sustituyendo en la ecuación:
+\begin{flalign*}
+	\frac{Y(z)}{z}=\frac{\frac{1}{6}}{(z-1)}+\frac{\frac{1}{3}}{(z+2)}+\frac{\frac{-1}{2}}{(z+1)} \rightarrow Y(z)=\frac{\frac{1}{6}z}{(z-1)}+\frac{\frac{1}{3}z}{(z+2)}+\frac{\frac{-1}{2}z}{(z+1)} &&
+\end{flalign*}
+Sabiendo que $\frac{z}{z-a}=Z[a^n]$ (tabla de transformadas):
+
+\begin{conditionsb}
+	\frac{z}{z-1} &=& $Z[1]$ \\
+	\frac{z}{z+2} &=& $\frac{z}{z-(-2)}=Z[(-2)^n]$ \\
+	\frac{z}{z+1} &=& $\frac{z}{z-(-1)}=Z[(-1)^n]$ 
+\end{conditionsb}
+Finalmente agrupando las transformadas inversas:
+\begin{flalign*}
+	y_n=\frac{1}{6}(1)+\frac{1}{3}(-2)^n-\frac{1}{2}(-1)^n=\frac{1}{6}+\frac{1}{3}(-2)^n-\frac{1}{2}(-1)^n &&
+\end{flalign*}
+\end{solution}
+
+\end{questions}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

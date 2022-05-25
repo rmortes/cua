@@ -1,0 +1,3 @@
+- In the façade case, you have wrongly used "Cultural, docente, administrativo" for enclosure 2
+- what about enclosure 1? 
+- Please modify floor case in order to fulfill requirements for airborne noise!!!

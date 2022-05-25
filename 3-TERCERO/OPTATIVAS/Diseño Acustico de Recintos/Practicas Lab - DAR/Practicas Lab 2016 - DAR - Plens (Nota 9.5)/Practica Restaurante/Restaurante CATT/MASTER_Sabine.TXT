@@ -1,0 +1,28 @@
+Settings = C:\Users\CUA\Desktop\Restaurante\GEO.PRD
+PROJECT  = Restaurante
+MASTER   = MASTER.GEO
+
+The estimated classical RTs become:
+
+            125   250   500   1k    2k    4k    8k   16k 
+------------------------------------------------------------------------
+Eyring :   0,41  0,31  0,24  0,26  0,21  0,20  0,18  0,15 s
+Sabine :   0,50  0,39  0,32  0,34  0,28  0,26  0,24  0,19 s
+------------------------------------------------------------------------
+<Abs>  :   18,2  23,3  28,8  26,9  32,4  33,5  33,5  33,5 %
+Volume : 233   <Free path> :   2,0 m
+------------------------------------------------------------------------
+
+WARNING: The volume could not be estimated for this model
+and a crude estimate or a manually entered value was used.
+
+
+WARNING: The Sabine or Eyring RT may differ considerably
+from the actual RT. It depends on the absorption/diffusion
+distribution and if the hall shape is 'mixing' or not.
+Always compare the Sabine/Eyring values to the T-30 values
+estimated from 'Full detailed calculation'. Also note that
+the model has to be constructed according to guide-lines
+or Volume and <Abs> will be in error and thereby also the
+RT values above.
+

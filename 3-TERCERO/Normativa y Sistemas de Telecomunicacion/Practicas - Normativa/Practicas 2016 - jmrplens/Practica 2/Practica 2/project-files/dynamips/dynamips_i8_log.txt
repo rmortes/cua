@@ -1,0 +1,39 @@
+Feb 19 13:29:54.093 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Feb 19 13:29:54.093 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50040.
+Feb 19 13:29:54.138 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 19 13:29:54.143 HYPERVISOR: exec_cmd: hypervisor uuid 
+Feb 19 13:29:54.149 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 2/Practica 2/project-files/dynamips 
+Feb 19 13:29:54.149 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 2/Practica 2/project-files/dynamips
+Feb 19 13:29:54.153 HYPERVISOR: exec_cmd: vm create R4 9 c2691 
+Feb 19 13:29:54.153 VM: VM R4 created.
+Feb 19 13:29:54.157 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2003 
+Feb 19 13:29:54.162 HYPERVISOR: exec_cmd: c2691 get_mac_addr R4 
+Feb 19 13:29:54.173 HYPERVISOR: exec_cmd: vm set_ios R4 /Users/jmrplens/GNS3/images/IOS/c2691-advsecurityk9-mz.124-25d.image 
+Feb 19 13:29:54.182 HYPERVISOR: exec_cmd: c2691 set_mac_addr R4 c009.8c65.0000 
+Feb 19 13:29:54.195 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Feb 19 13:29:54.207 HYPERVISOR: exec_cmd: vm set_ram R4 192 
+Feb 19 13:29:54.216 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 19 13:29:54.228 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x606eaea8 
+Feb 19 13:29:54.234 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Feb 19 13:29:54.237 HYPERVISOR: exec_cmd: vm set_config R4 configs/i9_startup-config.cfg 
+Feb 19 13:29:54.727 HYPERVISOR: exec_cmd: nio create_udp udp-eb53d8a5-600c-4b68-8b66-692f41a55234 10016 127.0.0.1 10017 
+Feb 19 13:29:54.737 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-eb53d8a5-600c-4b68-8b66-692f41a55234 
+Feb 19 13:29:54.739 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 19 13:29:54.755 HYPERVISOR: exec_cmd: nio create_udp udp-89dae031-e572-4c8f-a5c7-8c97da489ac3 10018 127.0.0.1 10019 
+Feb 19 13:29:54.764 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-89dae031-e572-4c8f-a5c7-8c97da489ac3 
+Feb 19 13:29:54.776 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 19 13:29:57.963 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Feb 19 13:29:57.965 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c2691-advsecurityk9-mz.124-25d.image-192.ghost 
+Feb 19 13:29:57.967 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 19 13:29:57.968 HYPERVISOR: exec_cmd: vm start R4 
+Feb 19 13:32:55.998 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 19 13:32:56.000 HYPERVISOR: exec_cmd: vm stop R4 
+Feb 19 13:32:56.122 VM: VM R4 shutdown.
+Feb 19 13:32:56.124 HYPERVISOR: exec_cmd: vm extract_config R4 
+Feb 19 13:33:36.601 HYPERVISOR: exec_cmd: vm get_status R4 
+Feb 19 13:33:36.606 HYPERVISOR: exec_cmd: vm extract_config R4 
+Feb 19 13:33:36.611 HYPERVISOR: exec_cmd: vm delete R4 
+Feb 19 13:33:36.611 VM: VM R4 destroyed.
+Feb 19 13:33:36.617 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 19 13:33:36.742 HYPERVISOR: Stopped.
+Feb 19 13:33:36.742 GENERAL: reset done.

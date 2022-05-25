@@ -1,0 +1,62 @@
+Mar 08 02:56:39.208 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Mar 08 02:56:39.208 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60548.
+Mar 08 02:56:39.231 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 08 02:56:39.231 HYPERVISOR: exec_cmd: hypervisor uuid 
+Mar 08 02:56:39.232 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 3/Practica 3/project-files/dynamips 
+Mar 08 02:56:39.232 GENERAL: working_dir=/Users/jmrplens/Google Drive/Universidad/Grado en Sonido e Imagen 2015_16/Segundo cuatrimestre/Normativa y sistemas de telecomunicacion/Practicas/Practica 3/Practica 3/project-files/dynamips
+Mar 08 02:56:39.233 HYPERVISOR: exec_cmd: vm create R1 5 c2691 
+Mar 08 02:56:39.234 VM: VM R1 created.
+Mar 08 02:56:39.234 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 2001 
+Mar 08 02:56:39.235 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+Mar 08 02:56:39.236 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Mar 08 02:56:39.237 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/jmrplens/GNS3/images/IOS/c2691-advsecurityk9-mz.124-25d.image 
+Mar 08 02:56:39.238 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Mar 08 02:56:39.239 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 02:56:39.240 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x606eaea8 
+Mar 08 02:56:39.241 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Mar 08 02:56:39.242 HYPERVISOR: exec_cmd: vm set_config R1 configs/i5_startup-config.cfg 
+Mar 08 02:56:47.282 HYPERVISOR: exec_cmd: nio create_udp udp-cf591149-e084-4a88-ba12-5b779f16fd3d 10003 127.0.0.1 10005 
+Mar 08 02:56:47.290 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-cf591149-e084-4a88-ba12-5b779f16fd3d 
+Mar 08 02:56:47.292 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 02:56:52.117 HYPERVISOR: exec_cmd: nio create_udp udp-d1b6112c-bc5c-4c1e-b423-919d5e34d316 10006 127.0.0.1 10007 
+Mar 08 02:56:52.125 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-d1b6112c-bc5c-4c1e-b423-919d5e34d316 
+Mar 08 02:56:52.127 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 02:56:55.615 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Mar 08 02:56:55.616 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c2691-advsecurityk9-mz.124-25d.image-192.ghost 
+Mar 08 02:56:55.617 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 02:56:55.618 HYPERVISOR: exec_cmd: vm start R1 
+Mar 08 02:59:59.978 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 02:59:59.983 HYPERVISOR: exec_cmd: vm stop R1 
+Mar 08 03:00:00.107 VM: VM R1 shutdown.
+Mar 08 03:00:00.116 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 08 03:00:02.020 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:00:02.025 HYPERVISOR: exec_cmd: vm start R1 
+Mar 08 03:11:15.466 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:11:15.467 HYPERVISOR: exec_cmd: vm suspend R1 
+Mar 08 03:17:15.471 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:17:15.472 HYPERVISOR: exec_cmd: vm resume R1 
+Mar 08 03:21:06.515 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:21:06.517 HYPERVISOR: exec_cmd: vm suspend R1 
+Mar 08 03:27:51.636 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:27:51.637 HYPERVISOR: exec_cmd: vm resume R1 
+Mar 08 03:29:05.289 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:29:05.290 HYPERVISOR: exec_cmd: vm suspend R1 
+Mar 08 03:29:47.727 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:29:47.728 HYPERVISOR: exec_cmd: vm resume R1 
+Mar 08 03:32:56.043 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:32:56.049 HYPERVISOR: exec_cmd: vm slot_disable_nio R1 0 0 
+Mar 08 03:32:56.053 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Mar 08 03:32:56.054 HYPERVISOR: exec_cmd: nio delete udp-cf591149-e084-4a88-ba12-5b779f16fd3d 
+Mar 08 03:32:56.056 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:32:56.059 HYPERVISOR: exec_cmd: vm slot_disable_nio R1 0 1 
+Mar 08 03:32:56.077 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Mar 08 03:32:56.077 HYPERVISOR: exec_cmd: nio delete udp-d1b6112c-bc5c-4c1e-b423-919d5e34d316 
+Mar 08 03:32:56.080 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 08 03:32:56.081 HYPERVISOR: exec_cmd: vm stop R1 
+Mar 08 03:32:56.146 VM: VM R1 shutdown.
+Mar 08 03:32:56.149 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 08 03:32:56.152 HYPERVISOR: exec_cmd: vm delete R1 
+Mar 08 03:32:56.152 VM: VM R1 destroyed.
+Mar 08 03:32:56.158 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 08 03:32:56.535 HYPERVISOR: Stopped.
+Mar 08 03:32:56.535 GENERAL: reset done.

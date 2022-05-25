@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void){
+
+    int veces,i=0,n=1,contador;
+
+    do{
+        printf("Introduzca numero entero mayor que cero:"); scanf("%d",&veces);getchar();
+        if(veces<=0){
+            printf("Error: el numero no es mayor que cero.\n");
+        }
+    }while (veces<=0);
+
+    while (veces>0){
+
+        contador++;
+        n=contador;
+        i=0;
+        while (n>0){
+            i= i*10 + n%10;
+            n= n/10;
+        }
+        if(i==contador){
+            printf(" %d ",i);
+            veces--;
+        }
+    }
+    printf("\n");
+    return 0;
+}

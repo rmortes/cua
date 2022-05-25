@@ -1,0 +1,160 @@
+#include<stdio.h>
+#include<conio.h>
+int main(void){
+
+    int num,d,c;
+    int a=0;
+
+    do{
+        printf("Introduzca un numero entre 1 y 999\n");
+        scanf("%d",&num);
+        getche;
+    }while(num<1||num>999);
+
+    c=(num/100)%10;
+    num=num-c*100;
+
+    if(c>0){
+        switch(c){
+        case 1:
+            printf("cien");
+            break;
+        case 2:
+            printf("doscientos");
+            break;
+        case 3:
+            printf("trescientos");
+            break;
+        case 4:
+            printf("cuatrocientos");
+            break;
+        case 5:
+            printf("quinientos");
+            break;
+        case 6:
+            printf("seiscientos");
+            break;
+        case 7:
+            printf("setecientos");
+            break;
+        case 8:
+            printf("ochocientos");
+            break;
+        case 9:
+            printf("novecientos");
+            break;
+
+        }
+    }
+
+    if(num>0){
+        if(c==1){
+            printf("to");
+        }
+        d=(num/10)%num;
+        num=(num-d*10)%10;
+        if(d>0){
+            switch(d){
+            case 1:
+                if(num>=1 && num<=5){
+                    switch(num){
+                    case 1:
+                        printf(" once");
+                        getchar;
+                        break;
+                    case 2:
+                        printf(" doce");
+                        getchar;
+                        break;
+                    case 3:
+                        printf(" trece");
+                        getchar;
+                        break;
+                    case 4:
+                        printf(" catorce");
+                        getchar;
+                        break;
+                    case 5:
+                        printf(" quince");
+                        getchar;
+                        break;
+                    }
+                    a=1;
+                }else{
+                    printf(" diez ");
+                }
+                break;
+        case 2:
+                printf(" veinte ");
+                break;
+        case 3:
+                printf(" treinta ");
+                break;
+        case 4:
+                printf(" cuarenta ");
+                break;
+        case 5:
+                printf(" cincuenta ");
+                break;
+        case 6:
+                printf(" sesenta ");
+                break;
+        case 7:
+                printf(" setenta ");
+                break;
+        case 8:
+                printf(" ochenta ");
+                break;
+        case 9:
+                printf(" noventa ");
+                break;
+            }
+        }
+
+        if(num>0 && a==0){
+            if(d)
+                printf("y");
+            switch(num){
+            case 1:
+                printf(" uno");
+                getchar;
+                break;
+            case 2:
+                printf(" dos");
+                getchar;
+                break;
+            case 3:
+                printf(" tres");
+                getchar;
+                break;
+            case 4:
+                printf(" cuatro");
+                getchar;
+                break;
+            case 5:
+                printf(" cinco");
+                getchar;
+                break;
+            case 6:
+                printf(" seis");
+                getchar;
+                break;
+            case 7:
+                printf(" siete");
+                getchar;
+                break;
+            case 8:
+                printf(" ocho");
+                getchar;
+                break;
+            case 9:
+                printf(" nueve");
+                getchar;
+                break;
+            }
+        }
+    }
+    getche();
+    return(0);
+
+}

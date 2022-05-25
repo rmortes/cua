@@ -1,0 +1,64 @@
+#include<stdio.h>
+int main(void){//FATAN LOS NEGATIVOS
+
+    int dias,semanas,meses,anyos;
+
+    /*Coger datos Inicio*/
+    printf("Practica 1 de FP1. Ejercicio1\n");
+    printf("-----------------------------\n");
+    printf("Introduzca la edad del bebe en semanas:\n");
+    scanf("%d",&semanas);
+
+    /*Coger datos Fin*/
+    if(semanas==0){
+        printf("El bebe acaba de nacer.\n");
+    }
+    if(semanas<-40){
+        printf("ERROR, las semanas no pueden ser menores a -40.\n");
+    }else{
+        if(semanas>=-40 && semanas<0){
+            dias=(-1)*semanas*7;
+            anyos=dias/360;
+            meses = (dias - anyos*360)/30;
+            dias = dias - anyos*360 - meses*30;
+            printf("Al bebe le faltan:\n");
+        }
+        /*calcular Datos Inicio*/
+        if(semanas>0){
+            dias=semanas*7;
+            anyos=dias/360;
+            meses = (dias - anyos*360)/30;
+            dias = dias - anyos*360 - meses*30;
+            printf("El bebe tiene:\n");
+        }
+        if(anyos>1){
+            printf("%d anyos\n",anyos);
+        }else{
+            if (anyos==1){
+                printf("%d anyo\n",anyos);
+            }
+        }
+        if(meses>1){
+            printf("%d meses\n",meses);
+        }else{
+            if (meses==1){
+                printf("%d mes\n",meses);
+
+            }
+        }
+        if(dias>0){
+            printf("%d dias\n",dias);
+        }else{
+            if (dias==1){
+                printf("%d dia\n",dias);
+            }
+
+        }
+
+    }
+    return 0;
+}
+
+
+
+
